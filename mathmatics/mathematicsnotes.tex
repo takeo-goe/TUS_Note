@@ -1,0 +1,93 @@
+% !TeX program = uplatex
+\documentclass[a4paper,12pt]{jlreq}
+
+% ===== Packages =====
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{siunitx}
+\sisetup{detect-all,per-mode=symbol}
+\usepackage{physics}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ascmac}
+\usepackage{xcolor}
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancybox}
+\geometry{margin=25mm}
+
+% ===== Title =====
+\title{Mathematics Notes}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+% ===== Main Content =====
+\section*{マクローリン展開とテイラー展開}
+
+\section*{重積分におけるヤコビアンを利用した面積要素の変換 \hfill }
+\subsection*{2重積分の場合}
+
+\begin{itembox}[l]{次の微小体積要素の変換を説明せよ}
+\begin{align}
+\sum_k f(x_k, y_k) A_k 
+\;\doteq\;
+\sum_k f\bigl(x(u_k, v_k),\, y(u_k, v_k)\bigr)
+\left|
+\det
+\begin{pmatrix}
+\dfrac{\partial x}{\partial u} & \dfrac{\partial x}{\partial v} \\[6pt]
+\dfrac{\partial y}{\partial u} & \dfrac{\partial y}{\partial v}
+\end{pmatrix}
+\right|
+\Delta u\, \Delta v
+\end{align}
+\end{itembox}
+
+\subsection*{解答}
+一般的な変数変換を考える. いま, 1対1でなめらかな変数変換
+
+\begin{equation}
+\begin{cases}
+x = x(u, v), \\[4pt]
+y = y(u, v)
+\end{cases}
+\end{equation}
+が与えられ, この変換によって, ある領域$D$が長方形領域$D'$になるとする. 
+
+\textcolor{red}{ここに図を挿入} \par
+
+領域$D$の分割によって得られる小領域を$D_k$, その面積を$A_k$とし, 対応する領域$D'$の小領域を$D'_k$とする. 小領域$D'_k$の面積は$\Delta u \Delta v$である. \par
+
+ここで, $\Delta u$や$\Delta v$を用いて$D_k$の面積$A_k$を求めたい. そのためにまず, 3点$(x(u,v),y(u,v)), (x(u + \Delta u, v), y(u + \Delta u, v)), (x(u,v + \Delta v),y(u, v + \Delta v))$をそれぞれP,Q,Rとし, 列ベクトル表示を用いて
+
+\begin{align}
+  \overrightarrow{\text{PQ}} = 
+  \begin{pmatrix}
+    x(u + \Delta u, v) - x(u,v) \\
+    y(u + \Delta u, v) - y(u,v)
+  \end{pmatrix},
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
