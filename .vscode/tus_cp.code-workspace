@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../tus_cp"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"python-envs.defaultEnvManager": "ms-python.python:system",
+		"latex-workshop.view.pdf.viewer": "tab",
+		"terminal.integrated.env.osx": {
+			"PATH": "/Library/TeX/texbin:${env:PATH}"
+		}
+	}
+}

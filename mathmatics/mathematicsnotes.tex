@@ -80,6 +80,52 @@ y = y(u, v)
   \end{pmatrix},
 \end{align}
 
+\begin{align}
+  \overrightarrow{\text{PR}} =
+  \begin{pmatrix}
+    x(u, v + \Delta v) - x(u,v) \\
+    y(u, v + \Delta v) - y(u,v)
+  \end{pmatrix}
+\end{align}
+によってできる平行四辺形の面積で$A_k$を近似する. \par
+
+2つの列ベクトル$\overrightarrow{\text{PQ}}, \overrightarrow{\text{PR}}$によってできる平行四辺形の面積は$\text{det} (\overrightarrow{\text{PQ}}, \overrightarrow{\text{PR}})$の絶対値であるから
+
+\begin{align*}
+A_k &\approx 
+\det\begin{pmatrix}
+x(u+\Delta u, v) - x(u,v) & x(u, v+\Delta v) - x(u,v) \\
+y(u+\Delta u, v) - y(u,v) & y(u, v+\Delta v) - y(u,v)
+\end{pmatrix} \\[1em]
+&= 
+\det\begin{pmatrix}
+\dfrac{x(u+\Delta u, v) - x(u,v)}{\Delta u} \, \Delta u & 
+\dfrac{x(u, v+\Delta v) - x(u,v)}{\Delta v} \, \Delta v \\[1em]
+\dfrac{y(u+\Delta u, v) - y(u,v)}{\Delta u} \, \Delta u &
+\dfrac{y(u, v+\Delta v) - y(u,v)}{\Delta v} \, \Delta v
+\end{pmatrix}
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+\section*{熱力学における変文原理}
+
+
+\section*{フーリエ変換}
+
+
+\section*{微分方程式}
+
+
+\section*{以下は洋書からの抜粋集}
 
 
 
