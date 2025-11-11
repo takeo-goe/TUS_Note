@@ -1,38 +1,81 @@
 {
-  // ===== LaTeX Workshop ビルド設定 =====
+  // ===== Python 環境設定 =====
+  "python-envs.defaultEnvManager": "ms-python.python:system",
+  "python-envs.pythonProjects": [],
+
+  // ===== LaTeX Workshop 設定 =====
   "latex-workshop.latex.tools": [
     {
-      "name": "uplatex",
-      "command": "uplatex",
+      "name": "lualatex",
+      "command": "lualatex",
       "args": [
         "-interaction=nonstopmode",
+        "-file-line-error",
         "-synctex=1",
         "%DOC%"
       ]
     },
     {
-      "name": "dvipdfmx",
-      "command": "dvipdfmx",
+      "name": "latexmk (uplatex ➜ dvipdfmx)",
+      "command": "/Library/TeX/texbin/latexmk",
       "args": [
-        "%DOCFILE%"
+        "-e",
+        "$latex='uplatex %O -synctex=1 -interaction=nonstopmode %S';",
+        "-e",
+        "$dvipdf='dvipdfmx %O -o %D %S';",
+        "-pdfdvi",
+        "%DOC%"
       ]
     }
   ],
 
   "latex-workshop.latex.recipes": [
     {
-      "name": "uplatex ➜ dvipdfmx",
-      "tools": ["uplatex", "dvipdfmx"]
+      "name": "LuaLaTeX",
+      "tools": ["lualatex"]
+    },
+    {
+      "name": "uplatex ➜ dvipdfmx 🔁",
+      "tools": ["latexmk (uplatex ➜ dvipdfmx)"]
     }
   ],
 
-  // ===== ビルド・出力設定 =====
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.autoBuild.run": "onSave",
+  // ===== 既定レシピを LuaLaTeX に =====
+  "latex-workshop.latex.recipe.default": "LuaLaTeX",
+
+  // ===== 出力フォルダ =====
   "latex-workshop.latex.outDir": "./out",
 
-  // ===== メッセージ抑制設定 =====
-  "latex-workshop.message.log.show": false,
-  "latex-workshop.message.warning.show": false,
-  "latex-workshop.message.error.show": false
+  // ===== PDF ビューア =====
+  "latex-workshop.view.pdf.viewer": "tab",
+
+  // ===== PATH 設定（MacTeX 認識用） =====
+  "terminal.integrated.env.osx": {
+    "PATH": "/Library/TeX/texbin:${env:PATH}"
+  },
+
+  // ===== クリーン設定（中間ファイル削除） =====
+  "latex-workshop.latex.clean.fileTypes": [
+    "*.aux",
+    "*.bbl",
+    "*.blg",
+    "*.idx",
+    "*.ind",
+    "*.lof",
+    "*.lot",
+    "*.out",
+    "*.toc",
+    "*.acn",
+    "*.acr",
+    "*.alg",
+    "*.glg",
+    "*.glo",
+    "*.gls",
+    "*.ist",
+    "*.fls",
+    "*.log",
+    "*.fdb_latexmk",
+    "*.synctex.gz"
+  ]
 }
+
