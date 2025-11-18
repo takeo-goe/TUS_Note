@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  17 NOV 2025 11:09
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  18 NOV 2025 16:26
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/Users/t_goe/Desktop/Program/TUS_Note/coulomb_report/coulomb
-(/Users/t_goe/Desktop/Program/TUS_Note/coulomb_report/coulomb.tex
+**/Users/t_goe/Desktop/Program/TUS_Note/caluculus/calculus_practice
+(/Users/t_goe/Desktop/Program/TUS_Note/caluculus/calculus_practice.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
@@ -432,19 +432,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)
+)(load cache: extra_lmroman12-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 12.0pt on input line 1203.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1203.
+(Font)              scaled to size 12.0pt on input line 1203.
 \jlreq@omotekeiwidth=\dimen170
 \jlreq@chuubusokeiwidth=\dimen171
 \jlreq@urakeiwidth=\dimen172
 \jlreq@sidenote@length=\dimen173
 \jlreq@sidenote@sep=\dimen174
-(load cache: extra_lmroman8-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.00003pt on input line 1412.
+(Font)              scaled to size 9.60004pt on input line 1412.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.00003pt on input line 1412.
+(Font)              scaled to size 9.60004pt on input line 1412.
 \jlreq@BlockHeading@start@label@box=\box77
 \jlreq@BlockHeading@spaces@current@count=\count287
 \c@part=\count288
@@ -469,33 +470,17 @@ Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip setti
 \toclineskip=\skip58
 \@lnumwidth=\dimen177
 \jlreq@top@contents=\count298
-(load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 6462.
+(Font)              scaled to size 10.79993pt on input line 6462.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 6462.
+(Font)              scaled to size 10.79993pt on input line 6462.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/jlreq/jlreq-complements.sty
 Package: jlreq-complements 2024/08/23 jlreq-complements
  (/usr/local/texlive/2025/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2022/10/25 v0.8b Hooks for input files
  (/usr/local/texlive/2025/texmf-dist/tex/latex/filehook/filehook-2020.sty
 Package: filehook-2020 2022/10/25 v0.8b Hooks for input files
-)))) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: luatex.def on input line 106.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
-))
-\Gin@req@height=\dimen178
-\Gin@req@width=\dimen179
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+)))) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2024/11/05 v2.17t AMS math features
 \@mathmargin=\skip59
 
@@ -505,10 +490,10 @@ Package: amstext 2021/08/26 v2.01 AMS text
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks27
-\ex@=\dimen180
+\ex@=\dimen178
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen181
+\pmbraise@=\dimen179
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
@@ -529,7 +514,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen182
+\big@size=\dimen180
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count304
@@ -547,12 +532,12 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \column@=\count309
 \maxfields@=\count310
 \andhelp@=\toks29
-\eqnshift@=\dimen183
-\alignsep@=\dimen184
-\tagshift@=\dimen185
-\tagwidth@=\dimen186
-\totwidth@=\dimen187
-\lineht@=\dimen188
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
 \@envbody=\toks30
 \multlinegap=\skip60
 \multlinetaggap=\skip61
@@ -574,8 +559,8 @@ Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count311
 \calc@Bcount=\count312
-\calc@Adimen=\dimen189
-\calc@Bdimen=\dimen190
+\calc@Adimen=\dimen187
+\calc@Bdimen=\dimen188
 \calc@Askip=\skip62
 \calc@Bskip=\skip63
 LaTeX Info: Redefining \setlength on input line 80.
@@ -586,16 +571,16 @@ LaTeX Info: Redefining \addtolength on input line 81.
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
 \g_MT_multlinerow_int=\count314
-\l_MT_multwidth_dim=\dimen191
+\l_MT_multwidth_dim=\dimen189
 \origjot=\skip65
-\l_MT_shortvdotswithinadjustabove_dim=\dimen192
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen193
-\l_MT_above_intertext_sep=\dimen194
-\l_MT_below_intertext_sep=\dimen195
-\l_MT_above_shortintertext_sep=\dimen196
-\l_MT_below_shortintertext_sep=\dimen197
+\l_MT_shortvdotswithinadjustabove_dim=\dimen190
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen191
+\l_MT_above_intertext_sep=\dimen192
+\l_MT_below_intertext_sep=\dimen193
+\l_MT_above_shortintertext_sep=\dimen194
+\l_MT_below_shortintertext_sep=\dimen195
 \xmathstrut@box=\box82
-\xmathstrut@dim=\dimen198
+\xmathstrut@dim=\dimen196
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2023/12/19 v1.2f Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup7
@@ -618,7 +603,7 @@ Package: siunitx 2025-02-27 v3.4.6 A comprehensive (SI) units package
 \l__siunitx_number_group_first_int=\count322
 \l__siunitx_number_group_size_int=\count323
 \l__siunitx_number_group_minimum_int=\count324
-\l__siunitx_angle_tmp_dim=\dimen199
+\l__siunitx_angle_tmp_dim=\dimen197
 \l__siunitx_angle_marker_box=\box83
 \l__siunitx_angle_unit_box=\box84
 \l__siunitx_compound_count_int=\count325
@@ -626,28 +611,38 @@ Package: siunitx 2025-02-27 v3.4.6 A comprehensive (SI) units package
 Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
 )
 \l__siunitx_table_tmp_box=\box85
-\l__siunitx_table_tmp_dim=\dimen256
-\l__siunitx_table_column_width_dim=\dimen257
+\l__siunitx_table_tmp_dim=\dimen198
+\l__siunitx_table_column_width_dim=\dimen199
 \l__siunitx_table_integer_box=\box86
 \l__siunitx_table_decimal_box=\box87
 \l__siunitx_table_uncert_box=\box88
 \l__siunitx_table_before_box=\box89
 \l__siunitx_table_after_box=\box90
-\l__siunitx_table_before_dim=\dimen258
-\l__siunitx_table_carry_dim=\dimen259
+\l__siunitx_table_before_dim=\dimen256
+\l__siunitx_table_carry_dim=\dimen257
 \l__siunitx_unit_tmp_int=\count326
 \l__siunitx_unit_position_int=\count327
 \l__siunitx_unit_total_int=\count328
  (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
-\col@sep=\dimen260
+\col@sep=\dimen258
 \ar@mcellbox=\box91
-\extrarowheight=\dimen261
+\extrarowheight=\dimen259
 \NC@list=\toks32
 \extratabsurround=\skip66
 \backup@length=\skip67
 \ar@cellbox=\box92
-)) (/usr/local/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-siunitx.sty) (/usr/local/texlive/2025/texmf-dist/tex/latex/physics/physics.sty
+)) (/usr/local/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-siunitx.sty)
+
+Package siunitx Info: Option "detect-all" has been deprecated in this release.
+(siunitx)             
+(siunitx)             Use "mode = match, propagate-math-font = true,
+(siunitx)             reset-math-version = false, reset-text-family = false,
+(siunitx)             reset-text-series = false, reset-text-shape = false,
+(siunitx)             text-family-to-math = true, text-series-to-math = true"
+(siunitx)             as a replacement.
+
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/physics/physics.sty
 Package: physics 
  (/usr/local/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2024-08-16 L3 Experimental document command parser
@@ -659,7 +654,17 @@ Package: l3keys2e 2024-08-16 LaTeX2e option processing using LaTeX3 keys
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
 \l__chemgreek_tmpa_int=\count329
 \g__chemgreek_tmpa_int=\count330
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
+Package graphics Info: Driver file: luatex.def on input line 106.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2024/04/13 v1.2e Graphics/color driver for luatex
+))
 \l__mhchem_ce_distanceFromLastComma_int=\count331
 \__mhchem_arrow_extPgfLength_skip=\skip68
 \mhchem@minispace@tmp=\skip69
@@ -672,10 +677,10 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use 
 \mhchem@bondtmp@minussidebearingleft=\skip76
 \mhchem@bondtmp@minussidebearingright=\skip77
 \l__mhchem_option_version_int=\count332
-\mhchem@option@minusmathsidebearingleft=\dimen262
-\mhchem@option@minusmathsidebearingright=\dimen263
-\mhchem@option@minustextsidebearingleft=\dimen264
-\mhchem@option@minustextsidebearingright=\dimen265
+\mhchem@option@minusmathsidebearingleft=\dimen260
+\mhchem@option@minusmathsidebearingright=\dimen261
+\mhchem@option@minustextsidebearingleft=\dimen262
+\mhchem@option@minustextsidebearingright=\dimen263
 
 
 Package mhchem Warning: You did not specify a 'version' option for the mhchem
@@ -686,46 +691,28 @@ Package mhchem Warning: You did not specify a 'version' option for the mhchem
 
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen266
-\lightrulewidth=\dimen267
-\cmidrulewidth=\dimen268
-\belowrulesep=\dimen269
-\belowbottomsep=\dimen270
-\aboverulesep=\dimen271
-\abovetopsep=\dimen272
-\cmidrulesep=\dimen273
-\cmidrulekern=\dimen274
-\defaultaddspace=\dimen275
+\heavyrulewidth=\dimen264
+\lightrulewidth=\dimen265
+\cmidrulewidth=\dimen266
+\belowrulesep=\dimen267
+\belowbottomsep=\dimen268
+\aboverulesep=\dimen269
+\abovetopsep=\dimen270
+\cmidrulesep=\dimen271
+\cmidrulekern=\dimen272
+\defaultaddspace=\dimen273
 \@cmidla=\count333
 \@cmidlb=\count334
-\@aboverulesep=\dimen276
-\@belowrulesep=\dimen277
+\@aboverulesep=\dimen274
+\@belowrulesep=\dimen275
 \@thisruleclass=\count335
 \@lastruleclass=\count336
-\@thisrulewidth=\dimen278
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/ascmac/ascmac.sty
-Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
- (/usr/local/texlive/2025/texmf-dist/tex/latex/ascmac/tascmac.sty
-Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
-Package tascmac Info: Patch from LuaTeX-ja will be applied on input line 44.
-\@savetbaselineshift=\dimen279
-\@saveybaselineshift=\dimen280
-\scb@x=\box93
-\scscb@x=\box94
-\@bw=\dimen281
-\@nbox=\box95
-\@nbody=\box96
-\@scw=\dimen282
-\ascmac@hoboxa=\box97
-\ascmac@hoboxb=\box98
-\@itemh=\dimen283
-\@iboxpos=\toks33
-\@iboxstr=\box99
-\@bwsp=\box100
-\@@bwsp=\box101
-\@bcal=\count337
-\shaderule=\dimen284
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
+\@thisrulewidth=\dimen276
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen277
+\Gin@req@width=\dimen278
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2024-11-05 v7.01l Hypertext links for LaTeX
  (/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
@@ -744,19 +731,19 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count338
+\c@section@level=\count337
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen285
-\Hy@linkcounter=\count339
-\Hy@pagecounter=\count340
+\@linkdim=\dimen279
+\Hy@linkcounter=\count338
+\Hy@pagecounter=\count339
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count341
+\Hy@SavedSpaceFactor=\count340
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 )
@@ -767,21 +754,21 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count342
+\c@Hy@tempcnt=\count341
  (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4763.
-\XeTeXLinkMargin=\dimen286
+\XeTeXLinkMargin=\dimen280
  (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count343
-\Field@Width=\dimen287
-\Fld@charsize=\dimen288
+\Fld@menulength=\count342
+\Field@Width=\dimen281
+\Fld@charsize=\dimen282
 Package hyperref Info: Hyper figures OFF on input line 6042.
 Package hyperref Info: Link nesting OFF on input line 6047.
 Package hyperref Info: Hyper index ON on input line 6050.
@@ -793,9 +780,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count344
-\c@Item=\count345
-\c@Hfootnote=\count346
+\Hy@abspage=\count343
+\c@Item=\count344
+\c@Hfootnote=\count345
 )
 Package hyperref Info: Driver (autodetected): hluatex.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hluatex.def
@@ -804,8 +791,8 @@ File: hluatex.def 2024-11-05 v7.01l Hyperref driver for luaTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count347
-\c@bookmark@seq@number=\count348
+\Fld@listcount=\count346
+\c@bookmark@seq@number=\count347
  (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -814,8 +801,46 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip78
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+Package tascmac Info: Patch from LuaTeX-ja will be applied on input line 44.
+\@savetbaselineshift=\dimen283
+\@saveybaselineshift=\dimen284
+\scb@x=\box93
+\scscb@x=\box94
+\@bw=\dimen285
+\@nbox=\box95
+\@nbody=\box96
+\@scw=\dimen286
+\ascmac@hoboxa=\box97
+\ascmac@hoboxb=\box98
+\@itemh=\dimen287
+\@iboxpos=\toks33
+\@iboxstr=\box99
+\@bwsp=\box100
+\@@bwsp=\box101
+\@bcal=\count348
+\shaderule=\dimen288
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 11.
+Package xcolor Info: Driver file: luatex.def on input line 274.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 21.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \enitkv@toks@=\toks34
@@ -842,35 +867,19 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen296
 \Gm@layoutvoffset=\dimen297
 \Gm@dimlist=\toks36
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen298
-\captionmargin=\dimen299
-\caption@leftmargin=\dimen300
-\caption@rightmargin=\dimen301
-\caption@width=\dimen302
-\caption@indent=\dimen303
-\caption@parindent=\dimen304
-\caption@hangindent=\dimen305
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->{\@ifundefined {@currenvir}{\@ifundefined {@captype}{\def \jlreq@tempb {}}{\let \jlreq@tempb =\@captype }}{\let \jlreq@tempb =\@currenvir }\reset@font \small \vskip \abovecaptionskip \edef \jlreq@do {\unexpanded {\def \jlreq@tempa ##1}{\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@label@format@setting}{\jlreq@tempb }}}\jlreq@do \setbox \jlreq@tempboxa =\hbox {\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@label@font@setting}{\jlreq@tempb }#1\relax }\ifdim \wd \jlreq@tempboxa =0pt\edef \jlreq@tempa {{\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@font@setting}{\jlreq@tempb }\unexpanded {#2}}}\else \edef \jlreq@tempa {{\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@label@font@setting}{\jlreq@tempb }\exp_not:o {\jlreq@tempa {#1}}}\unexpanded {\hskip \glueexpr }\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@after@label@space@setting}{\jlreq@tempb }\noexpand \relax {\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@font@setting}{\jlreq@tempb }\unexpanded {#2}}}\fi \setbox \@tempboxa =\hbox {\jlreq@tempa }\ifdim \wd \@tempboxa >\hsize \relax \edef \jlreq@tempc {\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@align@setting@large}{\jlreq@tempb }}\else \global \@minipagefalse \edef \jlreq@tempc {\jlreq@jlreqsetup@withenv@nameuse {jlreq@@makecaption@align@setting@small}{\jlreq@tempb }}\fi \expandafter \let \expandafter \jlreq@align \jlreq@tempc \ifx c\jlreq@align \centering \fi \ifx r\jlreq@align \raggedleft \fi \unhbox \@tempboxa \par \vskip \belowcaptionskip } on input line 1175.
-)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
 
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
-\c@caption@flags=\count354
-\c@continuedfloat=\count355
-Package caption Info: hyperref package is loaded.
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/makecell/makecell.sty
-Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen306
-\c@nlinenum=\count356
-\TeXr@lab=\toks37
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box103
+\shadowsize=\dimen298
+\@Sbox=\box104
+\do@VerbBox=\toks37
+\the@fancyput=\toks38
+\this@fancyput=\toks39
+\EndVerbatimTokens=\toks40
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
 ) (/usr/local/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
 Package: lltjp-tascmac 2022-08-24 Patch to (t)ascmac for LuaTeX-ja
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -878,59 +887,35 @@ warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
 ) (/usr/local/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
 Package: lltjp-array 2024-07-21 Patch to array for LuaTeX-ja
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 23.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: luatex.def on input line 149.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (./coulomb.aux)
-\openout1 = coulomb.aux
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 33.
+ (./calculus_practice.aux)
+\openout1 = calculus_practice.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
- (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
-\scratchdimen=\dimen307
-\scratchbox=\box103
-\nofMPsegments=\count358
-\nofMParguments=\count359
-\everyMPshowfont=\toks38
-\MPscratchCnt=\count360
-\MPscratchDim=\dimen308
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
-\everyMPtoPDFconversion=\toks39
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+
 
 Package siunitx Warning: Detected the "physics" package:
 (siunitx)                omitting definition of \qty.
@@ -945,41 +930,60 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 23.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 33.
 
-Package chemgreek Info: Activating mapping `default' on line 23.
+Package chemgreek Info: Activating mapping `default' on line 33.
 
-Package hyperref Info: Link coloring ON on input line 23.
- (./coulomb.out) (./coulomb.out)
-\@outlinefile=\write3
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count354
+\scratchdimen=\dimen299
+\scratchbox=\box105
+\nofMPsegments=\count355
+\nofMParguments=\count356
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count357
+\MPscratchDim=\dimen300
+\MPnumerator=\count358
+\makeMPintoPDFobject=\count359
+\everyMPtoPDFconversion=\toks42
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring ON on input line 33.
+ (./calculus_practice.out) (./calculus_practice.out)
+\@outlinefile=\write4
 
-\openout3 = coulomb.out
+\openout4 = calculus_practice.out
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
 *geometry* verbose mode - [ preamble ] result:
 * driver: luatex
-* paper: <default>
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=418.25368pt
-* \textheight=591.5302pt
-* \oddsidemargin=17.3571pt
-* \evensidemargin=17.3571pt
-* \topmargin=0.33665pt
-* \headheight=10.0pt
-* \headsep=18.8pt
-* \topskip=10.0pt
-* \footskip=30.0pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-35.6981pt
+* \headheight=12.0pt
+* \headsep=22.56pt
+* \topskip=12.0pt
+* \footskip=36.0pt
 * \marginparwidth=0.0pt
 * \marginparsep=0.0pt
-* \columnsep=20.0pt
-* \skip\footins=7.0pt plus 10.0pt
+* \columnsep=24.0pt
+* \skip\footins=8.4pt plus 12.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -989,150 +993,142 @@ Package hyperref Info: Link coloring ON on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 17.0pt on input line 26.
+(Font)              scaled to size 20.4pt on input line 35.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 17.0pt on input line 26.
-(load cache: extra_lmroman12-regular.luc)
+(Font)              scaled to size 20.4pt on input line 35.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 26.
+(Font)              scaled to size 14.4pt on input line 35.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 12.0pt on input line 26.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 26.
+(Font)              scaled to size 14.4pt on input line 35.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 35.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 26.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 35.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 26.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 35.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 26.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 35.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 26.
+(Font)              <14.4> on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 26.
+(Font)              <10> on input line 35.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 26.
+(Font)              <7> on input line 35.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 26.
+(Font)              scaled to size 10.0pt on input line 35.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 26.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
+(Font)              scaled to size 7.0pt on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 26.
+(Font)              scaled to size 14.4pt on input line 35.
 (load cache: extra_haranoajigothic-medium.luc)
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 26.
+(Font)              scaled to size 10.0pt on input line 35.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 6.0pt on input line 26.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 33.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 33.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.0pt on input line 33.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 33.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.0pt on input line 33.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 5.0pt on input line 33.
+(Font)              scaled to size 7.0pt on input line 35.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 14.0pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 38.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 14.0pt on input line 38.
-(load cache: extra_lmsans12-regular.luc)
+(Font)              scaled to size 16.8pt on input line 38.
+(load cache: extra_lmsans17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 38.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 38.
 (load cache: extra_lmsans10-bold.luc)
-LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <14> not available
+LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <16.8> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 38.
-LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <14> not available
+(Font)              scaled to size 16.8pt on input line 38.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <16.8> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 14.0pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 38.
+(load cache: extra_lmsans12-regular.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 40.
+LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <14.4> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 40.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 40.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <14.4> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 40.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 40.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 43.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 43.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 43.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 43.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 43.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 43.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.0pt on input line 43.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 6.0pt on input line 43.
+<images/number1.png, id=4, 271.0125pt x 159.59625pt>
+File: images/number1.png Graphic file (type png)
+<use images/number1.png>
+Package luatex.def Info: images/number1.png  used on input line 48.
+(luatex.def)             Requested size: 217.62206pt x 128.15933pt.
+<images/number2.png, id=5, 472.76625pt x 157.58875pt>
+File: images/number2.png Graphic file (type png)
+<use images/number2.png>
+Package luatex.def Info: images/number2.png  used on input line 56.
+(luatex.def)             Requested size: 364.19667pt x 121.4014pt.
 
 
 [1
 
-]
-<images/cou1.png, id=27, 529.98pt x 465.74pt>
-File: images/cou1.png Graphic file (type png)
-<use images/cou1.png>
-Package luatex.def Info: images/cou1.png  used on input line 79.
-(luatex.def)             Requested size: 200.75996pt x 176.42871pt.
-<images/cou2.png, id=28, 518.93875pt x 415.5525pt>
-File: images/cou2.png Graphic file (type png)
-<use images/cou2.png>
-Package luatex.def Info: images/cou2.png  used on input line 85.
-(luatex.def)             Requested size: 200.75996pt x 160.76495pt.
-<images/cou3.png, id=29, 693.59125pt x 541.02126pt>
-File: images/cou3.png Graphic file (type png)
-<use images/cou3.png>
-Package luatex.def Info: images/cou3.png  used on input line 104.
-(luatex.def)             Requested size: 418.25368pt x 326.25806pt.
+<./images/number1.png><./images/number2.png>]
 
+[2]
 
-[2<./images/cou1.png><./images/cou2.png>]
-
-[3<./images/cou3.png>]
-<images/cou4.png, id=46, 752.8125pt x 591.20876pt>
-File: images/cou4.png Graphic file (type png)
-<use images/cou4.png>
-Package luatex.def Info: images/cou4.png  used on input line 147.
-(luatex.def)             Requested size: 334.60422pt x 262.78485pt.
-
-
-[4<./images/cou4.png>]
-
-[5] (./coulomb.aux)
+[3] (./calculus_practice.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `coulomb.out' has not changed.
+Package rerunfilecheck Info: File `calculus_practice.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 )
 
 Here is how much of LuaTeX's memory you used:
- 22361 strings out of 475506
+ 21431 strings out of 475506
  125244,953878 words of node,token memory allocated
- 1147 words of node memory still in use:
-   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 227 attribute, 54 glue_spec, 33 attribute_list, 1 write, 15 user_defined nodes
-   avail lists: 1:7,2:25484,3:307,4:487,5:353,6:43,7:4227,8:27,9:2180,10:37
- 44898 multiletter control sequences out of 65536+600000
- 91 fonts using 73210543 bytes
- 125i,10n,128p,1908b,933s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf>{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmib7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on coulomb.pdf (5 pages, 359399 bytes).
+ 1162 words of node memory still in use:
+   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 229 attribute, 55 glue_spec, 34 attribute_list, 1 write, 16 user_defined nodes
+   avail lists: 1:10,2:14397,3:135,4:485,5:408,6:41,7:1844,8:37,9:1089,10:11
+ 43999 multiletter control sequences out of 65536+600000
+ 94 fonts using 73605927 bytes
+ 125i,10n,128p,1892b,933s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on calculus_practice.pdf (3 pages, 896290 bytes).
 
-PDF statistics: 135 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 131072)
+PDF statistics: 103 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
