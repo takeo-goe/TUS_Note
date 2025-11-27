@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  18 NOV 2025 16:26
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  27 NOV 2025 16:22
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/t_goe/Desktop/Program/TUS_Note/caluculus/calculus_practice
@@ -839,47 +839,224 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks34
+\pgfutil@tempdima=\dimen289
+\pgfutil@tempdimb=\dimen290
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box102
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks35
+\pgfkeys@temptoks=\toks36
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks37
+))
+\pgf@x=\dimen291
+\pgf@y=\dimen292
+\pgf@xa=\dimen293
+\pgf@ya=\dimen294
+\pgf@xb=\dimen295
+\pgf@yb=\dimen296
+\pgf@xc=\dimen297
+\pgf@yc=\dimen298
+\pgf@xd=\dimen299
+\pgf@yd=\dimen300
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count349
+\c@pgf@countb=\count350
+\c@pgf@countc=\count351
+\c@pgf@countd=\count352
+\t@pgf@toka=\toks38
+\t@pgf@tokb=\toks39
+\t@pgf@tokc=\toks40
+\pgf@sys@id@count=\count353
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 21.
+Driver file for pgf: pgfsys-luatex.def
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count354
+\pgfsyssoftpath@bigbuffer@items=\count355
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen301
+\pgfmath@count=\count356
+\pgfmath@box=\box103
+\pgfmath@toks=\toks41
+\pgfmath@stack@operand=\toks42
+\pgfmath@stack@operation=\toks43
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count357
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen302
+\pgf@picmaxx=\dimen303
+\pgf@picminy=\dimen304
+\pgf@picmaxy=\dimen305
+\pgf@pathminx=\dimen306
+\pgf@pathmaxx=\dimen307
+\pgf@pathminy=\dimen308
+\pgf@pathmaxy=\dimen309
+\pgf@xx=\dimen310
+\pgf@xy=\dimen311
+\pgf@yx=\dimen312
+\pgf@yy=\dimen313
+\pgf@zx=\dimen314
+\pgf@zy=\dimen315
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen316
+\pgf@path@lasty=\dimen317
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen318
+\pgf@shorten@start@additional=\dimen319
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box104
+\pgf@hbox=\box105
+\pgf@layerbox@main=\box106
+\pgf@picture@serial@count=\count358
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen320
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen321
+\pgf@pt@y=\dimen322
+\pgf@pt@temp=\dimen323
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen324
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen325
+\pgf@sys@shading@range@num=\count359
+\pgf@shadingcount=\count360
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box107
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box108
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen326
+\pgf@nodesepend=\dimen327
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen328
+\pgffor@skip=\dimen329
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count361
+\pgfplotmarksize=\dimen330
+)
+\tikz@lastx=\dimen331
+\tikz@lasty=\dimen332
+\tikz@lastxsaved=\dimen333
+\tikz@lastysaved=\dimen334
+\tikz@lastmovetox=\dimen335
+\tikz@lastmovetoy=\dimen336
+\tikzleveldistance=\dimen337
+\tikzsiblingdistance=\dimen338
+\tikz@figbox=\box109
+\tikz@figbox@bg=\box110
+\tikz@tempbox=\box111
+\tikz@tempbox@bg=\box112
+\tikztreelevel=\count362
+\tikznumberofchildren=\count363
+\tikznumberofcurrentchild=\count364
+\tikz@fig@count=\count365
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count366
+\pgfmatrixcurrentcolumn=\count367
+\pgf@matrix@numberofcolumns=\count368
+)
+\tikz@expandcount=\count369
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\enitkv@toks@=\toks34
+\enitkv@toks@=\toks46
 \labelindent=\skip79
-\enit@outerparindent=\dimen289
-\enit@toks=\toks35
-\enit@inbox=\box102
-\enit@count@id=\count349
-\enitdp@description=\count350
+\enit@outerparindent=\dimen339
+\enit@toks=\toks47
+\enit@inbox=\box113
+\enit@count@id=\count370
+\enitdp@description=\count371
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count351
-\Gm@cntv=\count352
-\c@Gm@tempcnt=\count353
-\Gm@bindingoffset=\dimen290
-\Gm@wd@mp=\dimen291
-\Gm@odd@mp=\dimen292
-\Gm@even@mp=\dimen293
-\Gm@layoutwidth=\dimen294
-\Gm@layoutheight=\dimen295
-\Gm@layouthoffset=\dimen296
-\Gm@layoutvoffset=\dimen297
-\Gm@dimlist=\toks36
+\Gm@cnth=\count372
+\Gm@cntv=\count373
+\c@Gm@tempcnt=\count374
+\Gm@bindingoffset=\dimen340
+\Gm@wd@mp=\dimen341
+\Gm@odd@mp=\dimen342
+\Gm@even@mp=\dimen343
+\Gm@layoutwidth=\dimen344
+\Gm@layoutheight=\dimen345
+\Gm@layouthoffset=\dimen346
+\Gm@layoutvoffset=\dimen347
+\Gm@dimlist=\toks48
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/fancybox/fancybox.sty
 Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
-\@fancybox=\box103
-\shadowsize=\dimen298
-\@Sbox=\box104
-\do@VerbBox=\toks37
-\the@fancyput=\toks38
-\this@fancyput=\toks39
-\EndVerbatimTokens=\toks40
-\Verbatim@Outfile=\write3
-\Verbatim@Infile=\read2
+\@fancybox=\box114
+\shadowsize=\dimen348
+\@Sbox=\box115
+\do@VerbBox=\toks49
+\the@fancyput=\toks50
+\this@fancyput=\toks51
+\EndVerbatimTokens=\toks52
+\Verbatim@Outfile=\write4
+\Verbatim@Infile=\read3
 ) (/usr/local/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
 Package: lltjp-tascmac 2022-08-24 Patch to (t)ascmac for LuaTeX-ja
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -887,34 +1064,34 @@ warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
 ) (/usr/local/texlive/2025/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
 Package: lltjp-array 2024-07-21 Patch to array for LuaTeX-ja
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 33.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 35.
  (./calculus_practice.aux)
 \openout1 = calculus_practice.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 
 Package siunitx Warning: Detected the "physics" package:
@@ -930,34 +1107,34 @@ Package siunitx Warning: Detected the "physics" package:
 (/usr/local/texlive/2025/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 33.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 35.
 
-Package chemgreek Info: Activating mapping `default' on line 33.
+Package chemgreek Info: Activating mapping `default' on line 35.
 
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen299
-\scratchbox=\box105
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen300
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count375
+\scratchdimen=\dimen349
+\scratchbox=\box116
+\nofMPsegments=\count376
+\nofMParguments=\count377
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count378
+\MPscratchDim=\dimen350
+\MPnumerator=\count379
+\makeMPintoPDFobject=\count380
+\everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 35.
  (./calculus_practice.out) (./calculus_practice.out)
-\@outlinefile=\write4
+\@outlinefile=\write5
 
-\openout4 = calculus_practice.out
+\openout5 = calculus_practice.out
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -995,108 +1172,108 @@ Package hyperref Info: Link coloring ON on input line 33.
 
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 20.4pt on input line 35.
+(Font)              scaled to size 20.4pt on input line 37.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 20.4pt on input line 35.
+(Font)              scaled to size 20.4pt on input line 37.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 14.4pt on input line 35.
+(Font)              scaled to size 14.4pt on input line 37.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 14.4pt on input line 35.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 35.
+(Font)              scaled to size 14.4pt on input line 37.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 37.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 35.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 37.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 35.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 37.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 35.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 37.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 35.
+(Font)              <14.4> on input line 37.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 35.
+(Font)              <10> on input line 37.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 35.
+(Font)              <7> on input line 37.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
+(Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+(Font)              scaled to size 7.0pt on input line 37.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 14.4pt on input line 35.
+(Font)              scaled to size 14.4pt on input line 37.
 (load cache: extra_haranoajigothic-medium.luc)
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 35.
+(Font)              scaled to size 10.0pt on input line 37.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.0pt on input line 35.
+(Font)              scaled to size 7.0pt on input line 37.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 16.8pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 40.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 16.8pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 40.
 (load cache: extra_lmsans17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 16.8pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 40.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 16.8pt on input line 38.
+(Font)              scaled to size 16.8pt on input line 40.
 (load cache: extra_lmsans10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <16.8> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 38.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 16.8pt on input line 38.
-LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <16.8> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 38.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 16.8pt on input line 38.
-(load cache: extra_lmsans12-regular.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 14.4pt on input line 40.
-LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <14.4> not available
 (Font)              Font shape `JT3/gt/m/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 14.4pt on input line 40.
-LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <14.4> not available
+(Font)              scaled to size 16.8pt on input line 40.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <16.8> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 14.4pt on input line 40.
+(Font)              scaled to size 16.8pt on input line 40.
+(load cache: extra_lmsans12-regular.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 42.
+LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <14.4> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 42.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <14.4> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 43.
+(Font)              <12> on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 43.
+(Font)              <8> on input line 45.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 43.
+(Font)              <6> on input line 45.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.0pt on input line 43.
+(Font)              scaled to size 8.0pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.0pt on input line 43.
+(Font)              scaled to size 6.0pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 43.
+(Font)              scaled to size 12.0pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.0pt on input line 43.
+(Font)              scaled to size 8.0pt on input line 45.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 6.0pt on input line 43.
-<images/number1.png, id=4, 271.0125pt x 159.59625pt>
+(Font)              scaled to size 6.0pt on input line 45.
+<images/number1.png, id=7, 271.0125pt x 159.59625pt>
 File: images/number1.png Graphic file (type png)
 <use images/number1.png>
-Package luatex.def Info: images/number1.png  used on input line 48.
+Package luatex.def Info: images/number1.png  used on input line 50.
 (luatex.def)             Requested size: 217.62206pt x 128.15933pt.
-<images/number2.png, id=5, 472.76625pt x 157.58875pt>
+<images/number2.png, id=8, 472.76625pt x 157.58875pt>
 File: images/number2.png Graphic file (type png)
 <use images/number2.png>
-Package luatex.def Info: images/number2.png  used on input line 56.
+Package luatex.def Info: images/number2.png  used on input line 58.
 (luatex.def)             Requested size: 364.19667pt x 121.4014pt.
 
 
@@ -1105,8 +1282,22 @@ Package luatex.def Info: images/number2.png  used on input line 56.
 <./images/number1.png><./images/number2.png>]
 
 [2]
+<images/number3.png, id=34, 343.2825pt x 109.40875pt>
+File: images/number3.png Graphic file (type png)
+<use images/number3.png>
+Package luatex.def Info: images/number3.png  used on input line 142.
+(luatex.def)             Requested size: 348.19661pt x 110.9744pt.
 
-[3] (./calculus_practice.aux)
+
+[3<./images/number3.png>](load cache: extra_lmroman8-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 8.0pt on input line 167.
+(load cache: extra_lmroman6-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 6.0pt on input line 167.
+
+
+[4] (./calculus_practice.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1116,19 +1307,19 @@ Package rerunfilecheck Info: File `calculus_practice.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21431 strings out of 475506
- 125244,953878 words of node,token memory allocated
- 1162 words of node memory still in use:
-   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 229 attribute, 55 glue_spec, 34 attribute_list, 1 write, 16 user_defined nodes
-   avail lists: 1:10,2:14397,3:135,4:485,5:408,6:41,7:1844,8:37,9:1089,10:11
- 43999 multiletter control sequences out of 65536+600000
- 94 fonts using 73605927 bytes
- 125i,10n,128p,1892b,933s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on calculus_practice.pdf (3 pages, 896290 bytes).
+ 31511 strings out of 475506
+ 125244,1144653 words of node,token memory allocated
+ 1189 words of node memory still in use:
+   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 240 attribute, 55 glue_spec, 35 attribute_list, 2 write, 16 user_defined nodes
+   avail lists: 1:10,2:13262,3:134,4:471,5:406,6:41,7:1618,8:37,9:928,10:11
+ 53746 multiletter control sequences out of 65536+600000
+ 96 fonts using 73869367 bytes
+ 125i,10n,128p,1892b,921s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on calculus_practice.pdf (4 pages, 1175227 bytes).
 
-PDF statistics: 103 PDF objects out of 1000 (max. 8388607)
- 67 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 124 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

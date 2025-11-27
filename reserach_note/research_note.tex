@@ -1,0 +1,432 @@
+% !TeX program = uplatex
+\documentclass[a4paper,12pt]{jlreq}
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{geometry}
+\geometry{margin=25mm}
+
+\begin{document}
+
+\title{Hamiltonian Neural Networks を前提にした理論寄り研究アイデア集}
+\author{}
+\date{}
+\maketitle
+
+\section*{アイデア1：Hamiltonian の同定可能性（Identifiability）の理論}
+
+\subsection*{問題設定のイメージ}
+
+Hamiltonian Neural Networks (HNN) は軌道データから Hamiltonian
+\(H(q,p)\) を学習する．しかし Hamiltonian には
+
+\begin{itemize}
+  \item 定数を足しても運動方程式は不変
+  \item より一般には，正準変換（canonical transformation）で
+        座標を変えても物理は同じ
+\end{itemize}
+
+という「非一意性」がある．したがって，どの意味で
+「真の \(H\) が一意に決まるか」を理論的に整理することが重要である．
+
+\subsection*{具体的なテーマ案}
+
+位相空間が \(\mathbb{R}^2\)（1自由度系）の場合を考える．
+Hamilton 方程式
+\[
+  \dot{z} = J \nabla H(z), \qquad
+  z = (q,p),\quad
+  J = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix}
+\]
+を満たすベクトル場が観測されるとき，2つの Hamiltonian
+\(H_1, H_2\) が同じベクトル場を与える条件を調べる：
+\[
+  J \nabla H_1(z) = J \nabla H_2(z)
+  \quad\Rightarrow\quad
+  \nabla(H_1 - H_2)(z) = 0
+  \quad\Rightarrow\quad
+  H_1 - H_2 = \text{const}.
+\]
+
+\begin{itemize}
+  \item 有限時間区間内の軌道データ（ノイズあり）の下で，
+        \(H(q,p)\) がどのノルムでどこまで一意に決まるかを評価する．
+  \item 単純なクラス（例：分離形
+        \(H(q,p)= \dfrac{p^2}{2m} + V(q)\) で \(V\) が滑らか）に限定して，
+        軌道情報から \(V(q)\) を一意に同定できる条件を定理として与える．
+\end{itemize}
+
+\subsection*{HNN 損失との接続}
+
+HNN の典型的な損失は
+\[
+  \mathcal{L}(\theta)
+  =
+  \bigl\|
+    \dot{z}_{\text{data}} - J \nabla H_\theta(z)
+  \bigr\|^2
+\]
+となる．このとき，\(\mathcal{L}(\theta)\) が十分小さいとき，
+「真の Hamiltonian」\(H^\star\) と \(H_\theta\) の差
+\(\| H_\theta - H^\star\|\) をどの程度まで抑えられるかを評価する
+簡易版の誤差評価を与えることが目標となる．
+
+\bigskip
+
+\section*{アイデア2：学習誤差付き HNN の長時間ダイナミクス解析}
+
+\subsection*{設定}
+
+真の Hamiltonian を \(H^\star\)，学習されたものを
+\[
+  H_\theta = H^\star + \varepsilon R
+\]
+と書き，\(\varepsilon \ll 1\) を学習誤差の大きさとみなす．
+連続時間系は
+\[
+  \dot{z} = J \nabla H^\star(z),
+  \qquad
+  \dot{z}_\theta = J \nabla H_\theta(z_\theta)
+\]
+となる．さらに数値積分として，例えばシンプレクティック積分
+（Verlet 法など）を仮定する．
+
+\subsection*{解析のゴール（1自由度系に絞る）}
+
+\begin{enumerate}
+  \item 単振り子や調和振動子などの 1 自由度系について，
+        \(\varepsilon\) を小パラメータとみなした摂動解析により
+        \[
+          z_\theta(t) - z^\star(t)
+        \]
+        の成長を評価する．
+  \item 数値時間刻み \(h\) を導入したとき，
+        エネルギー誤差
+        \[
+          \Delta H(t)
+          =
+          H^\star\bigl(z_{\text{num}}(t)\bigr)
+          - H^\star\bigl(z^\star(t)\bigr)
+        \]
+        の時間スケーリング（例えば \(\mathcal{O}(\varepsilon)\),
+        \(\mathcal{O}(h^2)\) など）を評価する．
+  \item ベンチマークとして，ベクトル場
+        \(\dot{z} = f_\phi(z)\) を直接ニューラルネットで近似する
+        「非構造的」モデルと比較し，
+        長時間安定性（エネルギーのドリフト）に関する
+        理論・数値両方の評価を行う．
+\end{enumerate}
+
+\subsection*{理論的背景}
+
+\begin{itemize}
+  \item 連続 Hamilton 系に対するシンプレクティック積分法の
+        長時間保存性（バックワードエラー解析）．
+  \item Hamiltonian の摂動論（簡易版 KAM 的な議論の 1 自由度版）．
+\end{itemize}
+
+完全な KAM 理論ではなく，1 自由度に限定して線形化＋摂動解析を行うことで，
+学部レベルでも手が届く設定にするのが現実的である．
+
+\bigskip
+
+\section*{アイデア3：HNN の表現力を単純なクラスで完全解析}
+
+\subsection*{対象とするクラス}
+
+1 自由度で分離形の Hamiltonian を考える：
+\[
+  H(q,p)
+  =
+  \frac{p^2}{2m} + V(q),
+  \qquad
+  V \in C^k([a,b]) .
+\]
+このクラスに対して，HNN（もしくは類似構造のネットワーク）が
+どの程度の規模（層の深さ・幅）で \(\varepsilon\)-近似できるかを
+明示的に評価することを目指す．
+
+\subsection*{基本方針}
+
+\begin{enumerate}
+  \item ReLU ネットワークや Tanh ネットワークによる
+        一変数関数 \(V(q)\) の近似定理を用いて，
+        \(\|V - V_\theta\|_\infty \le \varepsilon\) を達成するための
+        ネットワークサイズの上界を与える．
+  \item その誤差を Hamiltonian 全体に拡張し，
+        ベクトル場
+        \[
+          f(z) = J \nabla H(z)
+        \]
+        の近似誤差 \(\| f - f_\theta \|\) を見積もる．
+  \item 誤差 \(\varepsilon\) を達成するための
+        パラメータ数，層数，幅のスケーリングを
+        明示的なオーダー（例：\(\mathcal{O}(\varepsilon^{-\alpha})\)）
+        で与えることを目標とする．
+\end{enumerate}
+
+\subsection*{既存研究との差別化}
+
+既存のユニバーサル近似定理は，より一般の Hamiltonian 写像や
+高次元系を対象とした抽象的な結果が多く，
+ネットワーク規模の評価も漸近的・存在的なものが中心である．
+
+ここでは対象クラスを
+\begin{itemize}
+  \item 1 自由度
+  \item 分離形 Hamiltonian
+\end{itemize}
+に強く制限する代わりに，より具体的で鋭いサイズ評価を与えることが
+新規性となる．
+
+\bigskip
+
+\section*{アイデア4：正準変換に対する不変性と HNN}
+
+\subsection*{問題意識}
+
+Hamiltonian 力学では，正準変換
+\[
+  (q,p) \mapsto (Q,P)
+\]
+の下でシンプレクティック形式が保存される．
+HNN で学習された \(\hat{H}(q,p)\) が，正準変換後の座標
+\((Q,P)\) でどのように表現されるべきか，
+またそれがどのような意味で「同じ物理系」を表すかを
+理論的に整理する．
+
+\subsection*{1自由度での具体的検討}
+
+\begin{itemize}
+  \item 調和振動子など単純な系に対して，
+        \((q,p)\) からアクション--アングル変数 \((J,\theta)\) への
+        正準変換を具体的に書き下ろす．
+  \item \((q,p)\) 座標で学習した Hamiltonian \(\hat{H}(q,p)\) と，
+        \((J,\theta)\) 座標で学習した \(\tilde{H}(J,\theta)\) の関係を
+        理論的・数値的に解析し，
+        どの条件のもとで
+        \[
+          \hat{H}(q,p) \simeq H^\star(q,p) + \text{const.},\quad
+          \tilde{H}(J,\theta) \simeq K(J) + \text{const.}
+        \]
+        といえるのかを議論する．
+\end{itemize}
+
+\subsection*{論文構成イメージ}
+
+\begin{enumerate}
+  \item \textbf{導入・背景}：  
+        Hamiltonian 力学と正準変換の基礎，
+        HNN・Symplectic NN の概要と既存研究の整理．
+  \item \textbf{理論部分}：  
+        1 自由度 Hamilton 系における正準変換のもとでの
+        Hamiltonian の変換則と，
+        HNN による学習結果の「同値性」の定義・命題の提示．
+  \item \textbf{簡単な数値例}：  
+        調和振動子などに対し，
+        2 つの座標系で HNN を学習し，
+        学習された Hamiltonian の関係を検証する．
+\end{enumerate}
+
+このアイデアはシンプレクティック幾何と HNN の橋渡しをする
+「概念整理＋簡単な定理＋数値例」という構成であり，
+理論寄りの卒論・修論としてまとめやすいテーマとなる．
+
+
+
+
+
+
+
+
+
+%==============================
+% 教科書PDFとHNN論文の対応
+%==============================
+
+\section*{付録：教科書PDFと HNN 論文の対応関係}
+
+本節では，配布されている教科書 PDF（第13章）と
+Greydanus らの Hamiltonian Neural Networks (HNN) 論文との
+対応関係を整理する．
+
+\subsection*{13.1～13.4：仮想仕事～変分原理と論文の対応}
+
+教科書 PDF の前半（13.1～13.4）には
+\begin{itemize}
+  \item 13.1 仮想仕事の原理
+  \item 13.2 ダランベールの原理
+  \item 13.3 ラグランジュ方程式の導出 その1
+  \item 13.4 変分原理（最小時間・フェルマー原理など）
+\end{itemize}
+が含まれている．
+
+HNN 論文では，これらの内容は直接は登場しないが，
+\emph{ニュートン力学 \(\to\) ラグランジュ形式 \(\to\) ハミルトン形式}
+という流れを理解するための前提知識となる．
+
+論文の 2. Theory の冒頭では，
+古典力学の複数の表現形式をさらっと触れつつ，
+「本論文ではハミルトン形式だけを用いる」という立場が取られているため，
+その背景を理解するために 13.1～13.4 を読んでおくとよい．
+
+\subsection*{13.5～13.7：ハミルトンの原理・一般化座標と論文の対応}
+
+PDF の次の部分（13.5～13.7）には
+\begin{itemize}
+  \item 13.5 ハミルトンの原理
+  \item 13.6 ラグランジュの運動方程式の導出 その2
+  \item 13.7 一般化座標と一般化力
+\end{itemize}
+が含まれている．
+
+HNN 論文 2. Theory の
+\emph{Hamiltonian Mechanics} 節では，
+状態を一般化座標 \(q\) とその共役運動量 \(p\) の組
+\((q,p)\) で表すとして議論を始める．これは教科書第13章における
+\begin{itemize}
+  \item 一般化座標 \(q_k\)
+  \item 一般化運動量 \(p_k\)
+\end{itemize}
+の導入に対応している．
+
+したがって，
+\[
+  (q,p) \text{ を状態ベクトルとして扱うとはどういうことか}
+\]
+をきちんと理解したい場合には，13.7（およびその前後）を読んでおくと
+論文の数式が自然に受け入れられる．
+
+\subsection*{13.8～13.9：ラグランジュ方程式と具体例 ↔ 論文のタスク系}
+
+PDF の 13.8～13.9 では
+\begin{itemize}
+  \item 13.8 一般化座標で表したラグランジュの運動方程式
+  \item 13.9 ラグランジュ方程式の応用（単振り子，円周上質点，二重振り子など）
+\end{itemize}
+が扱われている．
+
+HNN 論文 3. Learning a Hamiltonian from Data では，
+以下のような物理系をタスクとして扱っている：
+\begin{itemize}
+  \item 質点バネ系（ideal mass-spring）
+  \item 単振り子（ideal pendulum）
+  \item 2体問題（two-body problem） など
+\end{itemize}
+これらの系の運動方程式を，自分の手で
+ラグランジュ形式から導けるようになりたいなら，
+教科書の 13.8～13.9 が直接対応する．
+
+また HNN 論文では
+\[
+  H = K + U
+\]
+という形で Hamiltonian を
+運動エネルギー \(K\) とポテンシャルエネルギー \(U\) の和として書いているが，
+これは教科書 13.8～13.9 で導入される
+「エネルギー分解 \(K, U\)」の考えそのものである．
+
+\subsection*{13.10：ハミルトンの正準方程式 ↔ 論文の式 (2)}
+
+教科書 13.10「ハミルトンの正準方程式」では，
+ラグランジアン \(L(q,\dot q,t)\) から正準運動量 \(p_k\) を定義し，
+レジェンドル変換により Hamiltonian \(H(q,p,t)\) を導入したうえで，
+\[
+  \dot q_k = \frac{\partial H}{\partial p_k},
+  \qquad
+  \dot p_k = -\frac{\partial H}{\partial q_k}
+\]
+というハミルトンの正準方程式を導いている．
+
+HNN 論文 2. Theory の中核となる式 (2) は，まさにこれに対応している：
+\[
+  \dot{q}, \dot{p} = J \nabla H(q,p),
+\]
+ただし \(J\) は
+\[
+  J =
+  \begin{pmatrix}
+    0 & I \\
+    -I & 0
+  \end{pmatrix}
+\]
+のような交代行列である．
+
+HNN はニューラルネットワークによりスカラー関数 \(H_\theta(q,p)\) を出力し，
+その勾配 \(\nabla H_\theta\) を用いて
+\[
+  \dot z_\theta = J \nabla H_\theta(z)
+\]
+を計算し，これをデータ \(\dot z_{\text{data}}\) と比較する損失
+\[
+  \mathcal{L}(\theta)
+  =
+  \bigl\|
+    \dot{z}_{\text{data}} - J \nabla H_\theta(z)
+  \bigr\|^2
+\]
+で学習する．
+
+したがって，
+\begin{quote}
+  HNN 論文の「Hamiltonian Mechanics」節と HNN の定義部分は，
+  教科書 13.10 の内容をそのまま利用している
+\end{quote}
+と見なしてよい．
+
+\subsection*{13.11：ポアンソンの括弧 ↔ Pixel Pendulum の Poisson bracket}
+
+教科書 13.11 ではポアンソン括弧
+\[
+  [F,G]
+  =
+  \sum_k \left(
+    \frac{\partial F}{\partial q_k}\frac{\partial G}{\partial p_k}
+    -
+    \frac{\partial F}{\partial p_k}\frac{\partial G}{\partial q_k}
+  \right)
+\]
+が定義され，その性質が紹介される．
+
+HNN 論文の Pixel Pendulum の実験部分では，
+オートエンコーダの潜在ベクトル \(z\) の前半を「座標」，
+後半を「その共役量（あるいは時間微分）」とみなし，
+ポアンソン括弧が正準座標に近い性質
+\[
+  [q_i,p_j] \approx \delta_{ij},
+  \quad
+  [q_i,q_j] \approx 0,
+  \quad
+  [p_i,p_j] \approx 0
+\]
+を満たすように補助損失を設計している．
+
+このときに用いられる \emph{Poisson bracket relations} が，
+まさに教科書 13.11 の内容に対応している．
+
+\subsection*{どの順番で読めば HNN が理解しやすいか}
+
+HNN 論文を理解するうえで，特に直接役に立つ教科書の節は
+\begin{enumerate}
+  \item 13.7 一般化座標と一般化力
+  \item 13.10 ハミルトンの正準方程式
+  \item 13.9（単振り子や2体問題などの具体例）
+  \item 13.11 ポアンソンの括弧
+\end{enumerate}
+である．
+
+したがって，例えば次の順で読むと，
+HNN 論文の数式部分がかなりスムーズに追えるようになる：
+\[
+  13.7 \;\to\; 13.10 \;\to\; 13.9 \;\to\; 13.11.
+\]
+
+この付録を参照しながら教科書と論文を行き来することで，
+\begin{itemize}
+  \item 解析力学としての理論的理解
+  \item HNN の数式の意味づけ
+\end{itemize}
+の両方を強化できる．
+
+
+\end{document}
+
