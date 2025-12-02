@@ -25,76 +25,197 @@
 \usepackage{fancybox}
 \geometry{margin=25mm}
 
-\title{解析力学ゼミ資料 (考える力学13.1〜13.2)}
+\title{解析力学ゼミ資料 (考える力学13.10〜13.11)}
 \author{学籍番号：2225091　西亦 岳雄}
 
 \begin{document}
 \maketitle
 
-\begin{itembox}[l]{考える力学 13章}
-はじめに, 解析力学と呼ばれる力学のより一般的な定式化を行なっていく. 今まで学んできた力学は, 質点が慣性系においてニュートンの運動方程式
-\begin{align}
-    m \ddot{\bm{r}} = \bm{F}
-\end{align}
-に従うというものであった. これを変分原理による記述で発展させていく. 　
-
-
-\end{itembox}
-
-
-\section{仮想仕事の原理}
-この節では, つり合いについての力学を変分原理によって定式化し, 仮想仕事の原理について言及する.
-
-\subsection{1個の質点のつり合いの条件}
-簡単な例として, 1個の質点のつり合いの条件を考える. 質点に働くすべての力の合力を$\bm{F}$とすると, つり合いの状態を表す式は
-\begin{align}
-  \bm{F} = 0
-\end{align}
-である. 質点をこのつり合いの状態から任意の変位
-\begin{align}
-  \delta \bm{r} = (\delta x, \delta y, \delta z)
-\end{align}
-だけ動かしたとする. 式(1)における慣性の法則から, 何か外力が働かないとこの微小変位は起こり得ない. これを\textbf{仮想変位}とよび, この変位の間に行われる仕事を仮想変位という. この仕事は式(2)から
-\begin{align}
-  \bm{F}・\delta \bm{r} = 0
-\end{align}
 
 
 
+\section{13.10 ハミルトンの正準方程式}
+
+\subsection*{13.10 ハミルトンの正準方程式の導出}
+
+\subsubsection{全微分}
+1 変数関数 $y = f(x)$ の微小変化は
+\[
+  dy = \frac{df}{dx}\,dx
+\]
+で与えられる．
+
+$n$ 個の変数 $x_1,\dots,x_n$ の関数 $f(x_1,\dots,x_n)$ の全部微分は
+\[
+  df = \sum_{k=1}^n 
+        \frac{\partial f}{\partial x_k}\,dx_k
+\tag{13.128}
+\]
+と書かれる．
+
+\subsubsection{ルジャンドル変換}
+1 変数関数 $f(x)$ に対し
+\[
+  y = \frac{df}{dx}
+\]
+で定義される新しい変数 $y$ を導入し，
+\[
+  g(y) = xy - f(x)
+\]
+をルジャンドル変換と呼ぶ．
 
 
 
+\subsubsection{一般化運動量とハミルトニアンへの変換}
+ラグランジアン $L(q_1,\dots,q_f,\dot q_1,\dots,\dot q_f,t)$
+が与えられた力学系を考える．
+一般化運動量 $p_k$ を
+\[
+  p_k = \frac{\partial L}{\partial \dot q_k}
+  \qquad (k=1,\dots,f)
+\tag{13.133}
+\]
+で定義する．
 
+ルジャンドル変換の考え方を用いて，
+$\dot q_k$ を $p_k$ に置き換えた関数
+\[
+  H(q_1,\dots,q_f,p_1,\dots,p_f,t)
+  = \sum_{k=1}^f p_k \dot q_k - L(q,\dot q,t)
+\tag{13.138}
+\]
+を \textbf{ハミルトニアン}（ハミルトン関数）と呼ぶ．
 
-\subsection{仮想仕事の原理の応用}
+\subsubsection{ハミルトンの正準方程式}
+$H$ の全微分を求めると
+\[
+  dH = \sum_{k=1}^f
+       \frac{\partial H}{\partial q_k}\,dq_k
+     + \sum_{k=1}^f
+       \frac{\partial H}{\partial p_k}\,dp_k
+     + \frac{\partial H}{\partial t}\,dt
+\tag{13.139}
+\]
+である．一方，定義式 $H=\sum p_k\dot q_k - L$ を時間微分し，
+オイラー・ラグランジュ方程式
+\[
+  \frac{d}{dt}
+  \frac{\partial L}{\partial \dot q_k}
+  - \frac{\partial L}{\partial q_k} = 0
+\tag{13.103}
+\]
+を用いて整理すると
+\[
+  dH = \sum_{k=1}^f \dot q_k\,dp_k
+      - \sum_{k=1}^f \dot p_k\,dq_k
+      - \frac{\partial L}{\partial t}\,dt
+\tag{13.143}
+\]
+が得られる．
+この 2 つの表現を $dq_k,dp_k,dt$ それぞれの係数で比較すると
+\[
+  \dot q_k = \frac{\partial H}{\partial p_k},\qquad
+  \dot p_k = -\frac{\partial H}{\partial q_k}
+  \qquad (k=1,\dots,f)
+\tag{13.144}
+\]
+\[
+  \frac{\partial H}{\partial t}
+  = -\frac{\partial L}{\partial t}
+\tag{13.140}
+\]
+が従う．
+特に $L$ が時間に依存しないとき，
+$\partial L/\partial t=0$ なので
+\[
+  \frac{dH}{dt} = \frac{\partial H}{\partial t} = 0
+\]
+となり，$H$ は保存量である．これ(13.144)が
+\textbf{ハミルトンの正準方程式}である．
 
-\subsection{安定なつり合いと不安定なつり合い}
+\subsubsection{ハミルトニアンとエネルギー}
+質点系のラグランジアンが
+\[
+  L = K - U
+\]
+（$K$ は運動エネルギー，$U$ はポテンシャル・エネルギー）で与えられ，
+かつ一般化座標が直交座標と同等の性質をもつ場合には，
+一般化運動量と速度の関係は
+\[
+  p_i = m_i \dot{\bm r}_i
+\tag{13.145}
+\]
+であり，
+\[
+  \frac{1}{2}\sum_i p_i\cdot\dot{\bm r}_i = K
+\tag{13.150}
+\]
+が成り立つ．したがってハミルトニアンは
+\[
+  H = \sum_i p_i\cdot\dot{\bm r}_i - L
+    = K + U
+\tag{13.152}
+\]
+となり，全力学系の力学的エネルギーに等しい．
+$L$ が時間に依存しないとき，$H$ は保存エネルギーを表す．
 
+\subsection*{13.11 ポアソンの括弧}
 
+\subsubsection{定義}
+正準変数 $(q_1,\dots,q_f,p_1,\dots,p_f)$ の関数
+$F(q,p,t)$ と $G(q,p,t)$ に対し，
+\textbf{ポアソンの括弧}を
+\[
+  [F,G]
+  = \sum_{k=1}^f
+    \left(
+      \frac{\partial F}{\partial q_k}
+      \frac{\partial G}{\partial p_k}
+      - 
+      \frac{\partial F}{\partial p_k}
+      \frac{\partial G}{\partial q_k}
+    \right)
+\tag{13.155}
+\]
+で定義する．
 
-\section{ダランベールの原理}
+\subsubsection{時間発展との関係}
+$F(q,p,t)$ の時間微分は
+ハミルトンの正準方程式を用いると
+\[
+  \frac{dF}{dt}
+  = \sum_{k=1}^f
+    \left(
+      \frac{\partial F}{\partial q_k}\dot q_k
+      +\frac{\partial F}{\partial p_k}\dot p_k
+    \right)
+  + \frac{\partial F}{\partial t}
+\]
+\[
+  = [F,H] + \frac{\partial F}{\partial t}
+\tag{13.156}
+\]
+と書ける．
+特に $F$ が時間に依存しないとき，
+\[
+  \frac{dF}{dt} = [F,H]
+\tag{13.157}
+\]
+となる．
+このとき
+\[
+  [F,H]=0
+\tag{13.158}
+\]
+であれば $F$ は保存量である．
 
+特に, (13.157)に関して$F = q_k, p_k$であるとき
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\[
+  \dot{q_k} = [q_k,H],　\dot{p_k} = [p_k,H],　(k = 1,..., n)
+  \tag{13.159}
+\]
+で, これはポアソン括弧を用いた正準方程式である.
 
 
 
@@ -103,16 +224,11 @@
  
 
 
-
-
-
-
-
 \begin{thebibliography}{9}
 
 \bibitem{tasaki}
 
-益川 敏英【監修】/植松 恒夫/青山 秀明【編】/篠本 滋/坂口 英継【著】, 基幹講座 物理学 力学 , 東京図書, 2013 年.
+考える力学
 
 
 

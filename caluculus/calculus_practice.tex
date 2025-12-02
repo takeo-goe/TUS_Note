@@ -197,5 +197,252 @@ $x = r \cos \theta, y = r \sin \theta$という関係式を用いて変数変換
 
 
 
+% === 例題6 ===
+\begin{itembox}[l]{例題6}
+以下の積分を求めよ.
+\begin{align*}
+    I = \iint_{D}^{} x^2 dx dy , D = \left\{(x,y)|\frac{x^2}{a^2} + \frac{y^2}{b^2} \le 1 \right\}
+\end{align*}
+\end{itembox}
+
+\fbox{解答}\par
+\begin{align*}
+    x(r,\theta) = ar\cos\theta, y(r,\theta) = br\sin\theta
+\end{align*}
+
+①積分範囲の変換
+
+\begin{align*}
+    \frac{x^2}{a^2} + \frac{y^2}{b^2} \le 1 &\rightarrow r^2 (\cos^2 \theta + \sin^2 \theta) \le 1\\
+                                            &\rightarrow -1 \le r \le 1\\
+                                            &\rightarrow 0 \le r \le 1　(\text{距離の非負性})
+\end{align*}
+よって積分範囲は
+
+\begin{align*}
+    D' = \left\{{(r,0)| 0 \le r \le 1, 0 \le \theta \le 2\pi}\right\}
+\end{align*}
+
+②被積分関数の変換\par
+
+\begin{align*}
+    x^2 = (x(r,\theta))^2 = a^2 r^2 \cos^2 \theta
+\end{align*}
+
+③面積要素の変換\par
+ヤコビアンの絶対値は,
+\begin{align*}
+    \left|\frac{\partial (x,y)}{\partial (r,\theta)}\right| &= \left|\frac{\partial x}{\partial r} \frac{\partial y}{\partial \theta} - \frac{\partial y}{\partial r} \frac{\partial x}{\partial \theta}\right|\\
+                                                            &= \left| a \cos \theta (br\cos \theta) - b \sin \theta (-ar\sin \theta) \right|\\
+                                                            &= \left| abr (\cos^2 \theta + \sin^2 \theta) \right| = abr
+\end{align*}
+よって, 面積要素は
+\begin{align*}
+    dx dy &= \left| \frac{\partial (x,y)}{\partial (r,\theta)}\right| dr d \theta \\
+          &= abr drd\theta
+\end{align*}
+と変換できる. 以上より積分は
+\begin{align*}
+    I &= \iint_{D'}^{} (x(r,\theta))^2 \left| \frac{\partial (x,y)}{\partial (r,\theta)} \right| drd\theta\\
+      &= \int_{0}^{1} \int_{0}^{2\pi} a^3 b r^3 \cos^3 \theta d\theta dr\\
+      &= a^3 b \int_{0}^{1} r^3 dr \int_{0}^{2\pi} \frac{1}{2} (1 + \cos2\theta) d\theta\\
+      &= a^3 b \left[\frac{1}{4}r^4\right]_{0}^{1} \left[\frac{1}{2}\theta + \frac{1}{4}\sin2\theta\right]_{0}^{2\pi}\\
+      &= \frac{\pi}{4} a^3 b
+\end{align*}
+
+
+
+% === 例題7 ===
+\begin{itembox}[l]{例題7}
+曲面(平面)$ z = 6 - 3x -2y$について
+\begin{align*}
+    D = \left\{ (x,y)| x \ge 0, y \ge 0, x+y \le 1 \right\}
+\end{align*}
+という領域における面積を求めよ.
+
+\begin{center}
+\includegraphics[width=0.5\linewidth]{images/number4.png}
+\end{center}
+
+\end{itembox}
+
+積分領域は, 
+\begin{align*}
+    D &= \left\{ (x,y) | 0 \le x, 0 \le y, x+y \le 1 \right\}\\
+      &= \left\{ 0 \le x \le 1, 0 \le y \le 1-x \right\}
+\end{align*}
+と書き換えられる.
+
+
+\fbox{解答}\par
+\begin{align*}
+    S &= \iint_{D}^{} \sqrt{(\partial xf)^2 +(\partial yf)^2 + 1 } dxdy\\
+      &= \int_{0}^{1} \int_{0}^{1-x} \sqrt{9+4+1}dxdy\\
+      &= \sqrt{\frac{7}{2}}
+\end{align*}
+
+
+
+% === 例題8 ===
+\begin{itembox}[l]{例題8}
+以下の方程式を解け.
+\begin{align*}
+    u'(t) = k 　(k :\text{定数})
+\end{align*}
+
+\end{itembox}
+
+\fbox{解答}\par
+両辺を$t$で積分する.
+\begin{align*}
+    \int_{}^{} \frac{du}{dt}dt = k \int_{}^{} dt
+\end{align*}
+
+\begin{align*}
+    u(t) = kt + C (C \text{: 定数})
+\end{align*}
+
+
+
+% === 例題9 ===
+\begin{itembox}[l]{例題9}
+以下の微分方程式を解け.
+\begin{align*}
+    u'(t) = k 　(k :\text{定数})
+\end{align*}
+ただし, $u(t=0) = u_0$とする.
+
+\end{itembox}
+
+\fbox{解答}\par
+両辺を区間[$u,t$]で積分する.
+\begin{align*}
+    \int_{0}^{t} \frac{du}{dt} dt = \int_{0}^{t} k dt
+\end{align*}
+
+\begin{align*}
+    u(t) - u(0) = kt \rightarrow u(t) = kt + u_0
+\end{align*}
+
+
+
+% === 例題10 ===
+\begin{itembox}[l]{例題10}
+微分方程式$u(t) + au'(t) = 0$($a$ : 定数)を解け.
+
+\end{itembox}
+
+\fbox{解答}\par
+まず , 式を以下のように変形する. 
+\begin{align*}
+    \frac{1}{u}u'(t) = -\frac{1}{a} &\rightarrow \int_{}^{} \frac{1}{u} \frac{du}{dt} dt = -\frac{1}{a} \int_{}^{} dt\\
+                                    &\rightarrow \log\left|u\right| = \frac{1}{a} t + C \rightarrow u(t) = \pm \exp[\frac{1}{a} t + C]
+\end{align*}
+
+
+\vspace{20mm}
+
+% === 例題11 ===
+\begin{itembox}[l]{例題11}
+微分方程式$u'(t) + au(t) = 0$($a$ : 定数)を解け.
+
+\end{itembox}
+
+\fbox{解答}\par
+まず, 方程式を以下のように変形する.
+
+\begin{align*}
+    \frac{u'(t)}{u(t)} = -a
+\end{align*}
+両辺を$t$で積分する.
+\begin{align*}
+    \log\left|u(t)\right| = -at + C(C \text{: 定数})
+\end{align*}
+
+
+
+
+% === 例題12 ===
+\begin{itembox}[l]{例題12}
+非斉次系の方程式$u'(t) + tu(t) = t^2 + 1$の特殊解は, $u(t) = t$で与えられる. そして, 対応する斉次方程式の一般解は$A\exp[-\frac{1}{2}t^2]$ ($A$:定数)で与えられる. \par
+このとき, 与式の一般解が$u(t) = A\exp[-\frac{1}{2}t^2] + t$で与えられることを確かめよ.
+
+\end{itembox}
+
+\fbox{解答}\par
+\begin{align*}
+    (\text{左辺}) &= u'(t) + tu(t)\\
+                 &= (A\exp[-\frac{1}{2}t^2] + t)' + t(A\exp[-\frac{1}{2}t^2] + t)\\
+                 &= A\exp[-\frac{1}{2}t^2](-t) + 1 + tA\exp[-\frac{1}{2}t^2] + t^2\\
+                 &= t^2 + 1
+\end{align*}
+
+
+
+
+% === 例題13 ===
+\begin{itembox}[l]{例題13}
+非斉次方程式$u'(t) + tu(t) = t^2 +1$の特殊解を未定係数法を用いて求めよ. 
+ここで, 非斉次項が$t$の2次の多項式で与えられているから, 特殊解を$at^2 + bt + c$($a,b,c$:定数)
+と仮定する.
+\end{itembox}
+
+\fbox{解答}\par
+\begin{align*}
+    (左辺) &= (at^2 + bt + c)' + t(at^2 + bt + c)\\
+          &= 2at + b + at^3 + bt^2 + ct\\
+          &= at^2 + bt^2 + (2a+c)t + b
+\end{align*}
+これが右辺の$t^2+1$に一致するには, 未定係数を
+\begin{align*}
+    a=0,　c=0,　b=1
+\end{align*}
+とする必要があるので, 特殊解は$u(t)=t$.
+
+
+
+
+
+
+% === 例題14 ===
+\begin{itembox}[l]{例題14}
+$u''(t) - 3u(t) = 0$を解け.
+\end{itembox}
+
+
+\fbox{解答}\par
+与式は
+\begin{align*}
+    (D - \sqrt{3})(D + \sqrt{3})u(t) = 0
+\end{align*}
+と変形できるので, 一般解は
+\begin{align*}
+    u(t) = C_0 e^{\sqrt{3}t} + C_1 e^{-\sqrt{3}t}　(C_0,C_1:\text{定数})
+\end{align*}
+となる.
+
+
+
+
+% === 例題15 ===
+\begin{itembox}[l]{例題15}
+$u'' - 3u' + 2u = t$を解け.
+\end{itembox}
+
+\fbox{解答}\par
+①斉次形の一般解を求めよ.\par
+
+微分演算子を$D(=\frac{d}{dt})$とおく.
+対応する斉次方程式は
+\begin{align*}
+    u'' -3u' + 2u = 0 \rightarrow (D-2)(D-1)=0
+\end{align*}
+と書けるので, 微分演算子法よりこの一般解は
+\begin{align*}
+    C_1 e^{2t} + C_2 e^{t} 　(C_1,C_2:\text{定数})
+\end{align*}
+と書ける.
+
+
 
 \end{document}

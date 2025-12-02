@@ -1,0 +1,794 @@
+% !TeX program = uplatex
+\documentclass[a4paper,12pt]{jlreq}
+
+% ===== Packages =====
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{siunitx}
+\sisetup{detect-all,per-mode=symbol}
+\usepackage{physics}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ascmac} % ← itembox 使うため
+\usepackage{xcolor}
+\usepackage{tikz}
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancybox}
+\geometry{margin=25mm}
+
+\begin{document}
+
+\section*{問題2　無限長ソレノイドコイル}
+
+半径 \(a\)，単位長さあたりの巻数 \(n\) の無限に長いソレノイドコイルを考える。
+コイルには電流 \(I\) が流れているとする。
+真空中なので透磁率を \(\mu_0\) とする。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(i) 中心軸上の磁束密度 \(\bm{B}\)}
+
+\paragraph{方針}
+アンペールの法則
+\[
+\oint_C \bm{H}\cdot d\bm{l} = I_{\mathrm{enc}},\qquad
+\bm{B} = \mu_0 \bm{H}
+\]
+を用いる。ここで \(I_{\mathrm{enc}}\) は閉曲線 \(C\) を貫く総電流である。
+
+\paragraph{計算}
+コイルの軸方向を \(z\) 軸とする。
+図を頭の中に描き，ソレノイドの内部と外部を貫く長方形の経路 \(C\) をとる：
+
+\begin{itemize}
+  \item 一辺はコイルの内部で軸に平行な長さ \(\ell\) の線分
+  \item もう一辺はコイルの外部で軸に平行な長さ \(\ell\) の線分
+  \item その２本をつなぐ辺はコイルの巻き線と直交する向き
+\end{itemize}
+
+無限長ソレノイドでは対称性から，
+磁場 \(\bm{H}\) はコイル内部では軸に平行でほぼ一様，
+外部では十分小さい（無限長の極限では 0）とみなせる。
+
+このとき積分路に沿って
+\[
+\oint_C \bm{H}\cdot d\bm{l}
+  = H_{\mathrm{in}}\ell + H_{\mathrm{out}}\ell \simeq H_{\mathrm{in}}\ell
+\]
+となる（外部の寄与を 0 とした）．
+
+一方，長さ \(\ell\) の区間に含まれる巻き数は \(n\ell\) であり，
+各巻きに電流 \(I\) が流れているので，
+閉曲線 \(C\) を貫く総電流は
+\[
+I_{\mathrm{enc}} = n\ell\, I
+\]
+である。
+
+したがってアンペールの法則より
+\[
+H_{\mathrm{in}}\ell = n\ell I
+\quad\Rightarrow\quad
+H_{\mathrm{in}} = nI.
+\]
+
+真空中では \(\bm{B} = \mu_0\bm{H}\) なので，
+コイル内部（特に中心軸上）の磁束密度の大きさは
+\[
+B = \mu_0 n I
+\]
+となる。
+
+向きは右ねじの法則で決まり，
+電流の巻き方に対してコイルの軸方向
+（ここでは \(+z\) 方向と約束する）である。
+
+\paragraph{答}
+\[
+\boxed{\bm{B} = \mu_0 n I\,\bm{e}_z}
+\]
+ただし \(\bm{e}_z\) はコイル軸方向の単位ベクトルである。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(ii) 中心軸以外での磁場（コイル内部・外部）}
+
+\paragraph{コイル内部（\(r<a\)）}
+無限長ソレノイドは，軸回りの回転対称性と，
+軸方向への平行移動対称性をもつ。
+したがって，内部のどの点においても，
+磁場ベクトルの向きは軸方向，
+大きさは軸上と同じ一定値でなければならない。
+
+(i) で求めたように，
+\[
+\bm{B}_{\mathrm{in}} = \mu_0 n I\,\bm{e}_z
+\]
+がソレノイド内部全体に一様に分布している。
+
+\paragraph{コイル外部（\(r>a\)）}
+無限長ソレノイドでは，外部の磁束はほとんどソレノイド内部に閉じており，
+コイルの外では磁場は非常に小さい。
+理想的な無限長ソレノイドの極限では
+\[
+\bm{B}_{\mathrm{out}} \simeq \bm{0}
+\]
+とみなせる。
+
+\paragraph{答のまとめ}
+
+\begin{itemize}
+  \item コイル内部（\(r<a\)）：  
+        大きさ \(\mu_0 n I\)，向きはコイル軸方向の一様磁場。
+  \item コイル外部（\(r>a\)）：  
+        無限長ソレノイドの理想化のもとでは磁場は 0 とみなす。
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(iii) コイル内部での電子の運動}
+
+\paragraph{ローレンツ力}
+電場がないとすると，電子（電荷 \(-e\)）は
+ローレンツ力
+\[
+\bm{F} = -e\,\bm{v}\times\bm{B}
+\]
+を受ける。ここで \(\bm{v}\) は電子の速度である。
+\(\bm{B}\) は軸方向に一様なので，常に
+\(\bm{v}\) に垂直な力だけが働く。
+
+\paragraph{運動の性質}
+力が速度に常に垂直なので，
+\[
+\bm{F}\cdot\bm{v}=0
+\]
+となり，運動エネルギー（速さ \(|\bm{v}|\)）は変化せず，
+向きだけが変化する。
+
+速度を，磁場に平行な成分 \(\bm{v}_\parallel\)
+と垂直な成分 \(\bm{v}_\perp\) に分けると，
+
+\begin{itemize}
+  \item \(\bm{v}_\perp\) は軸に垂直な平面内で等速円運動をする。
+  \item \(\bm{v}_\parallel\) は磁場から力を受けないので一定であり，
+        軸方向に等速直線運動を続ける。
+\end{itemize}
+
+両者が重なった軌道は，軸に沿って進みながら回転する
+「らせん（螺旋）運動」となる。
+電子は負電荷なので，右ねじの向きとは逆向きに回転する。
+
+\paragraph{答（定性的記述）}
+ソレノイド内部の一様磁場中では，
+電子は速さを保ったまま，
+磁場に垂直な面内で円運動をしつつ，
+磁場に平行な方向に進むらせん状の軌道を描く。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(iv) 磁場は電子に対して仕事をするか}
+
+ローレンツ力による電子への瞬間的な仕事率は
+\[
+P = \bm{F}\cdot\bm{v}
+      = \bigl(-e(\bm{E}+\bm{v}\times\bm{B})\bigr)\cdot\bm{v}
+      = -e\,\bm{E}\cdot\bm{v}
+\]
+である。ここで
+\((\bm{v}\times\bm{B})\cdot\bm{v}=0\) を用いた。
+
+電場 \(\bm{E}=\bm{0}\) のもとでは
+\[
+P = 0
+\]
+となり，磁場による力は常に速度に垂直であるため，
+電子の運動エネルギーを変えることができない。
+したがって，磁場は電子に対して仕事をしない。
+
+\paragraph{答}
+電場が存在しない限り，磁場は電子に対して仕事をしない。
+電子の速さは変わらず，向きだけが変化する。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(v) 平行平板電極を入れたときの電子の運動（定性的説明）}
+
+ソレノイド内部の磁場は，これまでと同じく
+コイル軸方向に一様であるとする。
+この内部に，コイルの軸と平行な 2 枚の平板電極を置き，
+軸から各電極までの距離を \(d\) とする。
+一方の電極を電位 \(+V\)，もう一方を電位 \(-V\) に保つ。
+
+\paragraph{電場の向き}
+平板電極の間には，一様に近い電場が生じる。
+電場の向きは，高い電位（\(+V\) 側）から低い電位（\(-V\) 側）へ向かう。
+したがって，電子（負電荷）は電場の向きと反対側，
+すなわち \(-V\) 側から \(+V\) 側の電極へ引き寄せられる。
+
+\paragraph{電子の運動}
+この領域では，
+\begin{itemize}
+  \item 軸方向の一様磁場 \(\bm{B}\)
+  \item 軸に垂直で，平板間を結ぶ向きの一様電場 \(\bm{E}\)
+\end{itemize}
+が同時に存在している。
+
+電子は電場によって
+\(-V\) 側から \(+V\) 側へ向かって加速される一方，
+その瞬間の速度と磁場の向きに対して垂直なローレンツ力
+\(-e\bm{v}\times\bm{B}\) を受け，軌道が曲げられる。
+
+その結果，電子の軌道は
+
+\begin{itemize}
+  \item 電場により一方の電極に向かって加速されつつ，
+  \item 磁場により曲げられて，円運動（またはらせん運動）成分を持つ
+\end{itemize}
+
+複雑な曲線（サイクロイド状の軌道）となる。
+最終的には，電子は \(+V\) 側の電極に衝突する。
+\(
+\bm{E}\) が仕事をして電子の運動エネルギーを増加させる一方，
+\(\bm{B}\) は運動の向きを変えるだけでエネルギーには寄与しない。
+
+\paragraph{答（定性的）}
+平行平板電極を入れると，コイル軸に垂直な一定の電場が生じる。
+電子はこの電場により一方の電極へ加速されるが，
+同時に軸方向の磁場によって横向きの力を受け，
+直線的には進まず，曲がりながら（らせん・サイクロイド状に）
+進行して最終的に一方の電極に到達する。
+電子のエネルギーを増やすのは電場であり，
+磁場は軌道を曲げるだけである。
+
+
+
+
+
+\subsection*{(v) 平行平板電極を入れたときの電子の運動（定量的・定性的説明）}
+
+ソレノイド内部の磁場は，これまでと同じく
+コイル軸方向に一様であるとする。
+軸方向を \(z\) 軸とし，コイルの中心軸を \(z\) 軸と一致させる。
+この内部に，コイルの中心軸と平行な 2 枚の平板電極を，
+\(x\) 軸方向に距離 \(d\) だけ離して配置する。
+たとえば
+\[
+x = +d \text{ の平板の電位 } = +V,\qquad
+x = -d \text{ の平板の電位 } = -V
+\]
+とする（どちら側を \(+V\) とするかは任意であり，物理的内容は同じである）。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{電場・磁場の大きさと向き（定量）}
+
+平行平板電極の間では，一様な電場が近似的に成り立つので，
+電場の大きさは
+\[
+E = \frac{\Delta V}{\text{電極間隔}}
+   = \frac{(+V)-(-V)}{2d}
+   = \frac{V}{d}
+\]
+となる。
+向きは高い電位から低い電位へ向かうので，
+ここでは
+\[
+\bm{E} = -\,\frac{V}{d}\,\bm{e}_x
+\]
+と書ける（\(+V\) 側を \(x=+d\) にとったため）。
+
+ソレノイド内部の磁束密度は (i) より
+\[
+\bm{B} = \mu_0 n I\,\bm{e}_z
+\]
+であり，これは軸方向に一様である。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{電子の運動方程式（定量）}
+
+電子の電荷を \(-e\)（\(e>0\)），質量を \(m\) とすると，
+ローレンツ力は
+\[
+\bm{F} = -e\bigl(\bm{E} + \bm{v}\times\bm{B}\bigr)
+\]
+であり，運動方程式は
+\[
+m\frac{d\bm{v}}{dt} = -e\bigl(\bm{E} + \bm{v}\times\bm{B}\bigr)
+\]
+で与えられる。
+
+座標成分で書くために，
+\(\bm{v} = (v_x,v_y,v_z)\)，
+\(\bm{E} = (E_x,0,0) =(-V/d,0,0)\)，
+\(\bm{B} = (0,0,B)\)（\(B=\mu_0 n I\)）とすると，
+\[
+\bm{v}\times\bm{B} = (v_yB,\,-v_xB,\,0)
+\]
+なので
+\begin{align*}
+m\frac{dv_x}{dt} &= -e\bigl(E_x + v_y B\bigr),\\
+m\frac{dv_y}{dt} &= -e(-v_x B) = e B v_x,\\
+m\frac{dv_z}{dt} &= 0.
+\end{align*}
+
+ここでサイクロトロン角周波数
+\[
+\omega_c = \frac{|e|B}{m}
+\]
+とおくと，\(v_x,v_y\) の連立方程式は
+\begin{align*}
+\frac{dv_x}{dt} &= -\frac{e}{m}E_x + \operatorname{sgn}(e)\,\omega_c v_y,\\
+\frac{dv_y}{dt} &= \operatorname{sgn}(e)\,\omega_c v_x
+\end{align*}
+の形になり（\(\operatorname{sgn}(e)=-1\)），
+一様電場 \(E_x\) による加速と，
+一様磁場 \(B\) による円運動が重なった運動になる。
+
+複素速度
+\[
+v_\perp(t) = v_x(t) + i v_y(t)
+\]
+を導入すると，この連立方程式は
+\[
+\frac{dv_\perp}{dt}
+= -\frac{e}{m}E_x - i\,\omega_c v_\perp
+\]
+と書け，その定常解（\(\frac{dv_\perp}{dt}=0\) をみたす解）は
+\[
+v_\perp^{(\mathrm{drift})}
+ = -\,\frac{eE_x/m}{i\omega_c}
+ = \frac{\bm{E}\times\bm{B}}{B^2}
+\]
+に対応する。
+大きさは
+\[
+v_{\mathrm{drift}}
+ = \frac{E}{B}
+ = \frac{V/d}{\mu_0 n I}
+\]
+であり，向きは \(\bm{E}\times\bm{B}\) 方向である
+（電荷の符号によらず同じ向きになる \(\bm{E}\times\bm{B}\) ドリフト）。
+
+一般解は，
+この \(\bm{E}\times\bm{B}\) ドリフト速度に対応する一様運動に，
+角周波数 \(\omega_c\) の等速円運動（ラーモア運動）が重なった形になる。
+たとえば電子が初速度ゼロで放出された場合には，
+速度と位置は時間とともに
+\begin{itemize}
+  \item ドリフト速度 \(\bm{v}_{\mathrm{drift}} = \bm{E}\times\bm{B}/B^2\) で
+        平行平板と平行な方向へ一様に進みながら，
+  \item そのまわりに半径
+        \(\displaystyle r_L = \frac{m v_\perp}{|e|B}\)
+        の円運動を重ねた軌道
+\end{itemize}
+を描く。空間的な軌跡は「サイクロイド状」の曲線になる。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{エネルギーの変化}
+
+電子の運動エネルギーの変化率は
+\[
+\frac{d}{dt}\left(\frac{1}{2}m v^2\right)
+ = \bm{F}\cdot\bm{v}
+ = -e\,\bm{E}\cdot\bm{v}
+\]
+であり，\(\bm{B}\) による項
+\(-e(\bm{v}\times\bm{B})\cdot\bm{v}\) は常に 0 である。
+したがって電子のエネルギーを変化させる（仕事をする）のは電場だけであり，
+磁場は速度の向きを曲げるだけでエネルギーには寄与しない。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{答（定性的なまとめ）}
+
+平行平板電極を入れると，コイル軸に垂直な一定の電場
+\(\bm{E}\) が生じ，既に存在する軸方向の一様磁場
+\(\bm{B}\) と直交する \(\bm{E}\perp\bm{B}\) の状況になる。
+電子は電場によって一方の電極へ加速されると同時に，
+磁場によって横方向へ曲げられ，
+\(\bm{E}\times\bm{B}\) 方向に
+\[
+v_{\mathrm{drift}} = \frac{E}{B} = \frac{V/d}{\mu_0 n I}
+\]
+で一様にドリフトしつつ，そのまわりに円運動を重ねた
+サイクロイド状の軌道を描いて進む。
+最終的には一方の電極に到達する。
+電子のエネルギーを増やす（仕事をする）のは電場であり，
+磁場は軌道を曲げるだけである。
+
+
+
+%%%%%% コイル図 %%%%%%
+\begin{center}
+\includegraphics[width=0.5\linewidth]{images/number1.png}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.5\linewidth]{images/number2.png}
+\end{center}
+
+
+
+
+
+
+
+
+\vspace{50mm}
+
+\section*{問題3　電気双極子}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(i) 電気双極子とは何か}
+
+大きさが等しく符号が反対である 2 つの点電荷
+\(+q\) と \(-q\) が，距離 \(d\) だけ離れて存在する電荷系を
+\emph{電気双極子}という。
+負電荷から正電荷へ向かう変位ベクトルを \(\bm{d}\) とするとき，
+\[
+ \bm{p} = q \bm{d}
+\]
+で定義されるベクトル \(\bm{p}\) を
+\emph{電気双極子モーメント}という。
+双極子モーメントは双極子の強さと向きを表す量であり，
+以後は点電荷間の距離 \(d=|\bm{d}|\) が
+観測点までの距離 \(r=|\bm{r}|\) に比べて十分小さい
+\((d \ll r)\) 場合を考える。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(ii) 電気双極子の作る静電ポテンシャル}
+
+原点のまわりに電気双極子を置くため，
+\(+q\) を位置 \(\bm{r}' = \frac{1}{2}\bm{d}\) に，
+\(-q\) を位置 \(-\frac{1}{2}\bm{d}\) に置く。
+原点から観測点までの位置ベクトルを \(\bm{r}\) と書く。
+
+点電荷の作る静電ポテンシャルは
+\(\phi(\bm{r}) = \dfrac{1}{4\pi\varepsilon_0}\dfrac{q}{|\bm{r}-\bm{r}'|}\)
+なので，双極子全体のポテンシャルは重ね合わせにより
+\[
+ \phi(\bm{r})
+ = \frac{1}{4\pi\varepsilon_0}
+   \left[
+     \frac{q}{|\bm{r}-\frac{1}{2}\bm{d}|}
+   - \frac{q}{|\bm{r}+\frac{1}{2}\bm{d}|}
+   \right].
+\]
+
+ここで \(|\bm{d}|\ll|\bm{r}|\) を仮定して，
+\(|\bm{r}\pm\frac{1}{2}\bm{d}|\) を \(\bm{d}\) の一次まで展開する。
+一般に \(|\bm{r}'|\ll|\bm{r}|\) のとき
+\[
+ \frac{1}{|\bm{r}-\bm{r}'|}
+  = \frac{1}{r}
+    + \frac{\bm{r}\cdot\bm{r}'}{r^{3}}
+    + O(|\bm{r}'|^{2})
+ \qquad (r = |\bm{r}|)
+\]
+であるから，
+\(\bm{r}' = \pm\frac{1}{2}\bm{d}\) を代入して
+\begin{align*}
+ \frac{1}{|\bm{r}-\frac{1}{2}\bm{d}|}
+ &\simeq \frac{1}{r}
+   + \frac{\bm{r}\cdot(\frac{1}{2}\bm{d})}{r^{3}},\\[2mm]
+ \frac{1}{|\bm{r}+\frac{1}{2}\bm{d}|}
+ &\simeq \frac{1}{r}
+   + \frac{\bm{r}\cdot(-\frac{1}{2}\bm{d})}{r^{3}}.
+\end{align*}
+
+したがって差をとると
+\[
+ \frac{1}{|\bm{r}-\frac{1}{2}\bm{d}|}
+ -\frac{1}{|\bm{r}+\frac{1}{2}\bm{d}|}
+ \simeq
+ \frac{\bm{r}\cdot\bm{d}}{r^{3}}.
+\]
+
+これをポテンシャルの式に代入すると
+\[
+ \phi(\bm{r})
+ \simeq \frac{1}{4\pi\varepsilon_0}
+       q\,\frac{\bm{r}\cdot\bm{d}}{r^{3}}
+ = \frac{1}{4\pi\varepsilon_0}
+   \frac{\bm{p}\cdot\bm{r}}{r^{3}},
+\]
+ただし \(\bm{p}=q\bm{d}\) を用いた。
+したがって，電気双極子モーメント \(\bm{p}\) が
+原点にあるとき，観測点 \(\bm{r}\) における静電ポテンシャルは
+\[
+ \boxed{
+   \phi(\bm{r})
+   = \frac{\bm{p}\cdot\bm{r}}{4\pi\varepsilon_0 r^{3}}
+ }
+\]
+と書ける（\(r=|\bm{r}|\)）。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(iii) 電場の式を求める}
+
+電場はポテンシャルの負の勾配で与えられる：
+\[
+ \bm{E}(\bm{r}) = -\nabla\phi(\bm{r}).
+\]
+(ii) の結果を用いて
+\[
+ \phi(\bm{r})
+ = \frac{1}{4\pi\varepsilon_0}\,
+   \frac{\bm{p}\cdot\bm{r}}{r^{3}}
+\]
+の勾配を計算する。
+
+成分表示を用いるため，
+\(\bm{r}=(x_1,x_2,x_3)\) とし，
+\(\bm{p}=(p_1,p_2,p_3)\) と書く。
+このとき
+\[
+ \bm{p}\cdot\bm{r}= p_i x_i, \qquad
+ r = \sqrt{x_j x_j},
+\]
+（添字に関しては総和規約を用いる）。
+したがって
+\[
+ \phi(\bm{r})
+ = \frac{1}{4\pi\varepsilon_0}\,
+   p_i x_i\, r^{-3}.
+\]
+
+電場の \(j\) 成分は
+\[
+ E_j(\bm{r}) = -\frac{\partial\phi}{\partial x_j}
+\]
+だから，
+\begin{align*}
+ \frac{\partial\phi}{\partial x_j}
+ &= \frac{1}{4\pi\varepsilon_0}
+    \left[
+      p_i\frac{\partial x_i}{\partial x_j}\, r^{-3}
+      + p_i x_i\,\frac{\partial}{\partial x_j}(r^{-3})
+    \right] \\
+ &= \frac{1}{4\pi\varepsilon_0}
+    \left[
+      p_j r^{-3}
+      + (\bm{p}\cdot\bm{r})\,\frac{\partial}{\partial x_j}(r^{-3})
+    \right].
+\end{align*}
+
+\(r = (x_k x_k)^{1/2}\) より
+\[
+ \frac{\partial r}{\partial x_j}
+ = \frac{x_j}{r},
+\]
+従って
+\[
+ \frac{\partial}{\partial x_j}(r^{-3})
+ = -3 r^{-4}\frac{\partial r}{\partial x_j}
+ = -3\frac{x_j}{r^{5}}.
+\]
+これを代入すると
+\begin{align*}
+ \frac{\partial\phi}{\partial x_j}
+ &= \frac{1}{4\pi\varepsilon_0}
+    \left[
+      p_j r^{-3}
+      -3(\bm{p}\cdot\bm{r})\frac{x_j}{r^{5}}
+    \right],\\
+ E_j(\bm{r})
+ &= -\frac{\partial\phi}{\partial x_j}
+  = \frac{1}{4\pi\varepsilon_0}
+    \left[
+      3(\bm{p}\cdot\bm{r})\frac{x_j}{r^{5}}
+      - p_j r^{-3}
+    \right].
+\end{align*}
+
+これをベクトル表示に戻すと
+\[
+ \bm{E}(\bm{r})
+ = \frac{1}{4\pi\varepsilon_0}
+   \left[
+     \frac{3(\bm{p}\cdot\bm{r})\,\bm{r}}{r^{5}}
+     - \frac{\bm{p}}{r^{3}}
+   \right]
+ = \frac{1}{4\pi\varepsilon_0}
+   \frac{3(\bm{p}\cdot\bm{r})\,\bm{r} - r^{2}\bm{p}}{r^{5}}.
+\]
+
+したがって，
+\[
+ \boxed{
+   \bm{E}(\bm{r})
+   = \frac{1}{4\pi\varepsilon_0}
+     \frac{3(\bm{p}\cdot\bm{r})\,\bm{r} - r^{2}\bm{p}}{r^{5}}
+ }
+\]
+となり，求める式が示された。
+
+
+
+
+
+
+
+\section*{問題2　導体平面と点電荷}
+
+\subsection*{設定の確認}
+
+空間を直交座標 $(x,y,z)$ で表わす。
+領域 $x<0$ は理想導体で満たされており，領域 $x>0$ は真空である。
+点 $(a,0,0)$（$a>0$）に点電荷 $q$ をおく。
+
+導体平面 $x=0$ のポテンシャルは一様（たとえば 0）でなければならない。
+この条件を満たす電場は，
+領域 $x>0$ だけを考えると，
+点電荷 $q$ に加えて点
+\[
+  (\text{カ}) = (-a,0,0)
+\]
+に電荷 $-q$ がある場合の電場と等価になる
+（鏡像法）。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(キ) 領域 $x>0$ の一般の点 $\bm{r}$ における電場}
+
+$\bm{r}=(x,y,z)$ を領域 $x>0$ の点の位置ベクトルとし，
+$x$ 方向の単位ベクトルを $\bm{e}_x$ と書く。
+位置 $(a,0,0)$ にある電荷 $q$ の作る電場は
+\[
+  \frac{1}{4\pi\varepsilon_0}
+  \frac{q\left(\bm{r}-a\bm{e}_x\right)}
+       {\left|\bm{r}-a\bm{e}_x\right|^3},
+\]
+位置 $(-a,0,0)$ にある電荷 $-q$ の作る電場は
+\[
+  \frac{1}{4\pi\varepsilon_0}
+  \frac{-q\left(\bm{r}+a\bm{e}_x\right)}
+       {\left|\bm{r}+a\bm{e}_x\right|^3}
+\]
+であるから，重ね合わせにより
+\[
+  \boxed{
+  \bm{E}(\bm{r})
+   = \frac{1}{4\pi\varepsilon_0}
+     \left[
+       \frac{q\left(\bm{r}-a\bm{e}_x\right)}
+            {\left|\bm{r}-a\bm{e}_x\right|^3}
+       -\frac{q\left(\bm{r}+a\bm{e}_x\right)}
+            {\left|\bm{r}+a\bm{e}_x\right|^3}
+     \right]
+  }
+\]
+となる。これが (キ) に入る式である。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(ク) 導体表面近く ($x=0^+$) の電場}
+
+$\bm{r}=(x,y,z)$ とおき，導体表面のすぐ外側 $x\to 0^+$ の点では
+$\bm{r}\to (0,y,z)$ なので，
+\[
+  \bm{r}-a\bm{e}_x = (-a,\,y,\,z),\qquad
+  \bm{r}+a\bm{e}_x = (a,\,y,\,z).
+\]
+両ベクトルの長さは
+\[
+  R = \sqrt{a^2 + y^2 + z^2}
+\]
+で等しい。
+
+したがって (キ) の式に代入すると
+\begin{align*}
+ \bm{E}(y,z)
+ &= \frac{1}{4\pi\varepsilon_0}
+    \frac{q\bigl(-a,\,y,\,z\bigr)
+          -q\bigl(a,\,y,\,z\bigr)}
+         {R^3} \\[1mm]
+ &= \frac{1}{4\pi\varepsilon_0}
+    \frac{q(-2a,\,0,\,0)}{R^3} \\
+ &= -\,\frac{1}{4\pi\varepsilon_0}
+    \frac{2aq}{\bigl(a^2+y^2+z^2\bigr)^{3/2}}\,\bm{e}_x .
+\end{align*}
+すなわち
+\[
+  \boxed{
+  \bm{E}(y,z)
+   = -\,\frac{1}{4\pi\varepsilon_0}
+      \frac{2aq}{\bigl(a^2+y^2+z^2\bigr)^{3/2}}\,\bm{e}_x
+  }
+\]
+が (ク) に入る。
+
+（$y,z$ 方向成分が打ち消し合い，電場は表面に垂直な
+$x$ 方向のみになることがわかる。）
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(ケ) 表面電荷密度 $\sigma(y,z)$}
+
+導体内部 ($x<0$) の電場は 0 であるから，
+ガウスの法則の境界条件
+\[
+  E_{\perp,\text{out}} - E_{\perp,\text{in}}
+   = \frac{\sigma}{\varepsilon_0}
+\]
+を用いると
+\[
+  \sigma(y,z) = \varepsilon_0 E_x(x=0^+,y,z)
+\]
+となる（法線方向を $+x$ 方向にとった）。
+
+(ク) の $x$ 成分
+\[
+  E_x(0^+,y,z)
+   = -\,\frac{1}{4\pi\varepsilon_0}
+      \frac{2aq}{\bigl(a^2+y^2+z^2\bigr)^{3/2}}
+\]
+を代入すると
+\[
+  \boxed{
+  \sigma(y,z)
+  = -\,\frac{aq}{2\pi\bigl(a^2+y^2+z^2\bigr)^{3/2}}
+  }
+\]
+が (ケ) に入る式である。
+負号がついていることから，
+導体表面には負電荷が誘起されていることがわかる。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{(コ) 表面電荷の総量}
+
+導体表面全体（$yz$ 平面全域）に誘起された電荷の総量 $Q_{\mathrm{ind}}$ は
+\[
+ Q_{\mathrm{ind}}
+ = \iint_{-\infty}^{\infty} \sigma(y,z)\,dy\,dz
+\]
+で与えられる。
+円筒座標
+\[
+ y = \rho\cos\varphi,\quad z = \rho\sin\varphi
+\]
+を用いると
+\[
+ dy\,dz = \rho\,d\rho\,d\varphi,\qquad
+ a^2 + y^2 + z^2 = a^2 + \rho^2
+\]
+であるから
+\begin{align*}
+ Q_{\mathrm{ind}}
+ &= \int_{0}^{2\pi} d\varphi
+    \int_{0}^{\infty}
+      \left[
+        -\,\frac{aq}{2\pi\bigl(a^2+\rho^2\bigr)^{3/2}}
+      \right]\rho\,d\rho \\[1mm]
+ &= -\,\frac{aq}{2\pi}
+    \cdot 2\pi
+    \int_{0}^{\infty}
+      \frac{\rho\,d\rho}{\bigl(a^2+\rho^2\bigr)^{3/2}}.
+\end{align*}
+積分は，$u=a^2+\rho^2$ とおくと
+\[
+ \int_{0}^{\infty}
+   \frac{\rho\,d\rho}{\bigl(a^2+\rho^2\bigr)^{3/2}}
+ = \frac{1}{2}\int_{a^2}^{\infty} u^{-3/2}\,du
+ = \left[-u^{-1/2}\right]_{a^2}^{\infty}
+ = \frac{1}{a}
+\]
+となる。したがって
+\[
+ Q_{\mathrm{ind}}
+ = -\,aq \cdot \frac{1}{a}
+ = -q.
+\]
+すなわち導体表面に誘起される総電荷は
+\[
+  \boxed{(\text{コ})\;=\;-q}
+\]
+であり，外部の点電荷 $q$ をちょうど打ち消す量の負電荷が
+導体に誘起されることがわかる。
+
+
+
+
+\end{document}
