@@ -443,6 +443,48 @@ $u'' - 3u' + 2u = t$を解け.
 \end{align*}
 と書ける.
 
+②特殊解を求める\par
+特殊解を$pt + q$($p,q$：定数)と仮定して与式に代入する. 
+\begin{align*}
+    &(pt+q)'' -3(pt+q) + 2(pt+q) = t\\
+    &\rightarrow -3p + 2pt + 2q = t\\
+    &\rightarrow 2pt + (-3p + 2q) = t
+\end{align*}
+
+よって辺々を比較して
+\begin{align*}
+    &2p=1,　-3p+2q = 0\\
+    &\therefore p = \frac{1}{2}, q = \frac{3}{4}
+\end{align*}
+よって特殊解は
+\begin{align*}
+    \frac{1}{2} p + \frac{3}{4} q
+\end{align*}
+となる. 以上より, 非斉次方程式の一般解は
+\begin{align*}
+    u(t) = C_1 e^{2t} + C_2 e^{t} + \frac{1}{2} p + \frac{3}{4} q 　(C_1,C_2：\text{定数})
+\end{align*}
+
+
+
+
+
+
+
+
+% === 例題16 ===
+\begin{itembox}[l]{例題16}
+\begin{align*}
+    u'' + au' + bu = Q_1(t) + Q_2(t)　-(\ast)
+\end{align*}
+の特殊解を求めたい. ここで, 
+\begin{align*}
+    F(u'', u', u) = Q_1(t), 
+\end{align*}
+
+\end{itembox}
+
+\fbox{解答}\par
 
 
 \end{document}
