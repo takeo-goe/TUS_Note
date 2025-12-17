@@ -479,12 +479,114 @@ $u'' - 3u' + 2u = t$を解け.
 \end{align*}
 の特殊解を求めたい. ここで, 
 \begin{align*}
-    F(u'', u', u) = Q_1(t), 
+    F(u'', u', u) = Q_1(t), F(u'', u', u) = Q_2(t)
 \end{align*}
-
+の特殊解がそれぞれ$t_1,t_2$で与えられるとき, $(\ast)$の特殊解の一つが
+$t_1+t_2$となることを確かめよ.
 \end{itembox}
 
 \fbox{解答}\par
+$t_1,t_2$をそれぞれの方程式に代入すると
+\begin{align*}
+    t''_1 + at'_1 + bt_1 = Q_1(t) = Q_2(t)
+\end{align*}
+という2つの式を得る. 2つの式の辺々を足すと
+\begin{align*}
+    &t''_1 + t''_2 + a(t'_1 + t'_2) + b(t_1 + t_2) = Q_1(t) + Q_2(t)\\
+    &\rightarrow (t_1 + t_2)'' + a(t_1 + t_2)' + b(t_1 + t_2) = Q_1(t) + Q_2(t)\\
+\end{align*}
+となるので, $t_1 + t_2$は$(\ast)$の特殊解であることが確かめられた. 
+
+
+\vspace{10mm}
+
+% === 例題17 ===
+\begin{itembox}[l]{例題17}
+\begin{align*}
+    u''(t) + u(t) = \frac{1}{\sin t}
+\end{align*}
+を解け.
+\end{itembox}
+
+\fbox{解答}\par
+①斉次の一般解$u(t)$を求める.\par
+
+対応する斉次は微分演算子$D=\frac{d}{dt}$を用いて
+\begin{align*}
+    (D - i)(D + i)u(t) = 0
+\end{align*}
+と書ける. よって, 微分演算子法より
+\begin{align*}
+    u^{\text{斉次}}(t) = Ae^{-it} + Be^{it}　(A,B:\text{定数})
+\end{align*}
+と書ける. ここで, 一般解はオイラーの公式
+$\exp(\pm i\alpha t) = \cos (\alpha t) \pm i\sin (\alpha t)$ より
+\begin{align*}
+    u^{斉次}(t) &= A(\cos t - i\sin t) + B(\cos t + i\sin t)\\
+               &= (A+B)\cos t + i(-A+B) \sin t\\
+               &= C_1 \cos t + C_2 \sin t　(C_1,C_2:\text{定数})
+\end{align*}
+と変形できる. ここで, 
+\begin{align*}
+    f_1 (t) = \cos t, f_2 (t) = \sin t
+\end{align*}
+とおく. 
+
+
+②ロンスキアンを計算する.\par
+
+\begin{align*}
+    \bar{W}(f_1,f_2) &= \det 
+\begin{pmatrix}
+        \cos t & \sin t \\
+        -\sin t & \cos t
+\end{pmatrix}\\
+&= \cos^2 t + \sin^2 t\\
+&= 1\\
+\end{align*}
+
+
+\begin{align*}
+    \bar{W_1}(f_1,f_2) &= \det
+    \begin{pmatrix}
+        0 & \sin t \\
+        \frac{1}{\sin t} & \cos t
+    \end{pmatrix}\\
+&= -1
+\end{align*}
+
+
+\begin{align*}
+    \bar{W_2}(f_1,f_2) &= \det
+    \begin{pmatrix}
+        \cos t & 0 \\
+        -\sin t & \frac{1}{\sin t}
+    \end{pmatrix} \\
+&= \frac{\cos t}{\sin t} \\
+&= \frac{(\sin t)'}{\sin t}
+\end{align*}
+
+③特殊解を求める.\par
+
+$u^{\text{斉次}}(t)$の係数をロンスキアンの積分の形式に変化させ, 
+特殊解を求める. 
+\begin{align*}
+    u^{特解}(t) &= \left( \int_{}^{} \frac{\bar{W_2}(f_1,f_2)}{\bar{W}(f_1,f_2)}dt\right)f_1(t) + \left( \int_{}^{} \frac{\bar{W_2}(f_1,f_2)}{\bar{W}(f_1,f_2)}\right) f_2(t)\\
+               &= \left(-\int_{}^{} dt \right)\cos t + \left(\int \frac{(\sin t)'}{\sin t} dt\right) \sin t \\
+               &= -t \cos t + \log|\sin t|\sin t
+\end{align*}
+(このとき, 積分定数は0として良い. 
+なぜなら, 特殊解は非斉次を満たすようなある1つの解なので.)
+
+以上より, 非斉次の一般解は
+\begin{align*}
+    u^{非斉次}(t) &= u^{斉次}(t) + u^{特解}(t) \\
+                &= \left(C_1 \cos t + C_2 \sin t\right) + \left(-t\cos t + \log |\sin t|\sin t\right)\\
+                &= (-t + C_1) \cos t + \left(\log |\sin t| + C_2\right) \sin t
+\end{align*}
+となる.
+
+
 
 
 \end{document}

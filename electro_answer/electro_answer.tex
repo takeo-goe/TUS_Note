@@ -10,9 +10,8 @@
 \usepackage{booktabs}
 \usepackage{graphicx}
 \usepackage{hyperref}
-\usepackage{ascmac} % ← itembox 使うため
+\usepackage{ascmac}
 \usepackage{xcolor}
-\usepackage{tikz}
 
 
 \hypersetup{
@@ -21,7 +20,6 @@
   urlcolor=blue,
   citecolor=black
 }
-
 \usepackage{enumitem}
 \usepackage{geometry}
 \usepackage{fancybox}
@@ -29,11 +27,105 @@
 
 \begin{document}
 
-\section*{問題2　無限長ソレノイドコイル}
+\section*{2023年}
 
-半径 \(a\)，単位長さあたりの巻数 \(n\) の無限に長いソレノイドコイルを考える。
-コイルには電流 \(I\) が流れているとする。
-真空中なので透磁率を \(\mu_0\) とする。
+以下の問いに答えよ. 結果だけでなく途中の計算も書くこと. 必要に応じて
+図を併用してわかりやすい答案にすること. また用いた文字変数の
+定義は全て書くこと. 
+
+\subsection*{問2}
+半径$a$, 単位長さあたりの巻き数$n$の無限に長いソレノイドコイル
+がある.
+
+
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=0.5\linewidth]{images/number3.png} % ← 拡張子・大文字小文字に注意！
+  \caption{}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+(i) このコイルに一定の電流$I$を流したとき, コイルの中心軸に
+作られる磁束密度を求めよ. 大きさだけでなく向きも答えよ. \par
+
+\vspace{5mm}
+
+\fbox{解答}\par
+半径$a$の無限に長いソレノイドコイルに電流$I$が流れている場合の磁場を
+考える. 導線の巻き数は1mあたり$n$回であるとする. 対称性から, 
+このソレノイドコイル内外の磁場は, 0でなければ軸に平行で, 大きさは中心軸
+からの距離のみに依存する. つまり, 中心軸を$z$軸とする円筒座標系のもとで
+\begin{align}
+  \bm{H}(\bm{r}) = H(\xi) \bm{e_z}
+\end{align}
+となる(円形電流が連続的に並んでいると考えると理解できる). 
+これを前提に磁場の大きさを求める. \par
+
+
+\begin{figure}[hbtp]
+  \centering
+  \includegraphics[width=0.5\linewidth]{images/number4.png} % ← 拡張子・大文字小文字に注意！
+  \caption{}
+\end{figure}
+
+図2のように, ソレノイド内部に軸に平行な長さ$l$の辺を持つ任意の長方形
+の経路ABCDを考えると, アンペールの法則
+\begin{align}
+  \oint_C \bm{H}(\bm{r}) \cdot d \bm{r} = \sum_{\text{Cを縁とする任意の面を貫く}}^{} I_i
+\end{align}
+
+\begin{align}
+  \oint_C \bm{H}(\bm{r}) \cdot d \bm{r} = \sum_{\text{C鎖交する}}^{} I_i
+\end{align}
+
+の左辺は
+\begin{align}
+  \oint_{ABCD} \bm{H}(\bm{r}) \cdot d \bm{r} &= \int_{A}^{B} \bm{H}(\bm{r}) \cdot d \bm{r} + \int_{B}^{C} \bm{H}(\bm{r}) \cdot d \bm{r} + \int_{C}^{D} \bm{H}(\bm{r}) \cdot d \bm{r} + \int_{D}^{A} \bm{H}(\bm{r}) \cdot d \bm{r} \\
+  &= \int_{A}^{B} H(\xi_A) \bm{e_z} \cdot dz \bm{e_z} + 0 + \int_{C}^{D} H(\xi_D) \bm{e_z} \cdot (-dz)\bm{e_z} + 0 \\
+  &= H(\xi_A) l - H(\xi_D) l
+\end{align}
+である. 一方, 右辺は電流が面ABCDを貫いていないので0だから
+\begin{align}
+  &H(\xi_A)l - H(\xi_D)l = 0\\
+  &\therefore　 H(\xi_A)l = H(\xi_D)l
+\end{align}
+となる. 長方形は任意だから, 内部の磁場は$\xi$によらず一定となり
+\begin{align}
+  H(\xi) = H_{in}　(\xi < a)
+\end{align}
+である. \par
+
+次に, ソレノイドの外側に, 軸に平行な長さ$l$の辺を持つ長方形の経路A'B'C'D'
+を考えると, 上と同様の議論により, 外側の磁場も$\xi$によらず一定となり
+\begin{align}
+  H(\xi) = H_{out}　(\xi > a)
+\end{align}
+となる. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{10mm}
+
+(ii) 中心軸以外での磁場はどうなっているか. コイルの内部, 外部
+それぞれについて答えよ. 
+
+(iii) このコイルの中で電子はどのような運動をするか.
+
+(iv) 磁場は電子に対して仕事をするか.
+
+(v) このコイルの内部に2枚の平行な平板電極をコイルの中心軸と平行においた. 
+中心軸から電極までの距離はともに$d$である. 電極の一方には$V$の電位を, 
+もう一方には$-V$の電位を印加した. 平行平板間での電子の運動を議論せよ.
+(数式は使わずに, 定性的に記述すれば良い.)
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{(i) 中心軸上の磁束密度 \(\bm{B}\)}
