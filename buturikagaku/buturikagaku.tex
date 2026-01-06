@@ -1,0 +1,701 @@
+% !TeX program = uplatex
+\documentclass[a4paper,12pt]{jlreq}
+
+% ===== Packages =====
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{siunitx}
+\sisetup{detect-all,per-mode=symbol}
+\usepackage{physics}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ascmac}
+\usepackage{xcolor}
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancybox}
+\geometry{margin=25mm}
+
+\begin{document}
+
+\paragraph{問題 1.1.1 解答}
+
+閉鎖系にある一定量の理想気体の体積変化に伴う仕事 $w$ は，
+外圧を $p_{\mathrm{ex}}$ とすると
+\[
+  dw = -p_{\mathrm{ex}}\,dV
+\]
+で与えられる．
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subparagraph{(1)}
+初期状態と最終状態は
+\[
+  V_1 = 3.0\times 10^{-3}\ \mathrm{m^3},\quad
+  p_1 = 1.0\times 10^{5}\ \mathrm{Pa},
+\]
+\[
+  V_2 = 1.0\times 10^{-3}\ \mathrm{m^3},\quad
+  p_2 = 3.0\times 10^{5}\ \mathrm{Pa}
+\]
+であり，$V_2<V_1$ なので圧縮過程である．
+温度一定かつ理想気体なので $pV=nRT$ より
+\[
+  nRT = p_1 V_1 = (1.0\times10^{5})(3.0\times10^{-3})
+  = 3.0\times10^{2}\ \mathrm{J}
+\]
+となる．
+
+\begin{enumerate}
+  \item[(i)] \textbf{外圧 $p_2$ による 1 段階圧縮}
+
+  外圧は一定 $p_{\mathrm{ex}} = p_2$ であるから
+  \[
+    w = -\int_{V_1}^{V_2} p_{\mathrm{ex}}\,dV
+      = -p_2(V_2-V_1)
+      = -3.0\times10^{5}\,(1.0-3.0)\times10^{-3}.
+  \]
+  体積差 $V_2-V_1 = -2.0\times10^{-3}\ \mathrm{m^3}$ を代入すると
+  \[
+    w = -3.0\times10^{5}\times(-2.0\times10^{-3})
+      = 6.0\times10^{2}\ \mathrm{J}.
+  \]
+  圧縮なので $w>0$ になっていることも確認できる．
+
+  \item[(ii)] \textbf{準静的（可逆）等温圧縮}
+
+  準静的過程では常に系の内部圧 $p$ が外圧に等しいので，
+  \[
+    pV = nRT = \text{一定}
+  \]
+  から
+  \[
+    p = \frac{nRT}{V}
+  \]
+  となる．したがって仕事は
+  \[
+    w = -\int_{V_1}^{V_2} p\,dV
+      = -\int_{V_1}^{V_2} \frac{nRT}{V}\,dV
+      = -nRT\int_{V_1}^{V_2} \frac{dV}{V}
+      = -nRT \ln\frac{V_2}{V_1}.
+  \]
+  ここで $nRT = p_1V_1 = 3.0\times10^{2}\ \mathrm{J}$，
+  \(
+    V_2/V_1 = (1.0\times10^{-3})/(3.0\times10^{-3}) = 1/3
+  \)
+  なので
+  \[
+    w = -3.0\times10^{2}\ln\frac{1}{3}
+      = 3.0\times10^{2}\ln 3
+      \simeq 3.3\times10^{2}\ \mathrm{J}.
+  \]
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subparagraph{(2)}
+次に
+\[
+  V_1 = 2.1\ \mathrm{L},\quad p_1 = 2.0\ \mathrm{bar},
+\]
+\[
+  V_2 = 3.0\ \mathrm{L},\quad p_2 = 1.4\ \mathrm{bar}
+\]
+であり，$V_2>V_1$ なので膨張過程である．
+温度一定より
+\[
+  nRT = p_1V_1 = (2.0)(2.1) = 4.2\ \mathrm{L\cdot bar}.
+\]
+（計算の最後に $1\ \mathrm{L\cdot bar}=100\ \mathrm{J}$ を用いる．）
+
+\begin{enumerate}
+  \item[(i)] \textbf{外圧 $p_2$ による 1 段階膨張}
+
+  外圧一定 $p_{\mathrm{ex}} = p_2$ なので
+  \[
+    w = -p_{\mathrm{ex}}(V_2-V_1)
+      = -1.4\,(3.0-2.1)\ \mathrm{L\cdot bar}
+      = -1.26\ \mathrm{L\cdot bar}.
+  \]
+  これをジュールに直すと
+  \[
+    w = -1.26\times 100\ \mathrm{J}
+      \simeq -1.3\times10^{2}\ \mathrm{J}.
+  \]
+
+  \item[(ii)] \textbf{準静的（可逆）等温膨張}
+
+  (1) と同様に
+  \[
+    w = -\int_{V_1}^{V_2} p\,dV
+      = -nRT\ln\frac{V_2}{V_1}.
+  \]
+  ここで $nRT = 4.2\ \mathrm{L\cdot bar}$，
+  \(
+    V_2/V_1 = 3.0/2.1 = 10/7
+  \)
+  だから
+  \[
+    w = -4.2\ln\!\left(\frac{10}{7}\right)\ \mathrm{L\cdot bar}
+      \simeq -1.41\ \mathrm{L\cdot bar}.
+  \]
+  ジュールに変換すると
+  \[
+    w \simeq -1.41\times100\ \mathrm{J}
+      \simeq -1.4\times10^{2}\ \mathrm{J}.
+  \]
+  膨張過程なので $w<0$ となっており，符号規約とも一致している．
+\end{enumerate}
+
+
+
+
+
+
+\newpage
+
+
+\paragraph{1.1.2 の解答（メタンの燃焼）}
+
+反応：
+\[
+\mathrm{CH_4(g) + 2O_2(g) \rightarrow CO_2(g) + 2H_2O(l)}
+\]
+
+標準生成エンタルピー：
+\[
+\Delta_{\mathrm f}H^\circ(\mathrm{CH_4}) = -74.81\ \mathrm{kJ\,mol^{-1}},
+\quad
+\Delta_{\mathrm f}H^\circ(\mathrm{CO_2}) = -393.51\ \mathrm{kJ\,mol^{-1}},
+\]
+\[
+\Delta_{\mathrm f}H^\circ(\mathrm{H_2O(l)}) = -285.83\ \mathrm{kJ\,mol^{-1}},
+\quad
+\Delta_{\mathrm f}H^\circ(\mathrm{O_2(g)}) = 0.
+\]
+
+標準反応エンタルピーの一般式
+\[
+\Delta_{\mathrm r}H^\circ
+ = \sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+ - \sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+\]
+に従うと，
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+= 1\cdot\Delta_{\mathrm f}H^\circ(\mathrm{CO_2})
+  + 2\cdot\Delta_{\mathrm f}H^\circ(\mathrm{H_2O(l)})
+\]
+\[
+= (-393.51) + 2(-285.83)
+= -393.51 - 571.66
+= -965.17\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+= 1\cdot\Delta_{\mathrm f}H^\circ(\mathrm{CH_4})
+  + 2\cdot\Delta_{\mathrm f}H^\circ(\mathrm{O_2})
+= -74.81 + 2\cdot 0
+= -74.81\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}H^\circ
+= -965.17 - (-74.81)
+= -890.36\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+-------------------------------------------------------------------------------
+
+\paragraph{1.1.3 の解答}
+
+反応：
+\[
+\mathrm{O_2(g) + 4HCl(g) \rightarrow 2Cl_2(g) + 2H_2O(g)}
+\]
+
+与えられた標準生成エンタルピー：
+\[
+\Delta_{\mathrm f}H^\circ(\mathrm{HCl(g)}) = -92.31\ \mathrm{kJ\,mol^{-1}},
+\quad
+\Delta_{\mathrm f}H^\circ(\mathrm{H_2O(g)}) = -241.82\ \mathrm{kJ\,mol^{-1}}.
+\]
+元素の標準状態については
+\[
+\Delta_{\mathrm f}H^\circ(\mathrm{O_2(g)}) = 0,\quad
+\Delta_{\mathrm f}H^\circ(\mathrm{Cl_2(g)}) = 0.
+\]
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+= 2\cdot\Delta_{\mathrm f}H^\circ(\mathrm{Cl_2(g)})
+  + 2\cdot\Delta_{\mathrm f}H^\circ(\mathrm{H_2O(g)})
+\]
+\[
+= 2\cdot 0 + 2(-241.82)
+= -483.64\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+= 1\cdot\Delta_{\mathrm f}H^\circ(\mathrm{O_2(g)})
+  + 4\cdot\Delta_{\mathrm f}H^\circ(\mathrm{HCl(g)})
+\]
+\[
+= 0 + 4(-92.31)
+= -369.24\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}H^\circ
+= -483.64 - (-369.24)
+= -114.40\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+-------------------------------------------------------------------------------
+
+\paragraph{1.1.4 の解答}
+
+反応：
+\[
+\mathrm{Fe_2O_3(c) + 3CO(g) \rightarrow 2Fe(c) + 3CO_2(g)}
+\]
+
+標準生成エンタルピー（表より）：
+\[
+\Delta_{\mathrm f}H^\circ(\mathrm{Fe_2O_3(c)}) = -824.2\ \mathrm{kJ\,mol^{-1}},
+\quad
+\Delta_{\mathrm f}H^\circ(\mathrm{CO(g)}) = -110.5\ \mathrm{kJ\,mol^{-1}},
+\]
+\[
+\Delta_{\mathrm f}H^\circ(\mathrm{CO_2(g)}) = -393.5\ \mathrm{kJ\,mol^{-1}}.
+\]
+元素の固体鉄は標準状態なので
+\[
+\Delta_{\mathrm f}H^\circ(\mathrm{Fe(c)}) = 0.
+\]
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+= 2\cdot\Delta_{\mathrm f}H^\circ(\mathrm{Fe(c)})
+  + 3\cdot\Delta_{\mathrm f}H^\circ(\mathrm{CO_2(g)})
+\]
+\[
+= 2\cdot 0 + 3(-393.5)
+= -1180.5\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}H_i^\circ
+= 1\cdot\Delta_{\mathrm f}H^\circ(\mathrm{Fe_2O_3(c)})
+  + 3\cdot\Delta_{\mathrm f}H^\circ(\mathrm{CO(g)})
+\]
+\[
+= (-824.2) + 3(-110.5)
+= -824.2 - 331.5
+= -1155.7\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}H^\circ
+= -1180.5 - (-1155.7)
+= -24.8\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+-------------------------------------------------------------------------------
+
+\noindent
+よって，求める標準反応エンタルピーは
+\[
+\boxed{\Delta_{\mathrm r}H^\circ(1.1.2) = -8.90\times10^{2}\ \mathrm{kJ\,mol^{-1}}}
+\]
+\[
+\boxed{\Delta_{\mathrm r}H^\circ(1.1.3) = -1.14\times10^{2}\ \mathrm{kJ\,mol^{-1}}}
+\]
+\[
+\boxed{\Delta_{\mathrm r}H^\circ(1.1.4) = -2.48\times10^{1}\ \mathrm{kJ\,mol^{-1}}}
+\]
+である。
+
+
+
+
+
+
+\newpage
+
+
+
+
+\paragraph{問題 1.3.1 解答}
+
+講義ノートより，標準反応 Gibbs エネルギーは状態関数であり，
+標準生成 Gibbs エネルギー $\Delta_{\mathrm f}G_i^\circ$ を用いて
+\[
+\Delta_{\mathrm r}G^\circ
+  = \sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+  - \sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+\]
+と表される．（$\nu_i$ は化学量論係数）:contentReference[oaicite:0]{index=0}  
+
+$\Delta_{\mathrm r}G^\circ<0$ なら標準状態で自発的に進行し，
+$\Delta_{\mathrm r}G^\circ>0$ なら自発的に進行しない。
+
+表に与えられた標準生成 Gibbs エネルギー：
+\[
+\begin{array}{lcl}
+\Delta_{\mathrm f}G^\circ(\mathrm{CO(g)}) &=& -137.17\ \mathrm{kJ\,mol^{-1}}\\
+\Delta_{\mathrm f}G^\circ(\mathrm{CO_2(g)}) &=& -394.36\ \mathrm{kJ\,mol^{-1}}\\
+\Delta_{\mathrm f}G^\circ(\mathrm{NH_3(g)}) &=& -16.45\ \mathrm{kJ\,mol^{-1}}\\
+\Delta_{\mathrm f}G^\circ(\mathrm{NO(g)})  &=& +86.55\ \mathrm{kJ\,mol^{-1}}\\
+\Delta_{\mathrm f}G^\circ(\mathrm{MgO(s)}) &=& -569.45\ \mathrm{kJ\,mol^{-1}}\\[2mm]
+\Delta_{\mathrm f}G^\circ(\mathrm{PbO(s)}) &=& -188.93\ \mathrm{kJ\,mol^{-1}}\\
+\Delta_{\mathrm f}G^\circ(\mathrm{CaF_2(s)}) &=& -1167.3\ \mathrm{kJ\,mol^{-1}}\\
+\Delta_{\mathrm f}G^\circ(\mathrm{Ca^{2+}(aq)}) &=& -553.58\ \mathrm{kJ\,mol^{-1}}\\
+\Delta_{\mathrm f}G^\circ(\mathrm{F^-(aq)}) &=& -278.79\ \mathrm{kJ\,mol^{-1}}
+\end{array}
+\]
+元素の標準状態については
+\[
+\Delta_{\mathrm f}G^\circ(\mathrm{Pb(s)}) =
+\Delta_{\mathrm f}G^\circ(\mathrm{Mg(s)}) =
+\Delta_{\mathrm f}G^\circ(\mathrm{N_2(g)}) =
+\Delta_{\mathrm f}G^\circ(\mathrm{O_2(g)}) =
+\Delta_{\mathrm f}G^\circ(\mathrm{H_2(g)}) = 0
+\]
+である。
+
+%----------------------------------------------------------
+\subparagraph{(1)\ $\mathrm{PbO(s)+CO(g)\rightleftharpoons Pb(s)+CO_2(g)}$}
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{Pb(s)}) + \Delta_{\mathrm f}G^\circ(\mathrm{CO_2(g)})
+= 0 + (-394.36)
+= -394.36
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{PbO(s)}) + \Delta_{\mathrm f}G^\circ(\mathrm{CO(g)})
+= -188.93 + (-137.17)
+= -326.10
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}G^\circ
+= -394.36 - (-326.10)
+= -68.26\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+$\Delta_{\mathrm r}G^\circ<0$ より，\textbf{標準状態で自発的に進行する}。
+
+%----------------------------------------------------------
+\subparagraph{(2)\ $\mathrm{MgO(s)+CO(g)\rightleftharpoons Mg(s)+CO_2(g)}$}
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{Mg(s)}) + \Delta_{\mathrm f}G^\circ(\mathrm{CO_2(g)})
+= 0 + (-394.36)
+= -394.36
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{MgO(s)}) + \Delta_{\mathrm f}G^\circ(\mathrm{CO(g)})
+= -569.45 + (-137.17)
+= -706.62
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}G^\circ
+= -394.36 - (-706.62)
+= +312.26\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+$\Delta_{\mathrm r}G^\circ>0$ なので，\textbf{標準状態では自発的に進行しない}
+（逆反応の方が自発的）。
+
+%----------------------------------------------------------
+\subparagraph{(3)\ $\mathrm{N_2(g)+O_2(g)\rightleftharpoons 2NO(g)}$}
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= 2\,\Delta_{\mathrm f}G^\circ(\mathrm{NO(g)})
+= 2\times 86.55
+= 173.10
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{N_2(g)})
+ + \Delta_{\mathrm f}G^\circ(\mathrm{O_2(g)})
+= 0+0=0
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}G^\circ = 173.10\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+$\Delta_{\mathrm r}G^\circ>0$ より，
+\textbf{標準状態では自発的に進行しない}。
+
+%----------------------------------------------------------
+\subparagraph{(4)\ $\mathrm{CaF_2(s)\rightleftharpoons Ca^{2+}(aq)+2F^-(aq)}$}
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{Ca^{2+}(aq)})
+  + 2\,\Delta_{\mathrm f}G^\circ(\mathrm{F^-(aq)})
+= -553.58 + 2(-278.79)
+= -1111.16
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{CaF_2(s)})
+= -1167.3
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}G^\circ
+= -1111.16 - (-1167.3)
+= +56.14\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+よって $\Delta_{\mathrm r}G^\circ>0$ であり，
+\textbf{標準状態では溶解は自発的に進行しない}
+（固体 $\mathrm{CaF_2}$ のままの方が安定）。
+
+%----------------------------------------------------------
+\subparagraph{(5)\ $\mathrm{N_2(g)+3H_2(g)\rightleftharpoons 2NH_3(g)}$}
+
+生成系：
+\[
+\sum_{\text{生成系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= 2\,\Delta_{\mathrm f}G^\circ(\mathrm{NH_3(g)})
+= 2\times(-16.45)
+= -32.90
+\]
+
+反応原系：
+\[
+\sum_{\text{反応原系}} \nu_i \Delta_{\mathrm f}G_i^\circ
+= \Delta_{\mathrm f}G^\circ(\mathrm{N_2(g)})
+  + 3\,\Delta_{\mathrm f}G^\circ(\mathrm{H_2(g)})
+= 0 + 3\times 0 = 0
+\]
+
+したがって
+\[
+\Delta_{\mathrm r}G^\circ
+= -32.90\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+$\Delta_{\mathrm r}G^\circ<0$ なので，
+\textbf{標準状態でアンモニア生成反応は自発的に進行する}。
+
+%----------------------------------------------------------
+\noindent
+以上をまとめると，
+\[
+\begin{array}{c|c|c}
+\text{反応} & \Delta_{\mathrm r}G^\circ\ /\ \mathrm{kJ\,mol^{-1}} & \text{標準状態での自発性} \\
+\hline
+(1) & -68.26  & \text{自発的} \\
+(2) & +312.26 & \text{自発的でない（逆向きが自発的）} \\
+(3) & +173.10 & \text{自発的でない} \\
+(4) & +56.14  & \text{自発的でない} \\
+(5) & -32.90  & \text{自発的}
+\end{array}
+\]
+となる。
+
+
+
+
+
+\newpage
+
+
+
+\paragraph{問題 1.3.2 解答}
+
+KOH 型燃料電池
+\[
+\mathrm{H_2(Pt)\,|\,KOH(aq)\,|\,O_2(Pt)}
+\]
+では，各電極で
+\[
+\begin{cases}
+(-)\ \mathrm{H_2 + 2OH^- \rightarrow 2H_2O(l) + 2e^-} \\
+(+)\ \dfrac{1}{2}\mathrm{O_2 + H_2O(l) + 2e^- \rightarrow 2OH^-}
+\end{cases}
+\]
+の電極反応が起こる。ギブズエネルギーと最大外部仕事の関係は
+\[
+-\Delta_{\mathrm r}G^\circ = -w_{e,\max}
+\]
+であり，さらに
+\[
+\Delta_{\mathrm r}G^\circ = -\nu F E^\circ
+\]
+が成り立つ。ここで $\nu$ は電子の量論数，$F$ は Faraday 定数である:contentReference[oaicite:0]{index=0}。
+
+\subparagraph{(1) 全体の酸化還元反応}
+
+2e$^-$，OH$^-$，H$_2$O を消去して全体の反応式を求める：
+\[
+\mathrm{H_2 + \frac{1}{2}O_2 \rightarrow H_2O(l)}.
+\]
+
+\subparagraph{(2) 4.00 mol の水素をすべて消費したときの最大仕事}
+
+上で得た全体反応は，
+標準状態における水の生成反応
+\[
+\mathrm{H_2(g) + \frac{1}{2}O_2(g) \rightarrow H_2O(l)}
+\]
+そのものであるから，
+\[
+\Delta_{\mathrm r}G^\circ
+  = \Delta_{\mathrm f}G^\circ(\mathrm{H_2O(l)})
+  - \Delta_{\mathrm f}G^\circ(\mathrm{H_2})
+  - \frac{1}{2}\Delta_{\mathrm f}G^\circ(\mathrm{O_2})
+  = -237.1\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+4.00 mol の H$_2$ が反応するので，全反応のギブズエネルギー変化は
+\[
+\Delta G = 4.00\times(-237.1)\ \mathrm{kJ}
+          = -948.4\ \mathrm{kJ}.
+\]
+ギブズエネルギーの減少量の絶対値が外部に取り出せる最大非膨張仕事であるから，
+\[
+-w_{e,\max} = \Delta G \quad\Rightarrow\quad
+w_{e,\max} = -\Delta G = 9.48\times10^{2}\ \mathrm{kJ}.
+\]
+
+\subparagraph{(3) この電池の標準起電力 $E^\circ$}
+
+全体反応 1 回あたりに移動する電子数は，電極反応から
+\[
+\nu = 2
+\]
+である。よって
+\[
+E^\circ
+ = -\frac{\Delta_{\mathrm r}G^\circ}{\nu F}
+ = -\frac{-237.1\times10^{3}\ \mathrm{J\,mol^{-1}}}
+        {2\times 9.6485\times10^{4}\ \mathrm{C\,mol^{-1}}}.
+\]
+計算すると
+\[
+E^\circ \simeq 1.23\ \mathrm{V}.
+\]
+
+\subparagraph{(4) リン酸型燃料電池の標準起電力}
+
+リン酸型燃料電池
+\[
+\mathrm{H_2(Pt)\,|\,H_3PO_4(aq)\,|\,O_2(Pt)}
+\]
+では，各電極反応は
+\[
+\begin{cases}
+(-)\ \mathrm{H_2 \rightarrow 2H^+ + 2e^-} \\
+(+)\ \dfrac{1}{2}\mathrm{O_2 + 2H^+ + 2e^- \rightarrow H_2O(l)}
+\end{cases}
+\]
+である。両辺を加えると
+\[
+\mathrm{H_2 + \frac{1}{2}O_2 \rightarrow H_2O(l)}
+\]
+となり，全体反応は KOH 型燃料電池と同じである。
+したがって $\Delta_{\mathrm r}G^\circ$ も同じ値をとり，
+電子数 $\nu = 2$ であることも変わらないので，
+\[
+E^\circ = 1.23\ \mathrm{V}
+\]
+と求まる。
+
+\paragraph{問題 1.3.3 解答}
+
+鉛蓄電池
+\[
+\mathrm{Pb\,|\,H_2SO_4(aq)\,|\,PbO_2}
+\]
+の標準起電力は $E^\circ = 2.05\ \mathrm{V}$ であり，起こっている全体の酸化還元反応は
+\[
+\mathrm{PbO_2 + Pb + 2H_2SO_4 \rightarrow 2PbSO_4 + 2H_2O}
+\]
+である。
+
+半反応は例えば
+\[
+\mathrm{Pb + SO_4^{2-} \rightarrow PbSO_4 + 2e^-}
+\]
+\[
+\mathrm{PbO_2 + SO_4^{2-} + 4H^+ + 2e^- \rightarrow PbSO_4 + 2H_2O}
+\]
+のように書けるので，全体反応 1 回あたりの電子の量論数は
+\[
+\nu = 2
+\]
+である。
+
+したがって標準反応ギブズエネルギーは
+\[
+\Delta_{\mathrm r}G^\circ
+= -\nu F E^\circ
+= -2 \times 9.6485\times10^{4}\ \mathrm{C\,mol^{-1}}
+     \times 2.05\ \mathrm{V}.
+\]
+\[
+\Delta_{\mathrm r}G^\circ
+\simeq -3.96\times10^{5}\ \mathrm{J\,mol^{-1}}
+= -3.96\times10^{2}\ \mathrm{kJ\,mol^{-1}}.
+\]
+
+よって，
+\[
+\boxed{\Delta_{\mathrm r}G^\circ \approx -4.0\times10^{2}\ \mathrm{kJ\,mol^{-1}}}
+\]
+となり，非常に自発的な反応であることがわかる。
+
+
+
+
+
+\end{document}
