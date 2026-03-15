@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  6 JAN 2026 22:39
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  15 JAN 2026 09:07
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku
@@ -1084,7 +1084,264 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 
 [10]
 
-[11] (./buturikagaku.aux)
+[11]
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 14.4pt on input line 712.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 14.4pt on input line 712.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 712.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 712.
+LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <14.4> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 712.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 712.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <14.4> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 712.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 14.4pt on input line 712.
+
+
+[12]
+
+[13]
+
+[14]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 981.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 981.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 981.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 981.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 7.0pt on input line 981.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 981.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 7.0pt on input line 981.
+
+
+[15]
+
+[16]
+
+[17]
+
+[18]
+
+[19]
+
+[20](load cache: extra_lmroman17-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 16.8pt on input line 1289.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 16.8pt on input line 1289.
+(load cache: extra_lmsans17-regular.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 16.8pt on input line 1289.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 16.8pt on input line 1289.
+LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <16.8> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 1289.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 16.8pt on input line 1289.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <16.8> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 1289.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 16.8pt on input line 1289.
+
+
+[21]
+
+[22]
+
+[23]
+
+[24]
+
+[25]
+
+[26]
+
+[27]
+LaTeX Font Info:    Calculating math sizes for size <16.8> on input line 1577.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <16.8> on input line 1577.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <11.75995> on input line 1577.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8.4> on input line 1577.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 11.75995pt on input line 1577.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 8.4pt on input line 1577.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 11.75995pt on input line 1577.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.4pt on input line 1577.
+
+
+[28]
+
+[29]
+
+[30]
+
+[31]
+
+[32]
+
+[33]
+
+[34]
+
+[35]
+
+[36]
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2030: Undefined control sequence.
+l.2030 \varepsilon_9 = -8.186\ {\rm
+                                    eV},\qquad
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2031: Undefined control sequence.
+l.2031 \varepsilon_{10} = -5.934\ {\rm
+                                       eV}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2048: Undefined control sequence.
+<argument> ...-8.840)+(-8.186) \\ &= -94.79\ {\rm 
+                                                  eV} 
+l.2048 \end{align*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2048: Undefined control sequence.
+<argument> ...-8.840)+(-8.186) \\ &= -94.79\ {\rm 
+                                                  eV} 
+l.2048 \end{align*}
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2051: Undefined control sequence.
+l.2051 E_\pi = 2\times (-94.79)\ {\rm
+                                      eV}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2052: Undefined control sequence.
+l.2052       = -1.90\times 10^2\ {\rm
+                                      eV}\quad(\simeq -189.6\ {\rm eV})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2052: Undefined control sequence.
+l.2052 ... 10^2\ {\rm eV}\quad(\simeq -189.6\ {\rm
+                                                   eV})
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+[37](load cache: extra_lmroman12-italic.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/it' in size <12> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 2063.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 2063.
+LaTeX Font Info:    Font shape `JY3/gt/m/it' in size <12> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 2063.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 2063.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2063: Undefined control sequence.
+l.2063 ...i_9$ の\emph{電子密度} $\rho_j^{\rm
+                                                  (HOMO)}$ は󿿿
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2066: Undefined control sequence.
+l.2066 \rho_j^{\rm
+                  (HOMO)} = 2\,C_{9j}^2
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (16.60414pt too wide) detected at line 2078
+ \OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 324\OML/lmm/m/it/12 ;  \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 047\OML/lmm/m/it/12 ;  \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 445\OML/lmm/m/it/12 ;  \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 154\OML/lmm/m/it/12 ;  \OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 298\OML/lmm/m/it/12 ;  \OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 288\OML/lmm/m/it/12 ;  \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 167\OML/lmm/m/it/12 ;  \OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 160\OML/lmm/m/it/12 ;  \OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 095\OML/lmm/m/it/12 ;  \OMS/lmsy/m/n/12 ^^@\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 203)
+ []
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2081: Undefined control sequence.
+l.2081 \rho_j^{\rm
+                  (HOMO)} = 2C_{9j}^2
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2085: Undefined control sequence.
+l.2085 \rho_{11}^{\rm
+                     (HOMO)}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2090: Undefined control sequence.
+l.2090 $\rho_j^{\rm
+                   (HOMO)}$ の最大値は炭素 11 番で得られる󿿿
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/t_goe/Desktop/Program/TUS_Note/buturikagaku/buturikagaku.tex:2098: Undefined control sequence.
+l.2098         \rho_{11}^{\rm
+                             (HOMO)} \simeq 0.40
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+[38] (./buturikagaku.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1094,19 +1351,19 @@ Package rerunfilecheck Info: File `buturikagaku.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 21373 strings out of 475506
+ 21526 strings out of 475506
  125244,953878 words of node,token memory allocated
- 3264 words of node memory still in use:
-   11 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 1 penalty, 2 glyph, 1205 attribute, 53 glue_spec, 121 attribute_list, 1 write, 14 user_defined nodes
-   avail lists: 1:9,2:16010,3:321,4:141,5:274,6:44,7:3298,8:63,9:1106,10:7,11:12
- 43939 multiletter control sequences out of 65536+600000
- 59 fonts using 37676127 bytes
- 125i,9n,128p,1890b,935s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf>{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf>{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on buturikagaku.pdf (11 pages, 198064 bytes).
+ 6989 words of node memory still in use:
+   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 1 penalty, 2 glyph, 2901 attribute, 55 glue_spec, 276 attribute_list, 1 write, 15 user_defined nodes
+   avail lists: 1:9,2:31776,3:374,4:256,5:284,6:46,7:3298,8:111,9:1380,10:26,11:30
+ 44059 multiletter control sequences out of 65536+600000
+ 136 fonts using 95337399 bytes
+ 125i,9n,128p,1890b,1087s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf>{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on buturikagaku.pdf (38 pages, 385261 bytes).
 
-PDF statistics: 137 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 131072)
+PDF statistics: 272 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
+ 45 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

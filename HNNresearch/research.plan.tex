@@ -1,0 +1,99 @@
+% !TeX program = uplatex
+\documentclass[a4paper,12pt]{jlreq}
+
+% ===== Packages =====
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{siunitx}
+\sisetup{detect-all,per-mode=symbol}
+\usepackage{physics}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ascmac}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancybox}
+\geometry{margin=25mm}
+
+% --- タイトル情報 ---
+\title{\textbf{データ駆動アプローチによる非平衡ランジュバン系の\\ダイナミクス抽出と情報熱力学的検証}\\
+\large{Data-Driven Extraction of Non-Equilibrium Langevin Dynamics and Its Information-Thermodynamic Validation}}
+\author{Takeo Nishimata}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% --- 1. 概要 ---
+\section{概要 (Abstract)}
+近年、ハミルトニアン・ニューラルネットワーク（HNN）を始めとする物理法則を組み込んだ機械学習が注目を集めている。しかし、これらはエネルギー保存則を前提としており、散逸と熱揺らぎを伴う現実の非平衡系（アクティブマターやブラウン粒子など）への適用には限界がある。本研究では、HNNの損失関数にランジュバン方程式に基づく散逸項を組み込んだ「散逸型HNN（Dissipative HNN）」を提案する。本モデルに粒子の軌道データを入力することで、背後の有効ポテンシャルと摩擦係数を同時に推定する。さらに、抽出されたパラメータを用いて軌道に沿ったエントロピー生成量を計算し、情報熱力学におけるフルクトゥエーション定理（ゆらぎの定理）を満たすかを数値的に検証する。これにより、AIによる推定結果の熱力学的な正当性を厳密に証明する。
+
+% --- 2. 背景と問題意識 ---
+\section{背景と問題意識 (Background and Motivation)}
+深層学習を用いた物理系のダイナミクス予測は急速に進展している。特にGreydanusら(2019)によって提案されたHNNは、正準方程式をニューラルネットワークの学習プロセスに強制することで、系のハミルトニアン $H(q,p)$ を高精度に学習できることを示した。
+
+しかし、細胞内の物質輸送や微粒子のブラウン運動といったソフトマター・生物物理の領域では、系は周囲の熱浴との相互作用により摩擦（散逸）とランダムな力（揺らぎ）を受ける。これらは以下のランジュバン方程式で記述される。
+\begin{equation}
+    \dot{q} = \frac{p}{m}, \quad \dot{p} = -\frac{\partial H}{\partial q} - \gamma \frac{p}{m} + \xi(t)
+\end{equation}
+ここで $\gamma$ は摩擦係数、$\xi(t)$ は熱揺らぎを表すホワイトノイズである。従来のHNNはこの散逸項 $-\gamma (p/m)$ を扱えないため、実際の実験データに適用することが極めて困難であった。
+
+% --- 3. 研究目的 ---
+\section{研究目的 (Research Objectives)}
+本研究の目的は以下の3点である。
+\begin{enumerate}[label=\textbf{\arabic*.}]
+    \item \textbf{散逸型HNNの構築:} 従来のHNNを拡張し、ハミルトニアンによる保存力と、摩擦による非保存力を同時に学習可能なネットワークアーキテクチャを設計する。
+    \item \textbf{軌道データからのパラメータ逆算:} オープンデータおよび自作のシミュレーションデータ（軌道情報のみ）を用いて、系の有効自由エネルギー地形（ポテンシャル）と摩擦係数 $\gamma$ をデータ駆動的に抽出する。
+    \item \textbf{情報熱力学に基づく検証:} 機械学習によって得られたパラメータが物理的に妥当であるかを、確率熱力学の基本定理である「フルクトゥエーション定理」を用いて定量的に評価する。
+\end{enumerate}
+
+% --- 4. 研究手法 ---
+\section{研究手法 (Methodology)}
+
+\subsection{モデルの定式化と学習アルゴリズム}
+状態変数 $(q, p)$ を入力とし、スカラー量 $H_{\theta}(q,p)$ を出力するニューラルネットワークを構築する。さらに、摩擦係数 $\gamma_{\phi}$ を学習可能な独立パラメータとして定義する。損失関数（Loss）は、真の軌道の時間微分 $(\dot{q}_{true}, \dot{p}_{true})$ と、モデルが予測する微分値との二乗誤差として以下のように定義する。
+\begin{equation}
+    \mathcal{L} = \left\| \dot{q}_{true} - \frac{\partial H_{\theta}}{\partial p} \right\|^2 + \left\| \dot{p}_{true} - \left( -\frac{\partial H_{\theta}}{\partial q} - \gamma_{\phi} \frac{p}{m} \right) \right\|^2
+\end{equation}
+熱揺らぎ $\xi(t)$ は平均ゼロのガウスノイズであるため、十分なデータ量があれば最適化の過程で平均化され、決定論的な物理パラメータ（$H$ と $\gamma$）のみが抽出される。
+
+\subsection{データ取得・生成戦略}
+本研究では、研究の独立性と再現性を担保するため、以下の2つのアプローチでデータを取得する。
+\begin{itemize}
+    \item \textbf{高次トイモデルの構築:} 複雑な2次元非調和ポテンシャル（例：ダブルウェル・ポテンシャル）上でのランジュバン動力学シミュレーションを自ら実装し、制御可能な仮想実験データセットを生成する。
+    \item \textbf{オープンデータの活用:} arXivやDryad等の公開データベースから、実際のコロイド粒子やアクティブマターのトラッキングデータ（時系列座標データ）を取得し、実世界のノイズに対するモデルの堅牢性（Robustness）をテストする。
+\end{itemize}
+
+\subsection{フルクトゥエーション定理による検証}
+抽出したポテンシャルと摩擦係数を用いて、個々の軌道に対する微視的エントロピー生成量 $\Delta s$ を計算する。この分布関数 $P(\Delta s)$ が、以下の詳細フルクトゥエーション定理（Detailed Fluctuation Theorem）を満たすかを確認する。
+\begin{equation}
+    \frac{P(\Delta s)}{P(-\Delta s)} = e^{\Delta s}
+\end{equation}
+これが成立することは、AIが「単なるカーブフィッティング」ではなく「真の熱力学的法則」を捕捉したことの強力な証明となる。
+
+% --- 5. 期待される成果と意義 ---
+\section{期待される成果と意義 (Expected Outcomes and Significance)}
+本研究は、機械学習の「ブラックボックス性」を物理法則によって制約し、さらにその結果を非平衡統計力学（情報熱力学）の定理で検証するという、極めて新しいアプローチである。本手法が確立されれば、生体内の未知の分子モーターのエネルギー効率の推定や、複雑なソフトマターの粘弾性測定など、実験データからマクロな熱力学量を非侵襲で抽出する強力な解析ツールとなることが期待される。
+
+% --- 6. スケジュール ---
+\section{スケジュール (Timeline)}
+\begin{itemize}
+    \item \textbf{1ヶ月目:} 理論モデルのPyTorch実装。単純な1次元調和振動子ベースのランジュバンシミュレーションを用いたPoC（概念実証）の完了。
+    \item \textbf{2ヶ月目:} 複雑な2次元ポテンシャルへの拡張。および、世界的なオープンデータセットからの実データ取得と前処理。
+    \item \textbf{3ヶ月目:} 実データへの散逸型HNNの適用。ハイパーパラメータのチューニングと、予測精度の評価。
+    \item \textbf{4ヶ月目:} 軌道データからのエントロピー生成量の計算と、フルクトゥエーション定理の検証。
+    \item \textbf{5ヶ月目:} 結果の考察、論文執筆、およびプレプリント（arXiv）への公開。
+\end{itemize}
+
+\end{document}
+

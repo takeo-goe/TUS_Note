@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  6 JAN 2026 21:40
+This is LuaHBTeX, Version 1.21.0 (TeX Live 2025)  (format=lualatex 2025.10.7)  8 JAN 2026 22:00
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/t_goe/Desktop/Program/TUS_Note/electro_answer/electro_answer
@@ -1271,105 +1271,176 @@ Package luatex.def Info: images/number17.png  used on input line 1189.
 
 
 [32<./images/number17.png>]
-<images/number25.png, id=404, 351.3125pt x 264.99pt>
+
+[33]
+
+[34]
+
+[35]
+<images/number25.png, id=427, 351.3125pt x 264.99pt>
 File: images/number25.png Graphic file (type png)
 <use images/number25.png>
-Package luatex.def Info: images/number25.png  used on input line 1200.
+Package luatex.def Info: images/number25.png  used on input line 1371.
 (luatex.def)             Requested size: 227.62206pt x 171.69559pt.
-<images/number26.png, id=405, 250.9375pt x 261.97874pt>
+<images/number26.png, id=428, 250.9375pt x 261.97874pt>
 File: images/number26.png Graphic file (type png)
 <use images/number26.png>
-Package luatex.def Info: images/number26.png  used on input line 1204.
+Package luatex.def Info: images/number26.png  used on input line 1375.
 (luatex.def)             Requested size: 227.62206pt x 237.6495pt.
 
 
-[33<./images/number25.png><./images/number26.png>]
-<images/number27.png, id=415, 139.52126pt x 128.48pt>
+[36<./images/number25.png><./images/number26.png>]
+<images/number27.png, id=438, 139.52126pt x 128.48pt>
 File: images/number27.png Graphic file (type png)
 <use images/number27.png>
-Package luatex.def Info: images/number27.png  used on input line 1229.
+Package luatex.def Info: images/number27.png  used on input line 1400.
 (luatex.def)             Requested size: 136.57462pt x 125.77034pt.
 
 
-[34<./images/number27.png>]
-<images/number18.png, id=433, 375.4025pt x 233.87375pt>
+[37<./images/number27.png>]
+<images/number32.png, id=456, 152.57pt x 233.87375pt>
+File: images/number32.png Graphic file (type png)
+<use images/number32.png>
+Package luatex.def Info: images/number32.png  used on input line 1440.
+(luatex.def)             Requested size: 136.57462pt x 209.36386pt.
+
+
+[38<./images/number32.png>]
+<images/number18.png, id=468, 375.4025pt x 233.87375pt>
 File: images/number18.png Graphic file (type png)
 <use images/number18.png>
-Package luatex.def Info: images/number18.png  used on input line 1268.
+Package luatex.def Info: images/number18.png  used on input line 1474.
 (luatex.def)             Requested size: 182.09486pt x 113.44646pt.
-<images/number19.png, id=434, 299.1175pt x 198.7425pt>
+<images/number19.png, id=469, 299.1175pt x 198.7425pt>
 File: images/number19.png Graphic file (type png)
 <use images/number19.png>
-Package luatex.def Info: images/number19.png  used on input line 1272.
+Package luatex.def Info: images/number19.png  used on input line 1478.
 (luatex.def)             Requested size: 227.62206pt x 151.23994pt.
 
 
-[35<./images/number18.png><./images/number19.png>]
-<images/number20.png, id=448, 198.7425pt x 219.82124pt>
+[39<./images/number18.png><./images/number19.png>]
+<images/number20.png, id=483, 198.7425pt x 219.82124pt>
 File: images/number20.png Graphic file (type png)
 <use images/number20.png>
-Package luatex.def Info: images/number20.png  used on input line 1307.
+Package luatex.def Info: images/number20.png  used on input line 1513.
 (luatex.def)             Requested size: 182.09486pt x 201.41286pt.
-<images/number21.png, id=449, 238.8925pt x 192.72pt>
+<images/number21.png, id=484, 238.8925pt x 192.72pt>
 File: images/number21.png Graphic file (type png)
 <use images/number21.png>
-Package luatex.def Info: images/number21.png  used on input line 1312.
+Package luatex.def Info: images/number21.png  used on input line 1518.
 (luatex.def)             Requested size: 227.62206pt x 183.62697pt.
 
 
-[36<./images/number20.png><./images/number21.png>]
+[40<./images/number20.png><./images/number21.png>]
 
-[37]
-<images/number22.png, id=472, 255.95625pt x 203.76125pt>
+[41]
+<images/number22.png, id=508, 255.95625pt x 203.76125pt>
 File: images/number22.png Graphic file (type png)
 <use images/number22.png>
-Package luatex.def Info: images/number22.png  used on input line 1355.
+Package luatex.def Info: images/number22.png  used on input line 1561.
 (luatex.def)             Requested size: 227.62206pt x 181.2039pt.
-<images/number23.png, id=473, 357.335pt x 225.84375pt>
+<images/number23.png, id=509, 357.335pt x 225.84375pt>
 File: images/number23.png Graphic file (type png)
 <use images/number23.png>
-Package luatex.def Info: images/number23.png  used on input line 1359.
+Package luatex.def Info: images/number23.png  used on input line 1565.
 (luatex.def)             Requested size: 227.62206pt x 143.86406pt.
 
 
-[38<./images/number22.png><./images/number23.png>]
+[42<./images/number22.png><./images/number23.png>]
 
-[39]
-<images/number24.png, id=489, 338.26375pt x 220.825pt>
+[43]
+<images/number24.png, id=525, 338.26375pt x 220.825pt>
 File: images/number24.png Graphic file (type png)
 <use images/number24.png>
-Package luatex.def Info: images/number24.png  used on input line 1395.
+Package luatex.def Info: images/number24.png  used on input line 1601.
 (luatex.def)             Requested size: 227.62206pt x 148.5989pt.
 
 
-[40<./images/number24.png>]
-
-[41]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 1449.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 1449.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 1449.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1449.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1449.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 1449.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1449.
-
-
-[42]
-
-[43]
-
-[44]
+[44<./images/number24.png>]
 
 [45]
+<images/number33.png, id=548, 854.19125pt x 94.3525pt>
+File: images/number33.png Graphic file (type png)
+<use images/number33.png>
+Package luatex.def Info: images/number33.png  used on input line 1654.
+(luatex.def)             Requested size: 455.24411pt x 50.28444pt.
+<images/number34.png, id=549, 315.1775pt x 251.94125pt>
+File: images/number34.png Graphic file (type png)
+<use images/number34.png>
+Package luatex.def Info: images/number34.png  used on input line 1659.
+(luatex.def)             Requested size: 227.62206pt x 181.95497pt.
+<images/number35.png, id=550, 116.435pt x 172.645pt>
+File: images/number35.png Graphic file (type png)
+<use images/number35.png>
+Package luatex.def Info: images/number35.png  used on input line 1669.
+(luatex.def)             Requested size: 91.04742pt x 135.005pt.
 
-[46] (./electro_answer.aux)
+
+[46<./images/number33.png><./images/number34.png><./images/number35.png>]
+<images/number36.png, id=560, 158.5925pt x 151.56625pt>
+File: images/number36.png Graphic file (type png)
+<use images/number36.png>
+Package luatex.def Info: images/number36.png  used on input line 1689.
+(luatex.def)             Requested size: 182.09486pt x 174.0408pt.
+
+
+[47<./images/number36.png>]
+<images/number28.png, id=569, 723.70375pt x 173.64874pt>
+File: images/number28.png Graphic file (type png)
+<use images/number28.png>
+Package luatex.def Info: images/number28.png  used on input line 1720.
+(luatex.def)             Requested size: 455.24411pt x 109.235pt.
+
+
+[48<./images/number28.png>]
+<images/number29.png, id=575, 729.72626pt x 168.63pt>
+File: images/number29.png Graphic file (type png)
+<use images/number29.png>
+Package luatex.def Info: images/number29.png  used on input line 1772.
+(luatex.def)             Requested size: 455.24411pt x 105.2005pt.
+
+
+[49<./images/number29.png>]
+<images/number30.png, id=581, 817.0525pt x 444.66125pt>
+File: images/number30.png Graphic file (type png)
+<use images/number30.png>
+Package luatex.def Info: images/number30.png  used on input line 1830.
+(luatex.def)             Requested size: 455.24411pt x 247.76016pt.
+<images/number31.png, id=582, 353.32pt x 272.01625pt>
+File: images/number31.png Graphic file (type png)
+<use images/number31.png>
+Package luatex.def Info: images/number31.png  used on input line 1834.
+(luatex.def)             Requested size: 273.14923pt x 210.29573pt.
+
+
+[50<./images/number30.png><./images/number31.png>]
+
+[51]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <14.4> on input line 1879.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 1879.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 1879.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1879.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1879.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1879.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 7.0pt on input line 1879.
+
+
+[52]
+
+[53]
+
+[54]
+
+[55]
+
+[56] (./electro_answer.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1379,19 +1450,19 @@ Package rerunfilecheck Info: File `electro_answer.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 22085 strings out of 475506
+ 22216 strings out of 475506
  125244,953878 words of node,token memory allocated
- 2592 words of node memory still in use:
-   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 887 attribute, 55 glue_spec, 93 attribute_list, 1 write, 15 user_defined nodes
-   avail lists: 1:27,2:35707,3:266,4:576,5:596,6:44,7:3102,8:81,9:2010,10:35,11:2
- 44238 multiletter control sequences out of 65536+600000
+ 3312 words of node memory still in use:
+   12 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 1217 attribute, 55 glue_spec, 123 attribute_list, 1 write, 15 user_defined nodes
+   avail lists: 1:27,2:35361,3:275,4:576,5:596,6:44,7:3102,8:81,9:2010,10:35,11:2
+ 44301 multiletter control sequences out of 65536+600000
  110 fonts using 82503351 bytes
  125i,15n,128p,1894b,1089s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf>{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmib10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on electro_answer.pdf (46 pages, 12028430 bytes).
+Output written on electro_answer.pdf (56 pages, 12346318 bytes).
 
-PDF statistics: 696 PDF objects out of 1000 (max. 8388607)
- 552 compressed objects within 6 object streams
- 344 named destinations out of 1000 (max. 131072)
+PDF statistics: 789 PDF objects out of 1000 (max. 8388607)
+ 616 compressed objects within 7 object streams
+ 385 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

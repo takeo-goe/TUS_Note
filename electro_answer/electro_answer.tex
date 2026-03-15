@@ -190,17 +190,17 @@ A"B"C"D"を考える. (3)の左辺は辺A"B"の部分以外の寄与は0で
 
 運動方程式から電子の運動を調べると, $q = -e$としてローレンツ力は
 \begin{align}
-  \bm{F} = q\bm{v} \times \bm{B} = (-qBv_y, qBv_x, 0)
+  \bm{F} = q\bm{v} \times \bm{B} = (qBv_y, -qBv_x, 0)
 \end{align}
 であるから, 電子の運動方程式は
 \begin{align}
-  m\frac{dv_x}{dt} &= -qBv_y,\\
-  m\frac{dv_y}{dt} &= qBv_x\\
+  m\frac{dv_x}{dt} &= qBv_y,\\
+  m\frac{dv_y}{dt} &= -qBv_x\\
   m\frac{dv_z}{dt} &= 0
 \end{align}
 とかける. ここで, 電子の質量を$m$とした. (20)式を時間微分して
 \begin{align}
-  \frac{d^2 v_x}{dt^2} = -\frac{qB}{m}\frac{dv_y}{dt}
+  \frac{d^2 v_x}{dt^2} = \frac{qB}{m}\frac{dv_y}{dt}
 \end{align}
 となり, この式に(21)式を代入して
 \begin{align}
@@ -213,7 +213,7 @@ A"B"C"D"を考える. (3)の左辺は辺A"B"の部分以外の寄与は0で
 \end{align}
 とかける. (20)式に(25)の一般解を代入すると
 \begin{align}
-  v_y = -\frac{m}{qB} \frac{dv_x}{dt} = -A \cos (\omega t + \alpha)
+  v_y = \frac{m}{qB} \frac{dv_x}{dt} = A \cos (\omega t + \alpha)
 \end{align}
 を得る. また, 
 \begin{align}
@@ -225,7 +225,7 @@ A"B"C"D"を考える. (3)の左辺は辺A"B"の部分以外の寄与は0で
 \end{align}
 
 \begin{align}
-  y(t) = \int (-A\cos (\omega t + \alpha))dt = -\frac{A}{\omega} \sin (\omega t + \alpha) + C_y
+  y(t) = \int A\cos (\omega t + \alpha)dt = \frac{A}{\omega} \sin (\omega t + \alpha) + C_y
 \end{align}
 
 \begin{align}
@@ -1191,6 +1191,177 @@ $\frac{\partial B_z}{\partial z} = 0$となる. また,
 電磁波は横波である. 振動する成分は進行方向と垂直である. 
 
 
+\newpage
+\section*{マクスウェル方程式からクーロンの法則へ}
+
+
+% マクスウェル方程式（与式）
+\begin{align}
+ \varepsilon_0 \, \mathrm{div}\,\bm{E}(\bm{r},t) &= \rho(\bm{r},t) \tag{1} \\
+ \mathrm{rot}\,\bm{E}(\bm{r},t) + \frac{\partial \bm{B}(\bm{r},t)}{\partial t} &= 0 \tag{2} \\
+ \mathrm{rot}\,\bm{B}(\bm{r},t) - \varepsilon_0 \mu_0 \frac{\partial \bm{E}(\bm{r},t)}{\partial t}
+ &= \mu_0 \bm{j}(\bm{r},t) \tag{3} \\
+ \mathrm{div}\,\bm{B}(\bm{r},t) &= 0 \tag{4}
+\end{align}
+
+\subsection*{1. 静電場への制限}
+
+クーロンの法則は静電場の法則なので，
+時間に依らない状況（静電気）を考える．すなわち
+\[
+\frac{\partial \bm{E}}{\partial t} = 0, \qquad
+\frac{\partial \bm{B}}{\partial t} = 0, \qquad
+\bm{j} = \bm{0}
+\]
+とおくと，(2)，(3) 式から
+\[
+\mathrm{rot}\,\bm{E} = \bm{0}, \qquad
+\mathrm{rot}\,\bm{B} = \bm{0}
+\]
+を得る．特に電場については
+\begin{align}
+ \varepsilon_0 \,\mathrm{div}\,\bm{E}(\bm{r}) &= \rho(\bm{r}), \tag{1'}
+\end{align}
+だけが残る．
+
+\subsection*{2. ガウスの法則（積分形）の導出}
+
+(1') を体積 $V$ で積分し，発散定理を用いる：
+\begin{align}
+ \varepsilon_0 \int_V \mathrm{div}\,\bm{E}(\bm{r})\, d^3r
+ &= \int_V \rho(\bm{r})\, d^3r \\
+ \varepsilon_0 \oint_{\partial V} \bm{E}(\bm{r})\cdot d\bm{S}
+ &= Q_{\mathrm{enc}}, 
+\end{align}
+ここで $Q_{\mathrm{enc}}$ は体積 $V$ に含まれる全電荷である．  
+これがガウスの法則（積分形）
+\[
+\oint_{\partial V} \bm{E}\cdot d\bm{S} = \frac{Q_{\mathrm{enc}}}{\varepsilon_0}
+\]
+である．
+
+\subsection*{3. 点電荷の作る電場}
+
+原点に点電荷 $q$ がある場合を考える．
+電荷密度は
+\[
+\rho(\bm{r}) = q\,\delta^{3}(\bm{r})
+\]
+であり，系は球対称なので電場は
+\[
+\bm{E}(\bm{r}) = E(r)\,\hat{\bm{r}}
+\qquad (r = |\bm{r}|,\; \hat{\bm{r}}=\bm{r}/r)
+\]
+の形をしている．
+
+半径 $r$ の球面 $S_r$ をとると，ガウスの法則より
+\begin{align}
+ \oint_{S_r} \bm{E}\cdot d\bm{S}
+ &= E(r) \oint_{S_r} dS
+  = E(r)\, 4\pi r^2
+  = \frac{q}{\varepsilon_0}.
+\end{align}
+よって
+\begin{align}
+ E(r) = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^{2}}.
+\end{align}
+したがって点電荷 $q$ の作る電場は
+\begin{align}
+ \bm{E}(\bm{r})
+ = \frac{1}{4\pi\varepsilon_0}\,
+   \frac{q}{r^{2}}\hat{\bm{r}}
+ = \frac{1}{4\pi\varepsilon_0}\,
+   q\,\frac{\bm{r}}{|\bm{r}|^{3}}
+\end{align}
+となる．
+
+\subsection*{4. クーロンの法則}
+
+この電場中に別の点電荷 $q'$ を置くと，その電荷に働く力は
+\[
+\bm{F} = q'\bm{E}(\bm{r})
+ = \frac{1}{4\pi\varepsilon_0}\,
+   \frac{q q'}{r^{2}}\,\hat{\bm{r}}
+\]
+となる．
+
+これは
+\[
+|\bm{F}| = \frac{1}{4\pi\varepsilon_0}\,
+          \frac{|q q'|}{r^{2}}
+\]
+という形で，
+「２つの点電荷間に働く力の大きさは電荷の積に比例し，
+距離の二乗に反比例する」という
+\textbf{クーロンの法則}そのものである．
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{最短版}
+% マクスウェル方程式（真空）
+\[
+ \epsilon_0 \,\mathrm{div}\,\mathbf{E} = \rho, \qquad
+ \mathrm{rot}\,\mathbf{E} + \frac{\partial \mathbf{B}}{\partial t}=0, \qquad
+ \mathrm{rot}\,\mathbf{B}-\epsilon_0\mu_0\frac{\partial \mathbf{E}}{\partial t}=\mu_0\mathbf{j},\qquad
+ \mathrm{div}\,\mathbf{B}=0.
+\]
+
+静電場を考えるので $\partial/\partial t =0,\ \mathbf{j}=0$ とすると
+\[
+ \epsilon_0 \,\mathrm{div}\,\mathbf{E} = \rho,\qquad
+ \mathrm{rot}\,\mathbf{E}=0
+\]
+を得る。
+
+原点に点電荷 $q$ のみがあるとすると
+\[
+ \rho(\mathbf{r}) = q\,\delta(\mathbf{r}).
+\]
+このとき系は球対称なので
+\[
+ \mathbf{E}(\mathbf{r}) = E(r)\,\hat{\mathbf{r}}
+\]
+と書ける（$\hat{\mathbf{r}}$ は半径方向単位ベクトル）。
+
+ガウスの法則を半径 $r$ の球 $V_r$ で体積積分すると
+\[
+ \epsilon_0 \int_{V_r}\mathrm{div}\,\mathbf{E}\,dV
+   = \int_{V_r}\rho\,dV = q.
+\]
+ガウスの定理より
+\[
+ \epsilon_0 \oint_{S_r} \mathbf{E}\cdot d\mathbf{S} = q.
+\]
+球面上では $\mathbf{E}$ の大きさは一定で外向き法線と同方向なので
+\[
+ E(r)\,4\pi r^2 = \frac{q}{\epsilon_0}
+ \quad\Rightarrow\quad
+ E(r) = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}.
+\]
+したがって
+\[
+ \mathbf{E}(\mathbf{r})
+   = \frac{1}{4\pi\epsilon_0}\frac{q}{r^2}\,\hat{\mathbf{r}}.
+\]
+
+ここで試験電荷 $q'$ を置くとローレンツ力は
+\[
+ \mathbf{F} = q'\mathbf{E}(\mathbf{r})
+   = \frac{1}{4\pi\epsilon_0}\frac{qq'}{r^2}\,\hat{\mathbf{r}}.
+\]
+よって，真空中の 2 点電荷間の力は
+\[
+ |\mathbf{F}| = \frac{1}{4\pi\epsilon_0}\frac{|qq'|}{r^2}
+\]
+となり，これがクーロンの法則である。
+
+
+
+
+
+
 
 \newpage
 \section*{無限に長い直線電流のまわりの磁場}
@@ -1259,6 +1430,41 @@ $|d\bm{r}' \times (\bm{r} - \bm{r}')| = dz'R\sin \theta$, $|\bm{r} - \bm{r'}| = 
 \end{align}
 これが直線電流が作る磁場の強さである. 
 
+
+\newpage
+
+
+これをアンペールの法則を用いて解いてみる. 
+
+\begin{center}
+\includegraphics[width=0.3\linewidth]{images/number32.png}
+\end{center}
+
+アンペールの法則
+\begin{align}
+  \oint \bm{B} \cdot d\bm{r} = \mu_0 I
+\end{align}
+に$\bm{B} = B(\xi)\bm{e}_\phi$を代入して
+\begin{align}
+  \oint_{C}^{} B(\xi)\bm{e}_\phi \cdot d\bm{r} = \mu_0 I
+\end{align}
+
+\begin{align}
+  \oint_{C}^{} B(\xi) \xi d\phi = \mu_0 I
+\end{align}
+
+\begin{align}
+  B(\xi) \times 2\pi \xi = \mu_0 I
+\end{align}
+よって
+\begin{align}
+  B(\xi) = \frac{\mu_0 I}{2\pi \xi}
+\end{align}
+
+\begin{align}
+  \bm{B} = \frac{\mu_0 I}{2\pi \xi}\bm{e}_\phi
+\end{align}
+となる. 
 
 
 \newpage
@@ -1438,6 +1644,230 @@ $-\frac{\pi}{2} \rightarrow \frac{\pi}{2}$.
   \bm{B} = \mu_0 nI\bm{e}_z
 \end{align}
 $a$に依存していない. 
+
+
+
+
+
+\newpage
+\begin{center}
+\includegraphics[width=1.0\linewidth]{images/number33.png}
+\end{center}
+
+
+\begin{center}
+\includegraphics[width=0.5\linewidth]{images/number34.png}
+\end{center}
+
+円周の長さは$2\pi a$, 電流の総量は$2\pi a J$である. 
+中心軸から$\xi$の距離にある点における磁束密度を求める. 
+
+(i) $\xi < a$のとき
+
+
+\begin{center}
+\includegraphics[width=0.2\linewidth]{images/number35.png}
+\end{center}
+
+$z$軸を中心とする円$C$上では磁束密度は等しい(軸対称).
+
+\begin{align}
+  \int_{C}^{} \bm{B} \cdot d\bm{r} = 0
+\end{align}
+
+
+\begin{align}
+  B = 0
+\end{align}
+
+
+\newpage
+(ii) $\xi > a$のとき
+
+
+\begin{center}
+\includegraphics[width=0.4\linewidth]{images/number36.png}
+\end{center}
+
+\begin{align}
+  \int_{C}^{} \bm{B} \cdot d\bm{r} = \mu_0 2\pi aJ
+\end{align}
+$(左辺) = 2\pi \xi B$であるから
+
+\begin{align}
+  B = \frac{\mu_0 aJ}{\xi}
+\end{align}
+\begin{align}
+  \bm{B} = \frac{\mu_0 aJ}{\xi} \bm{e}_\phi
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\section*{抵抗, 回路}
+
+\begin{center}
+\includegraphics[width=1.0\linewidth]{images/number28.png}
+\end{center}
+
+抵抗 $R_1,R_2,\dots,R_n$ を直列につないだ回路を考える。
+この直列部分の両端に電圧 $V$ を加え，回路が定常状態
+（電荷がどこにもたまっていない状態）にあるとする。
+
+直列接続では，どの抵抗を流れる電流も同じ値 $I$ である。
+（途中で電流が増えたり減ったりすると，その点に電荷が
+たまってしまい定常にならないため。）
+
+各抵抗の両端の電圧を $V_1,V_2,\dots,V_n$ とすると，
+電圧の加法則より
+\[
+  V = V_1 + V_2 + \cdots + V_n
+\]
+である。
+
+一方，各抵抗にはオームの法則
+\[
+  V_k = I R_k \quad (k=1,2,\dots,n)
+\]
+が成り立つから，
+\[
+  V = IR_1 + IR_2 + \cdots + IR_n
+     = I(R_1 + R_2 + \cdots + R_n)
+\]
+となる。
+
+ここで，これら $n$ 個の抵抗を 1 個の等価抵抗 $R$ に置き換えたとき，
+同じ電流 $I$ が流れ，同じ電圧 $V$ がかかるように定義すると，
+オームの法則より
+\[
+  V = IR
+\]
+でなければならない。
+
+したがって
+\[
+  IR = I(R_1 + R_2 + \cdots + R_n)
+\]
+であり，$I\neq 0$ なので両辺を $I$ で割れば
+\[
+  R = R_1 + R_2 + \cdots + R_n
+\]
+を得る。よって，$n$ 個の抵抗が直列につながれているときの
+合成抵抗は，それらの抵抗の単純な和になることが示された。
+
+
+\newpage
+
+\begin{center}
+\includegraphics[width=1.0\linewidth]{images/number29.png}
+\end{center}
+
+次に抵抗 $R_1,R_2,\dots,R_n$ が並列につながれている場合を考える。
+並列接続では，すべての抵抗の両端が同じ 2 点に接続されているので，
+各抵抗にかかる電圧はすべて同じ値 $V$ である。
+
+各抵抗に流れる電流を $I_1,I_2,\dots,I_n$，
+全体として電源から流れ込む電流を $I$ とする。
+電流の保存則より
+\[
+  I = I_1 + I_2 + \cdots + I_n
+\]
+が成り立つ。
+
+各抵抗に対してオームの法則を用いると
+\[
+  I_k = \frac{V}{R_k} \quad (k=1,2,\dots,n)
+\]
+であるから，
+\[
+  I = \frac{V}{R_1} + \frac{V}{R_2} + \cdots + \frac{V}{R_n}
+    = V\left(\frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}\right)
+\]
+となる。
+
+一方，並列部分全体を 1 個の等価抵抗 $R$ に置き換えたとき，
+同じ電圧 $V$ がかかり，電源から流れ込む電流が $I$ になるように
+定義すれば，オームの法則より
+\[
+  I = \frac{V}{R}
+\]
+である。
+
+したがって
+\[
+  \frac{V}{R}
+  = V\left(\frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}\right)
+\]
+となり，$V\neq 0$ として両辺を $V$ で割ると
+\[
+  \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}
+\]
+を得る。
+
+よって，$n$ 個の抵抗が並列につながれているときの合成抵抗 $R$ は
+\[
+  R = \frac{1}{\displaystyle \frac{1}{R_1} + \frac{1}{R_2} + \cdots + \frac{1}{R_n}}
+\]
+となることが示された。
+
+
+
+
+\newpage
+
+
+\begin{center}
+\includegraphics[width=1.0\linewidth]{images/number30.png}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.6\linewidth]{images/number31.png}
+\end{center}
+
+\begin{align}
+  &R_x I_1 + R_1 I_1  = V\\
+  &R_3 I_2 + R_2 I_2 = V\\
+  &R_1 I_1 = R_2 I_2\\
+  &R_x I_1 = R_3 I_2
+\end{align}
+
+$R_x$を$R_1,R_2,R_3$で表す. 
+
+①式より
+\begin{align}
+  I_1 = \frac{V}{R_x + R_1}
+\end{align}
+②式より
+\begin{align}
+  I_2 = \frac{V}{R_2 + R_3}
+\end{align}
+でこれらを③に代入して
+\begin{align}
+  R_1 \left(\frac{V}{R_x + R_1}\right) = R_2 \left(\frac{V}{R_2 + R_3}\right)
+\end{align}
+
+
+\begin{align}
+  R_1(R_2 + R_3) = R_2(R_2 + R_1)
+\end{align}
+
+\begin{align}
+  R_1 R_3 = R_2 R_x
+\end{align}
+
+\begin{align}
+  R_x = \frac{R_1 R_3}{R_2}
+\end{align}
 
 
 

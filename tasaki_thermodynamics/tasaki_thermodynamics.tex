@@ -1,0 +1,398 @@
+% !TeX program = uplatex
+\documentclass[a4paper,12pt]{jlreq}
+
+% ===== Packages =====
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{siunitx}
+\sisetup{detect-all,per-mode=symbol}
+\usepackage{physics}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ascmac}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancybox}
+\geometry{margin=25mm}
+
+\begin{document}
+
+\section*{第3章 等温操作とHelmholtzの自由エネルギー 復習}
+
+以下の問いに答えよ。本章では、温度一定の環境下にある熱力学系（等温操作）について考察し、熱力学の基本原理であるKelvinの原理、および完全な熱力学関数であるHelmholtzの自由エネルギーについて学ぶ。
+
+\subsection*{問1：等温操作とKelvinの原理}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itembox}[l]{(i)}
+  等温操作および等温準静操作を定義し、それぞれの記号的表現を書け。また、Kelvinの原理を数式を用いて述べ、その物理的意味を「第二種の永久機関」という言葉を用いて説明せよ。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 等温操作の定義} \par
+温度$T$の環境下において、ある平衡状態 $(T; X_1)$ を別の平衡状態 $(T; X_2)$ に移す操作を等温操作 (isothermal operation) と呼び、以下のように表す。
+\begin{align}
+  (T; X_1) \xrightarrow{i} (T; X_2)
+\end{align}
+ここで、$X$は示量変数の組を表す。操作の途中では系は必ずしも平衡状態にあるとは限らず、温度が一様でない場合も含むが、最終的には温度$T$の環境下で平衡状態に達する。
+
+\textbf{2. 等温準静操作の定義} \par
+操作を非常にゆっくりと行い、系がつねに平衡状態にあるとみなせる理想的な操作を等温準静操作 (isothermal quasistatic operation) と呼び、以下のように表す。
+\begin{align}
+  (T; X_1) \xrightarrow{iq} (T; X_2)
+\end{align}
+この操作は可逆であり、逆向きの操作が可能である。
+
+\textbf{3. Kelvinの原理} \par
+任意の温度における任意の等温サイクル（状態 $(T; X)$ から出発して再び $(T; X)$ に戻る操作）について、系が外界に行う仕事を $W_{\text{cyc}}$ とすると、以下の不等式が成り立つ。
+\begin{align}
+  W_{\text{cyc}} \le 0
+\end{align}
+すなわち、等温サイクルが外界に対して正の仕事をすることはあり得ない。
+
+\textbf{4. 物理的意味} \par
+もし $W_{\text{cyc}} > 0$ となるサイクルが存在すれば、温度一定の環境（空気や海水など）から熱を吸収し、それを仕事に変え続ける装置が可能となる。これを\textbf{第二種の永久機関}と呼ぶ。Kelvinの原理は、第二種の永久機関が存在し得ないという経験事実を要請としてまとめたものである。
+
+\vspace{10mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{問2：最大仕事とHelmholtzの自由エネルギー}
+
+\begin{itembox}[l]{(ii)}
+  最大仕事 $W_{\max}(T; X_1 \to X_2)$ を定義し、最大仕事の原理について説明せよ。また、Helmholtzの自由エネルギー $F[T; X]$ を最大仕事を用いて定義し、二つの状態間の最大仕事と自由エネルギーの関係式を導け。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 最大仕事の定義} \par
+状態 $(T; X_1)$ から $(T; X_2)$ へのあらゆる可能な等温操作において、系が外界に行う仕事の最大値を最大仕事と呼び、$W_{\max}(T; X_1 \to X_2)$ と書く。
+
+\textbf{2. 最大仕事の原理} \par
+最大仕事は、等温準静操作の間に系が外界に行う仕事に等しい。
+\begin{align}
+  W_{\max}(T; X_1 \to X_2) = (\text{等温準静操作での仕事})
+\end{align}
+準静的ではない一般の等温操作での仕事 $W'$ は、必ず $W' \le W_{\max}$ となる。
+
+\textbf{3. Helmholtzの自由エネルギーの定義} \par
+基準となる状態 $X_0(T)$ を固定し、任意の平衡状態 $(T; X)$ に対するHelmholtzの自由エネルギー $F[T; X]$ を次のように定義する。
+\begin{align}
+  F[T; X] \coloneqq W_{\max}(T; X \to X_0(T))
+\end{align}
+これは、状態 $(T; X)$ から基準状態に戻る際に取り出せる最大の仕事を表す。
+
+\textbf{4. 仕事と自由エネルギーの関係} \par
+最大仕事の性質（相加性など）を用いると、状態 $(T; X_1)$ から $(T; X_2)$ への最大仕事は以下のように書ける。
+\begin{align}
+  W_{\max}(T; X_1 \to X_2) &= W_{\max}(T; X_1 \to X_0) + W_{\max}(T; X_0 \to X_2) \notag \\
+  &= W_{\max}(T; X_1 \to X_0) - W_{\max}(T; X_2 \to X_0) \notag \\
+  &= F[T; X_1] - F[T; X_2]
+\end{align}
+この式は、力学における「仕事＝ポテンシャルエネルギーの減少」に対応しており、Helmholtzの自由エネルギーは等温操作におけるポテンシャルの役割を果たす。
+
+\vspace{10mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{問3：圧力と状態方程式}
+
+\begin{itembox}[l]{(iii)}
+  Helmholtzの自由エネルギー $F[T; V, N]$ を用いて、圧力 $p$ を定義する式を導出せよ。また、理想気体の状態方程式 $p = NRT/V$ が成り立つとき、理想気体のHelmholtzの自由エネルギーを求めよ。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 圧力の定義} \par
+体積を $V$ から $V + \Delta V$ に微小変化させる等温準静操作を考える。このとき系が外界に行う仕事は $p \Delta V$ （$p$は圧力）と書ける。一方、最大仕事の原理より、この仕事は自由エネルギーの減少分に等しい。
+\begin{align}
+  p \Delta V \simeq W_{\max}(T; (V, N) \to (V+\Delta V, N)) = F[T; V, N] - F[T; V+\Delta V, N]
+\end{align}
+両辺を $\Delta V$ で割り、$\Delta V \to 0$ の極限をとることで、圧力 $p$ は以下のように定義される。
+\begin{align}
+  p(T; V, N) = -\pdv{F[T; V, N]}{V}
+\end{align}
+
+\textbf{2. 理想気体の自由エネルギー} \par
+理想気体の状態方程式 $p(T; V, N) = \frac{NRT}{V}$ を用いる。自由エネルギーは圧力の積分で書けるため（基準点での体積を $v(T)N$ とする）、
+\begin{align}
+  F[T; V, N] &= - \int_{v(T)N}^{V} p(T; V', N) dV' \notag \\
+  &= - \int_{v(T)N}^{V} \frac{NRT}{V'} dV' \notag \\
+  &= - NRT \left[ \log V' \right]_{v(T)N}^{V} \notag \\
+  &= - NRT \log \frac{V}{v(T)N}
+\end{align}
+となる。ここで $R$ は気体定数である。この式から、体積 $V$ が増えると（対数の中身が大きくなるため全体として負の値が大きくなり）、自由エネルギーは減少することがわかる。
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{第4章 断熱操作とエネルギー 復習}
+
+以下の問いに答えよ。本章では、断熱壁に囲まれた系で行う操作（断熱操作）に着目し、熱力学の第一法則（エネルギー保存則）を導入する。また、完全な熱力学関数であるエネルギー（内部エネルギー）の定義とその性質、理想気体への応用について学ぶ。
+
+\subsection*{問1：断熱操作と温度上昇の要請}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itembox}[l]{(i)}
+  断熱操作および断熱準静操作を定義し、それぞれの記号的表現を書け。また、「温度を上げる断熱操作の存在」に関する要請（要請 4.1）を述べ、その物理的意味を説明せよ。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 断熱操作の定義} \par
+ある平衡状態 $(T; X)$ にある系を断熱壁で囲み、示量変数を $X$ から $X'$ へ変化させて新たな平衡状態 $(T'; X')$ に達する操作を断熱操作 (adiabatic operation) と呼び、以下のように表す。
+\begin{align}
+  (T; X) \xrightarrow{a} (T'; X')
+\end{align}
+このとき、最終的な温度 $T'$ は操作の結果として系が自ら決定するものであり、操作者が自由に選べるものではない。
+
+\textbf{2. 断熱準静操作の定義} \par
+断熱操作を非常にゆっくりと行い、系がつねに平衡状態にあるとみなせる理想的な操作を断熱準静操作 (adiabatic quasistatic operation) と呼び、以下のように表す。
+\begin{align}
+  (T; X) \xrightarrow{aq} (T'; X')
+\end{align}
+等温準静操作と同様に、断熱準静操作は可逆であり、逆向きの操作が可能である。
+
+\textbf{3. 温度を上げる断熱操作の存在（要請 4.1）} \par
+任意の平衡状態 $(T; X)$ に対し、$T' > T$ を満たす任意の温度 $T'$ について、示量変数の組を変えずに温度だけを上げる断熱操作が存在する。
+\begin{align}
+  (T; X) \xrightarrow{a} (T'; X)
+\end{align}
+この操作を行う際、外界から系に対して必ず正の仕事を行う必要がある。
+
+\textbf{4. 物理的意味} \par
+これは、「断熱された系に対して仕事を加えることで、いくらでも温度を上げることができる」という経験事実（Jouleの実験など）を要請したものである。例えば、気体を素早く圧縮したり、流体中で羽根車を回転させて摩擦熱を発生させたりすることで、断熱的に温度を上昇させることができる。
+
+\vspace{10mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{問2：熱力学第一法則とエネルギーの定義}
+
+\begin{itembox}[l]{(ii)}
+  「熱力学におけるエネルギー保存則（要請 4.3）」を断熱仕事 $W_{ad}$ を用いて述べよ。また、エネルギー（内部エネルギー）$U(T; X)$ を断熱仕事を用いて定義し、二つの状態間の断熱仕事とエネルギーの関係式（第一法則の数式表現）を導け。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 熱力学におけるエネルギー保存則} \par
+任意の断熱操作において、系が外界に行う仕事（断熱仕事）$W_{ad}$ は、はじめの状態と終わりの状態だけで一意に決まり、操作の方法や途中経過には依存しない。これを熱力学の第一法則とも呼ぶ。
+すなわち、状態Aから状態Bへの断熱操作が可能であれば、その仕事 $W_{ad}(\text{A} \to \text{B})$ は経路によらず定まる。
+
+\textbf{2. エネルギーの定義} \par
+基準となる状態 $(T^*; X^*)$ を固定する。任意の平衡状態 $(T; X)$ に対し、断熱操作によって基準状態と行き来が可能であることが保証されている（結果 4.2）。そこで、エネルギー $U(T; X)$ を以下のように定義する。
+\begin{align}
+  U(T; X) \coloneqq
+  \begin{cases}
+    W_{ad}((T; X) \xrightarrow{a} (T^*; X^*)) & (\text{基準へ行く操作が可能な時}) \\
+    -W_{ad}((T^*; X^*) \xrightarrow{a} (T; X)) & (\text{基準から来る操作が可能な時})
+  \end{cases}
+\end{align}
+この定義は、力学におけるポテンシャルエネルギーの定義（基準点までの仕事）と同様の構造を持つ。
+
+\textbf{3. 第一法則の数式表現} \par
+断熱操作 $(T; X) \xrightarrow{a} (T'; X')$ が可能なとき、断熱仕事の加法性（経路独立性）を用いると、系が外界に行う仕事は二つの状態のエネルギー差に等しくなる。
+\begin{align}
+  W_{ad}((T; X) \xrightarrow{a} (T'; X')) = U(T; X) - U(T'; X')
+\end{align}
+これは、「外界へ仕事をした分だけ、系の持ち合わせているエネルギーが減る」というエネルギー保存則を表している。
+
+\vspace{10mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{問3：理想気体のエネルギーとポアソンの関係式}
+
+\begin{itembox}[l]{(iii)}
+  定積熱容量 $C_v(T; X)$ の定義式を書け。また、理想気体において「エネルギーが体積に依存しない」という性質と「定積熱容量が定数である」という性質を認めたとき、断熱準静操作におけるポアソンの関係式 $TV^{1/c} = \text{const.}$ を導出せよ。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 定積熱容量の定義} \par
+示量変数 $X$（体積など）を一定に保ったまま温度を変化させたときのエネルギーの変化率として定義される。
+\begin{align}
+  C_v(T; X) = \pdv{U(T; X)}{T}
+\end{align}
+
+\textbf{2. 理想気体の性質} \par
+Jouleの実験（気体の自由膨張）の理想化により、理想気体のエネルギーは体積に依存しないとされる。
+\begin{align}
+  U(T; V, N) = U(T; N)
+\end{align}
+また、定積熱容量は温度によらず一定（単原子分子なら $c=3/2$、二原子分子なら $c=5/2$）であるとする。
+\begin{align}
+  C_v = cNR
+\end{align}
+これより、理想気体のエネルギーは $U(T; V, N) = cNRT + \text{const.}$ と表される。
+
+\textbf{3. ポアソンの関係式の導出} \par
+理想気体の断熱準静操作 $(T; V, N) \xrightarrow{aq} (T+\Delta T; V+\Delta V, N)$ を考える。この微小変化において、系が外界に行う仕事 $\Delta W$ を二通りの方法で表す。
+
+(a) 仕事の定義から：
+理想気体の状態方程式 $p = NRT/V$ を用いる。
+\begin{align}
+  \Delta W = p \Delta V = \frac{NRT}{V} \Delta V
+\end{align}
+
+(b) エネルギー保存則から：
+断熱操作なので熱の出入りはなく、仕事は内部エネルギーの減少に等しい。
+\begin{align}
+  \Delta W = -\Delta U = -C_v \Delta T = -cNR \Delta T
+\end{align}
+
+これらを等しいと置くと、以下の微分方程式が得られる。
+\begin{align}
+  \frac{NRT}{V} \Delta V = -cNR \Delta T \quad \Longrightarrow \quad \frac{dT}{T} = -\frac{1}{c} \frac{dV}{V}
+\end{align}
+この微分方程式を積分する。
+\begin{align}
+  \int \frac{dT}{T} &= -\frac{1}{c} \int \frac{dV}{V} \notag \\
+  \log T &= -\frac{1}{c} \log V + \text{const.} \notag \\
+  \log T + \log V^{1/c} &= \text{const.} \notag \\
+  \log (T V^{1/c}) &= \text{const.}
+\end{align}
+したがって、以下のポアソンの関係式が導かれる。
+\begin{align}
+  T V^{1/c} = \text{一定}
+\end{align}
+
+
+
+
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{第5章 熱とCarnotの定理 復習}
+
+以下の問いに答えよ。本章では、等温操作において系が環境から吸収する熱の概念を導入し、熱力学における最も本質的な定理の一つであるCarnotの定理、およびその応用である熱機関の効率について学ぶ。
+\subsection*{問1：熱の定義と最大吸熱量}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itembox}[l]{(i)}
+  等温操作における吸熱量 $Q$ を定義せよ。また、最大吸熱量 $Q_{\max}$ を最大仕事 $W_{\max}$ やHelmholtzの自由エネルギー $F$ を用いて表し、その性質（相加性・示量性）について述べよ。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 吸熱量の定義} \par
+任意の等温操作 $(T; X) \xrightarrow{i} (T; X')$ において、系が外界に行う仕事を $W$ とする。この操作の間に系が環境から熱として受け取るエネルギー $Q$ は、エネルギー保存則に基づき以下のように定義される。
+\begin{align}
+  Q \coloneqq W + U(T; X') - U(T; X)
+\end{align}
+これは、系が行った仕事 $W$ と系の内部エネルギー増加分 $U(T; X') - U(T; X)$ の合計が、熱という形で環境から供給されたエネルギーに等しいことを意味する。
+
+\textbf{2. 最大吸熱量の定義と表式} \par
+始状態 $(T; X)$ と終状態 $(T; X')$ を固定し、吸熱量 $Q$ を最大にするような等温操作（等温準静操作）における吸熱量を最大吸熱量 $Q_{\max}$ と呼ぶ。最大仕事 $W_{\max}$ を用いて以下のように表される。
+\begin{align}
+  Q_{\max}(T; X \to X') = W_{\max}(T; X \to X') + U(T; X') - U(T; X)
+\end{align}
+さらに、最大仕事とHelmholtzの自由エネルギーの関係式 $W_{\max} = F[T; X] - F[T; X']$ を用いると、以下のようになる。
+\begin{align}
+  Q_{\max}(T; X \to X') = F[T; X] - F[T; X'] + U(T; X') - U(T; X)
+\end{align}
+
+\textbf{3. 最大吸熱量の性質} \par
+最大吸熱量は、最大仕事や内部エネルギーと同様に、以下の性質を持つ。
+\begin{itemize}
+  \item \textbf{相加性:} 独立な二つの系を合わせた系における最大吸熱量は、それぞれの最大吸熱量の和に等しい。
+  \item \textbf{示量性:} 系全体のサイズを $\lambda$ 倍にすると、最大吸熱量も $\lambda$ 倍になる。
+\end{itemize}
+
+\vspace{10mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{問2：Carnotの定理}
+
+\begin{itembox}[l]{(ii)}
+  Carnotの定理（最大吸熱量の比の普遍性）について、数式を用いて正確に述べよ。また、理想気体の場合について最大吸熱量の比を具体的に計算し、その結果が温度比 $T'/T$ に等しくなることを示せ。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. Carnotの定理} \par
+ある温度 $T$ における等温操作 $(T; X_0) \to (T; X_1)$ での最大吸熱量を $Q_{\max}(T; X_0 \to X_1)$ とする。これに対応して、別の温度 $T'$ において、断熱準静操作 $(T; X_0) \leftrightarrow (T'; X'_0)$ および $(T; X_1) \leftrightarrow (T'; X'_1)$ で結ばれる二つの状態間の最大吸熱量 $Q_{\max}(T'; X'_0 \to X'_1)$ を考える。このとき、二つの最大吸熱量の比は、系の種類や状態の選び方によらず、二つの温度 $T, T'$ だけで決まる普遍的な関数 $f(T', T)$ となる。
+\begin{align}
+  \frac{Q_{\max}(T'; X'_0 \to X'_1)}{Q_{\max}(T; X_0 \to X_1)} = f(T', T)
+\end{align}
+特に、絶対温度目盛りを採用する場合、この比は単純な温度比に等しくなる。
+\begin{align}
+  f(T', T) = \frac{T'}{T}
+\end{align}
+
+\textbf{2. 理想気体による導出} \par
+理想気体を用いたCarnotサイクルで検証する。
+まず、理想気体の自由エネルギー $F[T; V, N] = -NRT \log(V/v(T)N)$ を用いて最大吸熱量を計算する。
+\begin{align}
+  Q_{\max}(T; (V_0, N) \to (V_1, N)) &= F[T; V_0, N] - F[T; V_1, N] \quad (\because UはVに依存しない) \notag \\
+  &= NRT \log \frac{V_1}{V_0} \quad \text{}
+\end{align}
+同様に、温度 $T'$ での最大吸熱量は以下となる。
+\begin{align}
+  Q_{\max}(T'; (V'_0, N) \to (V'_1, N)) = NRT' \log \frac{V'_1}{V'_0} \quad \text{}
+\end{align}
+ここで、断熱準静操作におけるポアソンの関係式 $TV^{1/c} = \text{const.}$ より、$T^c V_0 = (T')^c V'_0$ および $T^c V_1 = (T')^c V'_1$ が成り立つ。これより体積比が等しくなる ($V_1/V_0 = V'_1/V'_0$) ため、最大吸熱量の比は以下のように求まる。
+\begin{align}
+  \frac{Q_{\max}(T'; (V'_0, N) \to (V'_1, N))}{Q_{\max}(T; (V_0, N) \to (V_1, N))} = \frac{NRT' \log (V'_1/V'_0)}{NRT \log (V_1/V_0)} = \frac{T'}{T} \quad \text{}
+\end{align}
+となり、確かに温度比に等しくなる。
+
+\vspace{10mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{問3：熱機関の効率とCarnotサイクル}
+
+\begin{itembox}[l]{(iii)}
+  熱機関の効率 $\epsilon$ を定義し、Carnotサイクル（可逆熱機関）の効率 $\epsilon_0$ を求めよ。また、任意の熱機関の効率 $\epsilon$ が $\epsilon_0$ を超えないこと（Carnotの定理の帰結）を示し、その物理的意味を説明せよ。
+\end{itembox}
+
+\vspace{5mm}
+
+\fbox{解答}\par
+\textbf{1. 熱機関の効率の定義} \par
+高温熱源（温度 $T_H$）から熱 $Q_H$ を吸収し、外界へ仕事 $W$ を行い、低温熱源（温度 $T_L$）へ熱 $Q_L$ を放出するサイクルを行う熱機関において、効率 $\epsilon$ は以下のように定義される。
+\begin{align}
+  \epsilon \coloneqq \frac{W}{Q_H} = \frac{Q_H - Q_L}{Q_H} = 1 - \frac{Q_L}{Q_H}
+\end{align}
+
+\textbf{2. Carnotサイクルの効率} \par
+Carnotサイクル（二つの等温準静操作と二つの断熱準静操作からなる可逆サイクル）においては、Carnotの定理より吸熱量の比が絶対温度の比に等しくなる。すなわち、$Q_H / Q_L = T_H / T_L$ である。
+したがって、Carnotサイクルの効率 $\epsilon_0$ は以下のようになる。
+\begin{align}
+  \epsilon_0 = 1 - \frac{T_L}{T_H}
+\end{align}
+
+\textbf{3. 熱機関の効率の上限（Carnotの定理の帰結）} \par
+温度 $T_H$ と $T_L$ の間で動作する任意の熱機関の効率 $\epsilon$ は、Carnotサイクルの効率 $\epsilon_0$ を決して超えない。
+\begin{align}
+  \epsilon \le \epsilon_0 = 1 - \frac{T_L}{T_H}
+\end{align}
+
+\textbf{4. 証明の概略（背理法）} \par
+もし $\epsilon > \epsilon_0$ となる「超効率熱機関」が存在すると仮定する。この機関で仕事 $W$ を取り出し、その仕事の一部を使って逆Carnotサイクル（冷凍機）を動かし、低温熱源から熱を汲み上げる複合サイクルを考える。
+調整を行うと、高温熱源との熱のやり取りを正味ゼロにできるが、結果として「低温熱源（単一の熱源）から熱を吸収し、それを全て仕事に変えるサイクル」が完成してしまう。これはKelvinの原理（第二種永久機関の否定）に矛盾する。したがって、 $\epsilon > \epsilon_0$ となる熱機関は存在しない。
+
+\textbf{5. 物理的意味} \par
+熱機関の効率には、熱力学の原理によって決まる理論的な限界が存在する。どんなに技術が進歩しても、摩擦をゼロにしても、温度差 $T_H - T_L$ によって決まるCarnot効率を超えることはできない。
+
+\end{document}
+

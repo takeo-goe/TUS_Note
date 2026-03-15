@@ -1,0 +1,226 @@
+% !TeX program = uplatex
+\documentclass[a4paper,12pt]{jlreq}
+
+% ===== Packages =====
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{siunitx}
+\sisetup{detect-all,per-mode=symbol}
+\usepackage{physics}
+\usepackage{mhchem}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ascmac} % ← itembox 使うため
+\usepackage{xcolor}
+\usepackage{tikz}
+
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=blue,
+  citecolor=black
+}
+
+\usepackage{enumitem}
+\usepackage{geometry}
+\usepackage{fancybox}
+\geometry{margin=25mm}
+
+\title{入門力学　後期到達度評価解答}
+\author{学籍番号：2225091　西亦 岳雄}
+
+\begin{document}
+\maketitle
+
+
+
+\begin{itembox}[l]{問}
+
+\end{itembox}
+
+\fbox{解答}\par
+
+
+
+
+
+\section*{[1] 語句の穴埋め}
+
+\begin{itemize}
+    \item[\textbf{[ア]}] \textbf{運動量保存則}
+    \item[\textbf{[イ]}] \textbf{等速直線運動}
+    \item[\textbf{[ウ]}] \textbf{作用反作用の法則}（または作用・反作用の法則）
+    \item[\textbf{[エ]}] \textbf{角運動量}
+    \item[\textbf{[オ]}] \textbf{垂直}
+\end{itemize}
+
+\section*{[2] 2体衝突の問題}
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textbf{運動量保存則による $\bm{v}_2'$ の導出} \\
+    運動量保存則より、衝突前の全運動量と衝突後の全運動量は等しい。
+    \[
+    m_1 \bm{v}_1 + m_2 \bm{0} = m_1 \bm{v}_1' + m_2 \bm{v}_2'
+    \]
+    これより、
+    \[
+    m_2 \bm{v}_2' = m_1 (\bm{v}_1 - \bm{v}_1') \quad \Longrightarrow \quad \bm{v}_2' = \frac{m_1}{m_2}(\bm{v}_1 - \bm{v}_1')
+    \]
+
+    \item \textbf{運動エネルギー保存則による $v_2'$ の導出} \\
+    弾性衝突であるため、運動エネルギーが保存する。
+    \[
+    \frac{1}{2}m_1 v_1^2 = \frac{1}{2}m_1 v_1'^2 + \frac{1}{2}m_2 v_2'^2
+    \]
+    これより、
+    \[
+    m_2 v_2'^2 = m_1 (v_1^2 - v_1'^2) \quad \Longrightarrow \quad v_2' = \sqrt{\frac{m_1}{m_2}(v_1^2 - v_1'^2)}
+    \]
+
+    \item \textbf{質量が等しい場合 ($m_1 = m_2 = m$) の $v_1', v_2'$} \\
+    運動量保存則より $\bm{v}_1 = \bm{v}_1' + \bm{v}_2'$。これを二乗（内積）すると、
+    \[
+    v_1^2 = v_1'^2 + v_2'^2 + 2\bm{v}_1' \cdot \bm{v}_2'
+    \]
+    一方、運動エネルギー保存則より $v_1^2 = v_1'^2 + v_2'^2$ であるため、
+    \[
+    2\bm{v}_1' \cdot \bm{v}_2' = 0
+    \]
+    $v_1' \ne 0, v_2' \ne 0$ より、$\bm{v}_1'$ と $\bm{v}_2'$ は直交する。
+    散乱角 $\theta$ を用いて成分を考えると、
+    \[
+    v_1' = v_1 \cos \theta, \quad v_2' = v_1 \sin \theta
+    \]
+
+    \item \textbf{重心の位置ベクトル $\bm{r}_G$} \\
+    定義より、
+    \[
+    \bm{r}_G = \frac{m_1 \bm{r}_1 + m_2 \bm{r}_2}{m_1 + m_2}
+    \]
+
+    \item \textbf{重心系における相対位置ベクトル $\bm{R}_1, \bm{R}_2$} \\
+    $\bm{R}_1 = \bm{r}_1 - \bm{r}_G, \quad \bm{R}_2 = \bm{r}_2 - \bm{r}_G$ に (d) の結果を代入して、
+    \[
+    \bm{R}_1 = \bm{r}_1 - \frac{m_1 \bm{r}_1 + m_2 \bm{r}_2}{m_1 + m_2} = \frac{m_2 (\bm{r}_1 - \bm{r}_2)}{m_1 + m_2}
+    \]
+    \[
+    \bm{R}_2 = \bm{r}_2 - \frac{m_1 \bm{r}_1 + m_2 \bm{r}_2}{m_1 + m_2} = -\frac{m_1 (\bm{r}_1 - \bm{r}_2)}{m_1 + m_2}
+    \]
+
+    \item \textbf{重心系における運動量の和} \\
+    重心系での各物体の速度を $\bm{V}_1, \bm{V}_2$、重心速度を $\bm{v}_G$ とすると、定義より
+    \[
+    \bm{v}_G = \frac{m_1 \bm{v}_1 + m_2 \bm{0}}{m_1 + m_2} = \frac{m_1 \bm{v}_1}{m_1 + m_2}
+    \]
+    重心系での運動量の和は以下のように計算される。
+    \begin{align*}
+    m_1 \bm{V}_1 + m_2 \bm{V}_2 &= m_1 (\bm{v}_1 - \bm{v}_G) + m_2 (\bm{0} - \bm{v}_G) \\
+    &= m_1 \bm{v}_1 - (m_1 + m_2) \bm{v}_G \\
+    &= m_1 \bm{v}_1 - (m_1 + m_2) \frac{m_1 \bm{v}_1}{m_1 + m_2} \\
+    &= m_1 \bm{v}_1 - m_1 \bm{v}_1 \\
+    &= \bm{0}
+    \end{align*}
+    よって、運動量の和は $\bm{0}$（ゼロベクトル）となる。
+
+    \item \textbf{重心系での速さの比率 $V_1'/V_1$} \\
+    重心系における弾性衝突では、各物体の速度の大きさ（速さ）は保存される。
+    \[
+    \frac{V_1'}{V_1} = 1
+    \]
+
+    \item \textbf{重心系での速度ベクトルの概形} \\
+    衝突前の速度 $\bm{V}_1, \bm{V}_2$ は互いに逆向きで、$\bm{V}_1 + \bm{V}_2 \propto \bm{0}$ の関係にある。
+    衝突後の速度 $\bm{V}_1', \bm{V}_2'$ も互いに逆向きで、かつ大きさは衝突前と同じである。
+    
+    \begin{center}
+    \begin{tikzpicture}[scale=1.5]
+      % Coordinates
+      \coordinate (O) at (0,0);
+      \coordinate (V1) at (1.5,0);
+      \coordinate (V2) at (-1.0,0); % Assuming m1 < m2 roughly for drawing scale
+      \coordinate (V1p) at (1.0, 1.118); % Rotated
+      \coordinate (V2p) at (-0.66, -0.745); % Rotated opposite
+      
+      % Draw Vectors
+      \draw[->, thick, blue] (O) -- (V1) node[right] {$\bm{V}_1$};
+      \draw[->, thick, red] (O) -- (V2) node[left] {$\bm{V}_2$};
+      \draw[->, thick, blue, dashed] (O) -- (V1p) node[above right] {$\bm{V}_1'$};
+      \draw[->, thick, red, dashed] (O) -- (V2p) node[below left] {$\bm{V}_2'$};
+      
+      % Center point
+      \fill (O) circle (1.5pt) node[below=5pt] {重心};
+    \end{tikzpicture}
+    \end{center}
+\end{enumerate}
+
+\section*{[3] 回転座標系（非慣性系）}
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textbf{基底ベクトルの時間微分} \\
+    角速度ベクトル $\bm{\omega} = \omega \bm{e}_{z'}$ による回転の公式 $\dot{\bm{A}} = \bm{\omega} \times \bm{A}$ を用いる。
+    \[
+    \dot{\bm{e}}_{x'} = \bm{\omega} \times \bm{e}_{x'} = (\omega \bm{e}_{z'}) \times \bm{e}_{x'} = \omega \bm{e}_{y'}
+    \]
+    \[
+    \dot{\bm{e}}_{y'} = \bm{\omega} \times \bm{e}_{y'} = (\omega \bm{e}_{z'}) \times \bm{e}_{y'} = -\omega \bm{e}_{x'}
+    \]
+    （$\dot{\bm{e}}_{z'} = \bm{0}$ であるが、問題文より $z=0$ の平面運動のため省略可、あるいは $\bm{0}$）
+
+    \item \textbf{速度ベクトル $\dot{\bm{r}}$} \\
+    位置ベクトル $\bm{r}' = x'\bm{e}_{x'} + y'\bm{e}_{y'}$ を時間微分する。
+    \begin{align*}
+    \dot{\bm{r}} &= \frac{d}{dt}(x'\bm{e}_{x'} + y'\bm{e}_{y'}) \\
+                 &= \dot{x}'\bm{e}_{x'} + x'\dot{\bm{e}}_{x'} + \dot{y}'\bm{e}_{y'} + y'\dot{\bm{e}}_{y'} \\
+                 &= (\dot{x}'\bm{e}_{x'} + \dot{y}'\bm{e}_{y'}) + x'(\omega \bm{e}_{y'}) + y'(-\omega \bm{e}_{x'}) \\
+                 &= \bm{v}' + \omega x' \bm{e}_{y'} - \omega y' \bm{e}_{x'}
+    \end{align*}
+    （別解：$\dot{\bm{r}} = \bm{v}' + \bm{\omega} \times \bm{r}'$ と表してもよい）
+
+    \item \textbf{加速度ベクトル $\ddot{\bm{r}}$} \\
+    (b) の結果をさらに時間微分する。または公式 $\ddot{\bm{r}} = \bm{a}' + 2\bm{\omega} \times \bm{v}' + \bm{\omega} \times (\bm{\omega} \times \bm{r}')$ を用いて成分計算する。
+    \begin{align*}
+    \ddot{\bm{r}} &= \bm{a}' + 2(\omega \bm{e}_{z'}) \times (\dot{x}'\bm{e}_{x'} + \dot{y}'\bm{e}_{y'}) + (\omega \bm{e}_{z'}) \times \{(\omega \bm{e}_{z'}) \times (x'\bm{e}_{x'} + y'\bm{e}_{y'})\} \\
+                  &= \bm{a}' + 2\omega(\dot{x}'\bm{e}_{y'} - \dot{y}'\bm{e}_{x'}) - \omega^2(x'\bm{e}_{x'} + y'\bm{e}_{y'})
+    \end{align*}
+
+    \item \textbf{コリオリ力と遠心力} \\
+    S'系での運動方程式 $m\bm{a}' = \bm{F} - 2m\bm{\omega}\times\bm{v}' - m\bm{\omega}\times(\bm{\omega}\times\bm{r}')$ において、
+    
+    \textbf{コリオリ力} $\bm{F}_{\text{cor}} = -2m\bm{\omega} \times \bm{v}'$:
+    \[
+    \bm{F}_{\text{cor}} = -2m\omega(\dot{x}'\bm{e}_{y'} - \dot{y}'\bm{e}_{x'}) = 2m\omega\dot{y}'\bm{e}_{x'} - 2m\omega\dot{x}'\bm{e}_{y'}
+    \]
+    （※問題文の指定変数に $\dot{x}', \dot{y}'$ が含まれていない場合、これらが $S'$ 系での速度成分であることを前提とする）
+
+    \textbf{遠心力} $\bm{F}_{\text{cen}} = -m\bm{\omega}\times(\bm{\omega}\times\bm{r}')$:
+    \[
+    \bm{F}_{\text{cen}} = m\omega^2(x'\bm{e}_{x'} + y'\bm{e}_{y'})
+    \]
+
+    \item \textbf{回転盤上の静止摩擦力} \\
+    物体は $S'$ 系で静止しており ($\bm{v}'=\bm{0}, \bm{a}'=\bm{0}$)、位置は $(r, 0)$ である。
+    運動方程式のつり合いより、静止摩擦力 $\bm{f}$ と遠心力が釣り合っている（コリオリ力はゼロ）。
+    \[
+    \bm{0} = \bm{f} + m\omega^2 r \bm{e}_{x'}
+    \]
+    よって静止摩擦力は $\bm{f} = -m\omega^2 r \bm{e}_{x'}$ となり、その大きさは
+    \[
+    f = m r \omega^2
+    \]
+
+    \item \textbf{滑り出す条件 $\omega_{\max}$} \\
+    滑り出す直前において、静止摩擦力は最大静止摩擦力 $\mu N = \mu mg$ に等しい。
+    \[
+    m r \omega_{\max}^2 = \mu m g
+    \]
+    これを解いて、
+    \[
+    \omega_{\max} = \sqrt{\frac{\mu g}{r}}
+    \]
+\end{enumerate}
+
+
+
+
+\end{document}
